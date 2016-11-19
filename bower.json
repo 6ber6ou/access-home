@@ -1,0 +1,21 @@
+{
+  "name": "access-home",
+  "description": "",
+  "main": "",
+  "authors": [
+    "6ber6ou <cyber6ou@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/6ber6ou/access-home",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
