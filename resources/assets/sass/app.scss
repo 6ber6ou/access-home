@@ -1,0 +1,702 @@
+/* *** */
+/* APP */
+/* *** */
+
+/* ------------------------------------------------------------ */
+/* IMPORTS */
+/* ------------------------------------------------------------ */
+
+ @import "variables";
+
+/* ------------------------------------------------------------ */
+/* ANIMATIONS */
+/* ------------------------------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+	{
+	opacity : 0;
+	-webkit-animation-duration : 1s;
+	animation-duration : 1s;
+	}
+
+.js--wp-4
+	{
+	-webkit-animation-duration : 1s;
+	animation-duration : 1s;
+	}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated
+	{
+	opacity : 1;
+	}
+
+/* ------------------------------------------------------------ */
+/* BALISES */
+/* ------------------------------------------------------------ */
+
+*
+	{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+	}
+
+blockquote
+	{
+	margin-top : 40px;
+	position : relative;
+	border-left : none;
+	padding : 2%;
+	font-style : italic;
+	line-height : 145%;
+	&:before
+		{
+		position : absolute;
+		top : -5px;
+		left : -3px;
+		font-size : 500%;
+		display : block;
+		content : '\201C';
+		}
+	}
+
+cite
+	{
+	margin-top : 25px;
+	font-size : 90%;
+	display : block;
+	img
+		{
+		margin-right : 10px;
+		border-radius : 50%;
+		height : 45px;
+		vertical-align : middle;
+		}
+	}
+
+html, body
+	{
+	background-color : white;
+	color : $grey-font;
+	font-weight : 300;
+	font-size : 20px;
+	text-rendering : optimizeLegibility;
+	}
+
+body
+	{
+	font-family : 'Lato', 'Arial', sans-serif;
+	}
+
+h1, h2, h3
+	{
+	margin : 0;
+	}
+
+h1,
+h2,
+h3
+	{
+	font-weight : 300;
+	text-transform : uppercase;
+	}
+
+h1
+	{
+	margin-top : 0;
+	margin-bottom : 20px;
+	color : white;
+	font-size : 280%;
+	letter-spacing : 1px;
+	word-spacing : 4px;
+	}
+
+h2
+	{
+	margin-bottom : 30px;
+	font-size : 180%;
+	word-spacing : 2px;
+	letter-spacing : 1px;
+	text-align : center;
+	}
+
+h2:after
+	{
+	content : " ";
+	background-color : $orange;
+	margin : 30px auto 0 auto;
+	width : 100px;
+	height : 2px;
+	display : block;
+	}
+
+h3
+	{
+	margin-bottom : 15px;
+	font-size : 110%;
+	}
+
+/* ------------------------------------------------------------ */
+/* BOX */
+/* ------------------------------------------------------------ */
+
+.box
+	{
+	padding : 1%;
+	p
+		{
+		font-size : 90%;
+		line-height : 145%;
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* BUTTONS */
+/* ------------------------------------------------------------ */
+
+.btn:link,
+.btn:visited,
+input[type=submit]
+	{
+	border-radius : 50px;
+	padding : 10px 30px;
+	font-size : 110%;
+	font-weight : 300;
+	tewt-decoration : none;
+	display : inline-block;
+	-webkit-transition : background-color $transition, border $transition, color $transition;
+	transition : background-color $transition, border $transition, color $transition;
+	&:hover, &:active
+		{
+		background-color : $orange-darker;
+		}
+	}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+	{
+	border : 1px solid $orange;
+	background-color : $orange;
+	margin-right : 15px;
+	color : white;
+	&:hover, &:active
+		{
+		border : 1px solid $orange-darker;
+		color : white;
+		};
+	}
+
+.btn-ghost:link,
+.btn-ghost:visited
+	{
+	border : 1px solid $orange !important;
+	color : orange;
+	&:hover, &:active
+		{
+		border : 1px solid $orange-darker;
+		background-color : $orange-darker;
+		color : white;
+		};
+	}
+
+/* ------------------------------------------------------------ */
+/* CITIES */
+/* ------------------------------------------------------------ */
+
+.cities-photo
+	{
+	margin-bottom : 15px;
+	width : 100%;
+	height : auto;
+	}
+
+.city-feature
+	{
+	margin-bottom : 5px;
+	}
+
+/* ------------------------------------------------------------ */
+/* CONTACT FORM */
+/* ------------------------------------------------------------ */
+
+.section-contact
+	{
+    background-image : -webkit-linear-gradient( rgba( 255, 255, 255, 0.87 ), rgba( 255, 255, 255, 0.87 ) ), url( 'img/contact.jpg' );
+    background-image : linear-gradient( rgba( 255, 255, 255, 0.87 ), rgba( 255, 255, 255, 0.87 ) ), url( 'img/contact.jpg' );
+	background-position : center;
+	background-size : cover;
+	}
+
+.contact-form
+	{
+	margin-top : 10px;
+	.row
+		{
+		margin-bottom : 20px;
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* CLEARFIX */
+/* ------------------------------------------------------------ */
+
+.clearfix
+	{
+	zoom : 1;
+	}
+
+.clearfix:after
+	{
+	content : '.';
+	clear : both;
+	display : block;
+	height : 0;
+	visibility : hidden;
+	}
+
+/* ------------------------------------------------------------ */
+/* CONTAINER & ROW */
+/* ------------------------------------------------------------ */
+
+.container-fluid
+	{
+	padding : 0;
+	}
+
+.row
+	{
+	max-width : 1140px;
+	margin : 0 auto;
+	}
+
+/* ------------------------------------------------------------ */
+/* FEATURES */
+/* ------------------------------------------------------------ */
+
+.section-features .long-copy
+	{
+	margin-bottom : 30px;
+	}
+
+/* ------------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------------ */
+
+footer
+	{
+	background-image : url( 'img/footer.jpg' );
+	padding : 50px;
+	font-size : 100%;
+	p
+		{
+		color : $dark-grey-footer;
+		font-size : 90%;
+		text-align : center;
+		margin-top : 20px;
+		}
+	}
+
+.footer-nav
+	{
+	list-style : none;
+	float : left;
+	}
+
+.footer-social-links
+	{
+	font-size : 90%;
+	list-style : none;
+	float : right;
+	}
+
+.footer-nav li, .footer-social-links li
+	{
+	display : inline-block;
+	margin-right : 20px;
+	&:last-child
+		{
+		margin-right : 0;
+		}
+	}
+
+.footer-nav li a:link, .footer-nav li a:visited,
+.footer-social-links li a:link, .footer-social-links li a:visited
+	{
+	text-decoration : none;
+	border : none;
+	color : $dark-grey-footer;
+	-webkit-transition : color $transition;
+	transition : color $transition;
+	}
+
+.footer-nav li a:hover, .footer-nav li a:active
+	{
+	color : $light-grey-footer;
+	}
+
+.footer-social-links li a:link, .footer-social-links li a:visited
+	{
+	font-size : 160%;
+	}
+
+.ion-social-facebook, .ion-social-twitter, .ion-social-googleplus, .ion-social-instagram
+	{
+	-webkit-transition : color $transition;
+	transition : color $transition;
+	}
+
+.ion-social-facebook:hover
+	{
+	color : $facebook-footer;
+	}
+
+.ion-social-twitter:hover
+	{
+	color : $facebook-twitter;
+	}
+
+.ion-social-googleplus:hover
+	{
+	color : $facebook-googleplus;
+	}
+
+.ion-social-instagram:hover
+	{
+	color : $facebook-instagram;
+	}
+
+/* ------------------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------------------ */
+
+header
+	{
+	background-image : -webkit-linear-gradient( rgba( 0, 0, 0, 0.7 ), rgba( 0, 0, 0, 0.7 ) ), url( 'img/header.jpg' );
+	background-image : linear-gradient( rgba( 0, 0, 0, 0.7 ), rgba( 0, 0, 0, 0.7 ) ), url( 'img/header.jpg' );
+	background-size : cover;
+	background-position : center;
+	background-attachment : fixed;
+	height : 100vh;
+	a
+		{
+		border-bottom : none !important;
+		}
+	}
+
+.hero-text-box
+	{
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	width : 1140px;
+	-webkit-transform : translate( -50%, -50% );
+	-ms-transform : translate( -50%, -50% );
+	transform : translate( -50%, -50% );
+	}
+
+.logo,
+.logo-black
+	{
+	width : auto;
+	height : 50px;
+	margin-top : 20px;
+	float : left;
+	}
+
+.logo-black
+	{
+	display : none;
+	}
+
+.logo-text
+	{
+	margin-top : 25px;
+	margin-left : 15px;
+	color : white;
+	font-size : 200%;
+	display : inline-block;
+	span
+		{
+		margin-right : 10px;
+		color : $orange-darker;
+		}
+	}
+
+/* Main navigation */
+
+.main-nav
+	{
+	list-style : none;
+	float : right;
+	margin-top : 40px;
+	li
+		{
+		margin-left : 30px;
+		display : inline-block;
+		a:link, a:visited
+			{
+			border-bottom : 2px solid transparent !important;
+			padding : 8px 0;
+			color : white;
+			text-decoration : none;
+			text-transform : uppercase;
+			-webkit-transition : border-bottom $transition;
+			transition : border-bottom $transition;
+			}
+		a:hover, a:active
+			{
+			border-bottom : 2px solid $orange !important;
+			}
+		}
+	}
+
+/* Mobile navigation */
+
+.mobile-nav-icon
+	{
+	margin-top : 30px;
+	cursor : pointer;
+	display : none;
+	float : right;
+	i
+		{
+		font-size : 200%;
+		color : white;
+		}
+	}
+
+/* Sticky navigation */
+
+.sticky
+	{
+	background-color : rgba( 255, 255, 255, 0.98 );
+	box-shadow : 0 2px 2px #efefef;
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	z-index: 9999;
+	.main-nav
+		{
+		margin-top : 20px;
+		font-size : 80%;
+		li
+			{
+			a:link, a:visited
+				{
+				border-bottom : 3px solid transparent !important;
+				padding : 8px 0 13px 0;
+				color : $grey-font;
+				}
+			a:hover, a:active
+				{
+				border-bottom : 3px solid $orange !important;
+				padding-bottom : 13px;
+				}
+			}
+		}
+	.logo-black
+		{
+		margin : 5px 0 10px 0;
+		height : 40px;
+		display : block;
+		}
+	.logo
+		{
+		display : none;
+		}
+	.logo-text
+		{
+		margin-top : 7px;
+		color : $grey-font;
+		font-size : 150%;
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* HOW IT WORKS */
+/* ------------------------------------------------------------ */
+
+.section-steps
+	{
+	background-color : $light-grey;
+	}
+
+.steps-box:first-child
+	{
+	margin-top : 60px;
+	margin-right : 0;
+	}
+
+.steps-box:last-child
+	{
+	margin-top : 70px;
+	padding-left : 3%;
+	}
+
+.layout-image
+	{
+	margin-left : 40px;
+	text-align : right;
+	}
+
+.works-step
+	{
+	margin-bottom : 50px;
+	div
+		{
+		border : 2px solid $orange;
+		border-radius : 50%;
+		margin-right : 25px;
+		padding : 2px 8px 8px 8px;
+		width : 55px;
+		height : 55px;
+		color : $orange;
+		font-size : 150%;
+		text-align : center;
+		display : inline-block;
+		float : left;
+		}
+	p
+		{
+		padding-top : 15px;
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* ICONS */
+/* ------------------------------------------------------------ */
+
+.icon-big
+	{
+	margin-bottom : 10px;
+	color : $orange;
+	font-size : 350%;
+	display : block;
+	}
+
+.icon-small
+	{
+	margin-top : -5px;
+	margin-right : 10px;
+	width : 30px;
+	color : $orange;
+	font-size : 120%;
+	text-align : center;
+	line-height : 120%;
+	vertical-align : middle;
+	display : inline-block;
+	}
+
+/* ------------------------------------------------------------ */
+/* LINKS */
+/* ------------------------------------------------------------ */
+
+a:link,
+a:visited
+	{
+	border-bottom : 1px solid $orange;
+	padding-bottom : 1px;
+	color : $orange;
+	text-decoration : none;
+	-webkit-transition : border-bottom $transition, color $transition;
+	transition : border-bottom $transition, color $transition;
+	}
+
+a:hover,
+a:active
+	{
+	border-bottom : 1px solid transparent;
+	color : $grey-font;
+	}
+
+/* ------------------------------------------------------------ */
+/* PARAGRAPHS */
+/* ------------------------------------------------------------ */
+
+.long-copy
+	{
+	width : 70%;
+	line-height : 145%;
+	margin-left : 15%;
+	text-align : center;
+	}
+
+/* ------------------------------------------------------------ */
+/* PHOTOS SHOWCASE */
+/* ------------------------------------------------------------ */
+
+.section-photos
+	{
+	padding : 0;
+	}
+
+.photos-showcase
+	{
+	margin-bottom : 0;
+	width : 100%;
+	list-style : none;
+	li
+		{
+		width : 25%;
+		display : block;
+		float : left;
+		}
+	}
+
+.photo
+	{
+	background-color : black;
+	margin : 0;
+	width : 100%;
+	overflow : hidden;
+	img
+		{
+		width : 100%;
+		height : auto;
+		opacity : 0.7;
+		-webkit-transform : scale( 1.15 );
+		-ms-transform : scale( 1.15 );
+		transform : scale( 1.15 );
+		-webkit-transition : opacity $transition-photo-showcase, -webkit-transform $transition-photo-showcase;
+		transition : opacity $transition-photo-showcase, -webkit-transform $transition-photo-showcase;
+		transition : transform $transition-photo-showcase, opacity $transition-photo-showcase;
+		transition : transform $transition-photo-showcase, opacity $transition-photo-showcase, -webkit-transform $transition-photo-showcase;
+		&:hover
+			{
+			cursor : pointer;
+			opacity : 1;
+			-webkit-transform : scale( 1 );
+			-ms-transform : scale( 1 );
+			transform : scale( 1 );
+			}
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* SECTIONS */
+/* ------------------------------------------------------------ */
+
+section
+	{
+	padding : 80px 0;
+	}
+
+/* ------------------------------------------------------------ */
+/* TESTIMONIALS */
+/* ------------------------------------------------------------ */
+
+.section-testimonials
+	{
+	background-image : -webkit-linear-gradient( rgba( 0, 0, 0, 0.7 ), rgba( 0, 0, 0, 0.7 ) ), url( 'img/testimonials.jpg' );
+	background-image : linear-gradient( rgba( 0, 0, 0, 0.7 ), rgba( 0, 0, 0, 0.7 ) ), url( 'img/testimonials.jpg' );
+	background-size : cover;
+	background-position : center;
+	background-attachment : fixed;
+	color : white;
+	}

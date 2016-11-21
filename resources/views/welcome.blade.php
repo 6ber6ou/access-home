@@ -1,56 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>
-            {{ config( 'app.name', 'Access Home' ) }}
-        </title>
-
-        <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
-
-        <!-- Scripts -->
-        <script>
-
-            window.Laravel = <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-            ]); ?>
-
-        </script>
-
-    </head>
+    @include( 'layouts.partials._head' )
 
     <body>
 
         <!-- APP -->
         <div id="app">
 
+            <!-- CONTAINER FLUID -->
+            <div class="container-fluid">
 
+                <!-- HEADER -->
+                <header>
 
+                    <!-- NAV -->
+                    <nav>
 
+                        <!-- ROW -->
+                        <div class="row">
 
+                            <!-- LOGO -->
+                            <a href="#">
+                                <img src="{{ asset( 'img/logo-white.png' ) }}" class="logo" alt="Access Home logo">
+                                <img src="{{ asset( 'img/logo-black.png' ) }}" class="logo-black" alt="Access Home logo">
+                                <span class="logo-text">
+                                    Access <span>Houses</span>
+                                </span>
+                            </a>
+                            <!-- End ... LOGO -->
 
+                            <!-- MAIN NAV -->
+                            <ul class="main-nav js--main-nav">
 
+                                <li>
+                                    <a href="#" class="js--scroll-to-how-it-works">{!! trans( 'webpage-text.homepage-top-link-1' ) !!}</a>
+                                </li>
 
+                                <li>
+                                    <a href="#" class="js--scroll-to-cities">{!! trans( 'webpage-text.homepage-top-link-2' ) !!}</a>
+                                </li>
 
+                                <li>
+                                    <a href="#" class="js--scroll-to-contact">{!! trans( 'webpage-text.homepage-top-link-3' ) !!}</a>
+                                </li>
 
+                                <li>
+                                    <a href="#">{!! trans( 'webpage-text.homepage-top-link-4' ) !!}</a>
+                                </li>
 
+                            </ul>
+                            <!-- End ... MAIN NAV -->
 
+                            <!-- MOBILE NAV -->
+                            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                            <!-- End ... MOBILE NAV -->
 
+                        </div>
+                        <!-- End ... ROW -->
+
+                    </nav>
+                    <!-- NAV -->
+
+                    <!-- HERO TEXT BOX -->
+                    <div class="hero-text-box">
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <h1>
+                                {!! trans( 'webpage-text.homepage-h1' ) !!}
+                            </h1>
+
+                            <a href="#" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-1' ) !!}</a>
+                            <a href="#" class="btn btn-ghost js--scroll-to-start">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
+
+                       </div>
+                        <!-- End ... ROW -->
+
+                    </div>
+                    <!-- End ... HERO TEXT BOX -->
+
+                </header>
+                <!-- End ... HEADER -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-features js--section-features">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <h2>
+                            {!! trans( 'webpage-text.homepage-features-h2' ) !!}
+                        </h2>
+
+                        <p class="long-copy">
+                            {!! trans( 'webpage-text.homepage-features-p' ) !!}
+                        </p>
+
+                    </div>
+                    <!-- End ...ROW -->
+
+                    <!-- ROW -->
+                    <div class="row js--wp-1">
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <i class="ion-ios-infinite-outline icon-big"></i>
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-features-h3-1' ) !!}
+                            </h3>
+
+                            <p>
+                                 {!! trans( 'webpage-text.homepage-features-p-1' ) !!}
+                            </p>
+
+                        </div>
+                        <!-- End ... COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <i class="ion-ios-stopwatch-outline icon-big"></i>
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-features-h3-2' ) !!}
+                            </h3>
+
+                            <p>
+                                 {!! trans( 'webpage-text.homepage-features-p-2' ) !!}
+                            </p>
+
+                        </div>
+                        <!-- End ... COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <i class="ion-ios-nutrition-outline icon-big"></i>
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-features-h3-3' ) !!}
+                            </h3>
+
+                            <p>
+                                 {!! trans( 'webpage-text.homepage-features-p-3' ) !!}
+                            </p>
+
+                        </div>
+                        <!-- End ... COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <i class="ion-ios-cart-outline icon-big"></i>
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-features-h3-4' ) !!}
+                            </h3>
+
+                            <p>
+                                 {!! trans( 'webpage-text.homepage-features-p-4' ) !!}
+                            </p>
+
+                        </div>
+                        <!-- End ... COL MD 3 -->
+
+                    </div>
+                    <!-- End ...ROW -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-photos">
+
+                    <!-- PHOTOS SHOWCASE LINE 1 -->
+                    <ul class="photos-showcase clearfix">
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-01.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-02.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-03.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-04.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                    </ul>
+                    <!-- End ... PHOTOS SHOWCASE LINE 1 -->
+
+                    <!-- PHOTOS SHOWCASE LINE 2 -->
+                    <ul class="photos-showcase photos-showcase-second-row clearfix">
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-05.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-06.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-07.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                        <li>
+
+                            <figure class="photo">
+                                <img src="{{ asset( '/img/image-08.jpg' ) }}" alt="{{ trans( 'webpage-text.homepage-alt-showcase' ) }}">
+                            </figure>
+
+                        </li>
+
+                    </ul>
+                    <!-- End ... PHOTOS SHOWCASE LINE 2 -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-steps js--section-how-it-works">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <h2>
+                            {!! trans( 'webpage-text.homepage-steps-h2' ) !!}
+                        </h2>
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <!-- COL MD 6 -->
+                        <div class="col-md-6 steps-box">
+
+                            <!-- LAYOUT IMAGE -->
+                            <img src="{{ asset( 'img/plan-pmr.png' ) }}" class="img-responsive layout-image js--wp-2" alt="{!! trans( 'webpage-text.homepage-alt-how-it-works' ) !!}">
+                            <!-- End ... LAYOUT IMAGE -->
+
+                        </div>
+                        <!-- End ... COL MD 6 -->
+
+                        <!-- COL MD 6 -->
+                        <div class="col-md-6 steps-box">
+
+                            <!-- WORKS STEP 1 -->
+                            <div class="works-step">
+
+                                <div>
+                                    1
+                                </div>
+
+                                <p>
+                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-1' ) !!}
+                                </p>
+
+                            </div>
+                            <!-- End ... WORKS STEP 1 -->
+
+                            <!-- WORKS STEP 2 -->
+                            <div class="works-step">
+
+                                <div>
+                                    2
+                                </div>
+
+                                <p>
+                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-2' ) !!}
+                                </p>
+
+                            </div>
+                            <!-- End ... WORKS STEP 2 -->
+
+                            <!-- WORKS STEP 3 -->
+                            <div class="works-step">
+
+                                <div>
+                                    3
+                                </div>
+
+                                <p>
+                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-3' ) !!}
+                                </p>
+
+                            </div>
+                            <!-- End ... WORKS STEP 3 -->
+
+                        </div>
+                        <!-- End ... COL MD 6 -->
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-cities js--section-cities">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <h2>
+                            {!! trans( 'webpage-text.homepage-cities-h2' ) !!}
+                        </h2>
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                    <!-- ROW -->
+                    <div class="row js--wp-3">
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <img src="{{ asset( 'img/paris.jpg' ) }}" class="cities-photo" alt="{!! trans( 'webpage-text.homepage-cities-alt-1' ) !!}">
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-cities-h3-1' ) !!}
+                            </h3>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-person icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-1-1' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-star icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-2-1' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-social-twitter icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-3-1' ) !!}
+
+                            </div>
+
+                        </div>
+                        <!-- COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <img src="{{ asset( 'img/san-francisco.jpg' ) }}" class="cities-photo" alt="{!! trans( 'webpage-text.homepage-cities-alt-2' ) !!}">
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-cities-h3-2' ) !!}
+                            </h3>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-person icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-1-2' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-star icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-2-2' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-social-twitter icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-3-2' ) !!}
+
+                            </div>
+
+                        </div>
+                        <!-- COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <img src="{{ asset( 'img/berlin.jpg' ) }}" class="cities-photo" alt="{!! trans( 'webpage-text.homepage-cities-alt-3' ) !!}">
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-cities-h3-3' ) !!}
+                            </h3>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-person icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-1-3' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-star icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-2-3' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-social-twitter icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-3-3' ) !!}
+
+                            </div>
+
+                        </div>
+                        <!-- COL MD 3 -->
+
+                        <!-- COL MD 3 -->
+                        <div class="col-md-3 box">
+
+                            <img src="{{ asset( 'img/london.jpg' ) }}" class="cities-photo" alt="{!! trans( 'webpage-text.homepage-cities-alt-4' ) !!}">
+
+                            <h3>
+                                {!! trans( 'webpage-text.homepage-cities-h3-4' ) !!}
+                            </h3>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-person icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-1-4' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-ios-star icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-2-4' ) !!}
+
+                            </div>
+
+                            <div class="city-feature">
+
+                                <i class="ion-social-twitter icon-small"></i>
+                                {!! trans( 'webpage-text.homepage-cities-text-3-4' ) !!}
+
+                            </div>
+
+                        </div>
+                        <!-- COL MD 3 -->
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-testimonials">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <h2>
+                            {!! trans( 'webpage-text.homepage-testimonials-h2' ) !!}
+                        </h2>
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
+
+                            <blockquote>
+
+                                 Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+
+                                <cite>
+                                    <img src="{{ asset( 'img/users/user-1.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Alberto Duncan
+                                </cite>
+
+                            </blockquote>
+
+                        </div>
+                        <!-- End ... COL MD 4 -->
+
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
+
+                            <blockquote>
+
+                                 Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+
+                                <cite>
+                                    <img src="{{ asset( 'img/users/user-2.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Joana Silva
+                                </cite>
+
+                            </blockquote>
+
+                        </div>
+                        <!-- End ... COL MD 4 -->
+
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
+
+                            <blockquote>
+
+                                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+
+                                <cite>
+                                    <img src="{{ asset( 'img/users/user-3.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Milton Chapman
+                                </cite>
+
+                            </blockquote>
+
+                        </div>
+                        <!-- End ... COL MD 4 -->
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- ============================================================ -->
+
+                <!-- SECTION -->
+                <section class="section-contact js--section-contact">
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <h2>
+                            {!! trans( 'webpage-text.homepage-contact-h2' ) !!}
+                        </h2>
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                    <!-- ROW -->
+                    <div class="row js--wp-4">
+
+                        {!! Form::open( [ 'url' => '#', 'class' => 'contact-form' ] ) !!}
+
+                            <!-- ROW -->
+                            <div class="row">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+                                        {!! Form::text( 'name', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-1' ), 'required' ] ) !!}
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                            <!-- ROW -->
+                            <div class="row">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+                                        {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-2' ), 'required' ] ) !!}
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                            <!-- ROW -->
+                            <div class="row">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+                                        {!! Form::textarea( 'message', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                            <!-- ROW -->
+                            <div class="row">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+                                        {!! Form::submit( trans( 'webpage-text.homepage-contact-submit' ), [ 'class' => 'btn btn-full' ] ) !!}
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                        {!! Form::close() !!}
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                </section>
+                <!-- End ... SECTION -->
+
+                <!-- FOOTER -->
+                <footer>
+
+                    <!-- ROW -->
+                    <div class="row">
+
+                        <!-- COL MD 6 -->
+                        <div class="col-md-6">
+
+                            <ul class="footer-nav">
+
+                                <li>
+                                    <a href="#">{!! trans( 'webpage-text.homepage-footer-link-1' ) !!}</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">{!! trans( 'webpage-text.homepage-footer-link-2' ) !!}</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">{!! trans( 'webpage-text.homepage-footer-link-3' ) !!}</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!-- End ... COL MD 6 -->
+
+                        <!-- COL MD 6 -->
+                        <div class="col-md-6">
+
+                            <ul class="footer-social-links">
+
+                                <li>
+                                    <a href="#"><i class="ion-social-facebook"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="ion-social-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="ion-social-googleplus"></i></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><i class="ion-social-instagram"></i></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!-- End ... COL MD 6 -->
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                    <div class="row">
+                    <!-- ROW -->
+
+                        <p>
+                            {!! trans( 'webpage-text.homepage-footer-copyright' ) !!}
+                        </p>
+
+                    </div>
+                    <!-- End ... ROW -->
+
+                </footer>
+                <!-- End ... FOOTER -->
+
+            </div>
+            <!-- End ... CONTAINER FLUID -->
 
         </div>
         <!-- End ... APP -->
 
-        <!-- Scripts -->
-        <script src="/js/app.js"></script>
+        @include( 'layouts.partials._footer' )
 
     </body>
 

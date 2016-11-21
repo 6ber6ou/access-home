@@ -1,0 +1,347 @@
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+
+/* ------------------------------------------------------------ */
+/* IMPORTS */
+/* ------------------------------------------------------------ */
+
+ @import "variables";
+
+/* ------------------------------------------------------------ */
+/* BIG TABLETS to 1200px (width smaller than the 1140px row) */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 1200px )
+	{
+
+	.hero-text-box
+		{
+		padding : 0 2%;
+		width : 100%;
+		}
+
+	.row
+		{
+		padding : 0 2%;
+		}
+
+	.steps-box
+		{
+		img
+			{
+			margin-left : 0;
+			}
+		}
+
+	}
+
+/* ------------------------------------------------------------ */
+/* SMALL TABLETS to BIG TABLETS from 992 to 1023px */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 1023px )
+	{
+
+	.main-nav
+		{
+		margin-top : 50px;
+		li
+			{
+			margin-left : 20px;
+			}
+		}
+
+	.steps-box:first-child
+		{
+		margin-top : 0;
+		}
+
+	.steps-box:last-child
+		{
+		margin-top : 30px !important;
+		}
+
+	.form-group
+		{
+		div
+			{
+			margin-left : 0;
+			width : 100%;
+			}
+		}
+
+	body
+		{
+		font-size : 16px;
+		}
+
+	.logo-text
+		{
+		margin-top : 33px;
+		}
+
+	section
+		{
+		padding : 60px 0;
+		}
+
+	.section-steps
+		{
+		padding-bottom : 30px;
+		}
+
+	.long-copy
+		{
+		width : 80%;
+		margin-left : 10%;
+		}
+
+	.steps-box:last-child
+		{
+		margin-top : 0px;
+		}
+
+	.steps-box
+		{
+		margin-top : 0;
+		img
+			{
+			margin : 0 auto;
+			}
+		}
+
+	.col-md-3
+		{
+		width : 25%;
+		float : left !important;
+		}
+
+	.works-step
+		{
+		margin-bottom : 30px;
+		div
+			{
+			padding-top : 8px;
+			}
+		}
+
+	.icon-small
+		{
+		width : 20px;
+		}
+
+	}
+
+/* ------------------------------------------------------------ */
+/* SMALL TABLETS to BIG TABLETS from 768 to 991px */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 991px )
+	{
+
+	.steps-box:first:child
+		{
+		margin-top : 0;
+		}
+
+	}
+
+/* ------------------------------------------------------------ */
+/* SMALL PHONES to SMALL TABLETS from 481 to 767px */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 767px )
+	{
+
+	h1
+		{
+		font-size : 150%;
+		}
+
+	.logo
+		{
+		margin-left : 10px;
+		}
+
+	.main-nav
+		{
+		display : none;
+		margin-top : 35px;
+		margin-left : 5px;
+		float : left;
+		li
+			{
+			display : block;
+			a:link, a:visited
+				{
+				border : none;
+				padding : 10px 0;
+				font-size : 100%;
+				display : block;
+				}
+			}
+		}
+
+	.mobile-nav-icon
+		{
+		margin-right : 10px;
+		}
+
+	.sticky
+		{
+		.logo-black
+			{
+			margin-left : 10px;
+			}
+		.main-nav
+			{
+			margin-top : 10px;
+			margin-left : 20px;
+			li
+				{
+				margin-left : 0;
+				}
+			li a:link, li a:visited
+				{
+				padding : 10px 0;
+				}
+			}
+		.mobile-nav-icon
+			{
+			margin-top : 10px;
+			i
+				{
+				color : $grey-font;
+				}
+			}
+		}
+
+	.mobile-nav-icon
+		{
+		display : none;
+		}
+
+	.hero-text-box
+		{
+		.btn-full, .btn-ghost
+			{
+			margin-bottom : 20px;
+			}
+		}
+
+	.col-md-3
+		{
+		width : 100%;
+		clear : both;
+		}
+
+	.city-feature:last-child
+		{
+		margin-bottom : 50px;
+		}
+
+	.photos-showcase
+		{
+		li
+			{
+			width : 50%;
+			}
+		}
+
+	.photos-showcase-second-row
+		{
+		display : none;
+		}
+
+	.section-cities
+		{
+		padding-bottom : 10px;
+		}
+
+	.section-testimonials
+		{
+		padding-bottom : 30px;
+		}
+
+	.section-contact
+		{
+		padding-bottom : 30px;
+		}
+
+	footer
+		{
+		padding : 40px;
+		font-size : 100%;
+		}
+
+	.footer-social-links
+		{
+		font-size : 80%;
+		}
+
+	.footer-social-links
+		{
+		margin-top : -8px;
+		}
+
+	.section-features
+		{
+		padding-left : 10px;
+		padding-right : 10px;
+		}
+
+	.works-step
+		{
+		div
+			{
+			padding-top : 8px;
+			}
+		}
+
+	}
+
+/* ------------------------------------------------------------ */
+/* SMALL PHONES from 0 to 480px */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 480px )
+	{
+
+	.mobile-nav-icon
+		{
+		display : inline-block;
+		}
+
+	.row
+		{
+		padding : 0 10px;
+		}
+
+	.section-features
+		{
+		padding-left : 10px;
+		padding-right : 10px;
+		}
+
+	.footer-nav
+		{
+		margin-bottom : 30px;
+		}
+
+	.footer-nav, .footer-social-links
+		{
+		width : 100% !important;
+		text-align : center;
+		}
+
+	footer
+		{
+		font-size : 110%;
+		p
+			{
+			font-size : 90%;
+			}
+		}
+
+	}
