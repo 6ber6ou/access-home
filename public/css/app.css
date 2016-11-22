@@ -221,7 +221,7 @@ input[type=submit] {
 footer {
   background-image: url("img/footer.jpg");
   padding: 50px;
-  font-size: 100%; }
+  font-size: 80%; }
   footer p {
     color: #888;
     font-size: 90%;
@@ -232,8 +232,15 @@ footer {
   list-style: none;
   float: left; }
 
+.footer-flags {
+  list-style: none;
+  text-align: center; }
+  .footer-flags li {
+    margin-right: 15px;
+    display: inline; }
+
 .footer-social-links {
-  font-size: 90%;
+  font-size: 100%;
   list-style: none;
   float: right; }
 
@@ -316,11 +323,12 @@ header {
 
 /* Main navigation */
 .main-nav {
+  margin-top: 47px;
   list-style: none;
-  float: right;
-  margin-top: 40px; }
+  font-size: 90%;
+  float: right; }
   .main-nav li {
-    margin-left: 30px;
+    margin-left: 25px;
     display: inline-block; }
     .main-nav li a:link, .main-nav li a:visited {
       border-bottom: 2px solid transparent !important;
@@ -377,14 +385,15 @@ header {
 /* HOW IT WORKS */
 /* ------------------------------------------------------------ */
 .section-steps {
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  padding-bottom: 50px; }
 
 .steps-box:first-child {
-  margin-top: 60px;
+  margin-top: 20px;
   margin-right: 0; }
 
 .steps-box:last-child {
-  margin-top: 70px;
+  margin-top: 90px;
   padding-left: 3%; }
 
 .layout-image {

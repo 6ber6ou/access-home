@@ -34,19 +34,27 @@
                             <ul class="main-nav js--main-nav">
 
                                 <li>
-                                    <a href="#" class="js--scroll-to-how-it-works">{!! trans( 'webpage-text.homepage-top-link-1' ) !!}</a>
+                                    <a href="#" class=" js--scroll-to-start">{!! trans( 'webpage-text.homepage-top-link-1' ) !!}</a>
                                 </li>
 
                                 <li>
-                                    <a href="#" class="js--scroll-to-cities">{!! trans( 'webpage-text.homepage-top-link-2' ) !!}</a>
+                                    <a href="#" class="js--scroll-to-how-it-works">{!! trans( 'webpage-text.homepage-top-link-2' ) !!}</a>
                                 </li>
 
                                 <li>
-                                    <a href="#" class="js--scroll-to-contact">{!! trans( 'webpage-text.homepage-top-link-3' ) !!}</a>
+                                    <a href="#" class="js--scroll-to-cities">{!! trans( 'webpage-text.homepage-top-link-3' ) !!}</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">{!! trans( 'webpage-text.homepage-top-link-4' ) !!}</a>
+                                    <a href="#" class="js--scroll-to-testimonials">{!! trans( 'webpage-text.homepage-top-link-4' ) !!}</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="js--scroll-to-contact">{!! trans( 'webpage-text.homepage-top-link-5' ) !!}</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="js--scroll-to-footer"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag' ) !!}"></a>
                                 </li>
 
                             </ul>
@@ -73,7 +81,7 @@
                             </h1>
 
                             <a href="#" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-1' ) !!}</a>
-                            <a href="#" class="btn btn-ghost js--scroll-to-start">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
+                            <a href="#" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
 
                        </div>
                         <!-- End ... ROW -->
@@ -501,7 +509,7 @@
                 <!-- ============================================================ -->
 
                 <!-- SECTION -->
-                <section class="section-testimonials">
+                <section class="section-testimonials js--section-testimonials">
 
                     <!-- ROW -->
                     <div class="row">
@@ -674,10 +682,10 @@
                 <footer>
 
                     <!-- ROW -->
-                    <div class="row">
+                    <div class="row js--section-footer">
 
-                        <!-- COL MD 6 -->
-                        <div class="col-md-6">
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
 
                             <ul class="footer-nav">
 
@@ -692,10 +700,40 @@
                             </ul>
 
                         </div>
-                        <!-- End ... COL MD 6 -->
+                        <!-- End ... COL MD 4 -->
 
-                        <!-- COL MD 6 -->
-                        <div class="col-md-6">
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
+
+                            <ul class="footer-flags">
+
+                                <li>
+                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-fr' ) !!}"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-en.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-en' ) !!}"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-es.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-es' ) !!}"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-de.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-de' ) !!}"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-it.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-it' ) !!}"></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <!-- End ... COL MD 4 -->
+
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4">
 
                             <ul class="footer-social-links">
 
@@ -718,7 +756,7 @@
                             </ul>
 
                         </div>
-                        <!-- End ... COL MD 6 -->
+                        <!-- End ... COL MD 4 -->
 
                     </div>
                     <!-- End ... ROW -->

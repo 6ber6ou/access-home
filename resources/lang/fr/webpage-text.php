@@ -16,12 +16,18 @@ return
 	// ********
 
 	'homepage-h1'							=>      "échange de logements accessibles aux handicapés.",
-	'homepage-btn-1'						=>		"Connexion",
-	'homepage-btn-2'						=>		"En savoir plus",
-	'homepage-top-link-1'					=>		"En 3 étapes",
-	'homepage-top-link-2'					=>		"Destinations",
-	'homepage-top-link-3'					=>		"Contact",
-	'homepage-top-link-4'					=>		"Inscription",
+	'homepage-btn-1'						=>		"Inscription",
+	'homepage-btn-2'						=>		"Connexion",
+	'homepage-top-link-1'					=>		"En savoir plus",
+	'homepage-top-link-2'					=>		"En 3 étapes",
+	'homepage-top-link-3'					=>		"Destinations",
+	'homepage-top-link-4'					=>		"Témoignages",
+	'homepage-top-link-5'					=>		"Contact",
+	'homepage-alt-flag-fr'					=>		"Drapeau français",
+	'homepage-alt-flag-en'					=>		"Drapeau anglais",
+	'homepage-alt-flag-es'					=>		"Drapeau espagnol",
+	'homepage-alt-flag-de'					=>		"Drapeau allemand",
+	'homepage-alt-flag-it'					=>		"Drapeau italien",
 	'homepage-features-h2'					=>		"Profitez de vacances à bas prix<br>en parcourant le monde",
 	'homepage-features-p'					=>		"Enfin des logements accessibles aux handicapés ! Vous allez pouvoir visiter les pays qui vous attirent en étant sûr d'arriver dans un logement équipé spécialement à votre handicap.",
 	'homepage-features-h3-1'				=>		"Le monde s'offre à vous",
@@ -63,7 +69,7 @@ return
 	'homepage-contact-placeholder-3'		=>		"Votre message...",
 	'homepage-contact-submit'				=>		"Envoyer",
 	'homepage-footer-link-1'				=>		"Plan du site",
-	'homepage-footer-link-2'				=>		"Conditions générales d'utilisation",
+	'homepage-footer-link-2'				=>		"Conditions générales",
 	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés."
 
 	];

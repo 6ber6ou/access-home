@@ -291,7 +291,7 @@ footer
 	{
 	background-image : url( 'img/footer.jpg' );
 	padding : 50px;
-	font-size : 100%;
+	font-size : 80%;
 	p
 		{
 		color : $dark-grey-footer;
@@ -307,9 +307,20 @@ footer
 	float : left;
 	}
 
+.footer-flags
+	{
+	list-style : none;
+	text-align : center;
+	li
+		{
+		margin-right : 15px;
+		display : inline;
+		}
+	}
+
 .footer-social-links
 	{
-	font-size : 90%;
+	font-size : 100%;
 	list-style : none;
 	float : right;
 	}
@@ -431,12 +442,13 @@ header
 
 .main-nav
 	{
+	margin-top : 47px;
 	list-style : none;
+	font-size : 90%;
 	float : right;
-	margin-top : 40px;
 	li
 		{
-		margin-left : 30px;
+		margin-left : 25px;
 		display : inline-block;
 		a:link, a:visited
 			{
@@ -525,17 +537,18 @@ header
 .section-steps
 	{
 	background-color : $light-grey;
+	padding-bottom : 50px;
 	}
 
 .steps-box:first-child
 	{
-	margin-top : 60px;
+	margin-top : 20px;
 	margin-right : 0;
 	}
 
 .steps-box:last-child
 	{
-	margin-top : 70px;
+	margin-top : 90px;
 	padding-left : 3%;
 	}
 

@@ -56,6 +56,23 @@ $( document ).ready( function()
 
 	/* ------------------------------------------------------------ */
 
+	/* Scroll to testimonials */
+	/* ---------------------- */
+
+	$( '.js--scroll-to-testimonials' ).on( 'click', function()
+		{
+
+		$( 'hyml, body' ).animate(
+			{
+
+			scrollTop : $( '.js--section-testimonials' ).offset().top
+
+			}, 1000 );
+
+		} );
+
+	/* ------------------------------------------------------------ */
+
 	/* Scroll to contact */
 	/* ----------------- */
 
@@ -66,6 +83,23 @@ $( document ).ready( function()
 			{
 
 			scrollTop : $( '.js--section-contact' ).offset().top
+
+			}, 1000 );
+
+		} );
+
+	/* ------------------------------------------------------------ */
+
+	/* Scroll to footer */
+	/* ----------------- */
+
+	$( '.js--scroll-to-footer' ).on( 'click', function()
+		{
+
+		$( 'hyml, body' ).animate(
+			{
+
+			scrollTop : $( '.js--section-footer' ).offset().top
 
 			}, 1000 );
 
