@@ -109,7 +109,7 @@
                         <!-- COL MD 3 -->
                         <div class="col-md-3 box">
 
-                            <i class="ion-ios-infinite-outline icon-big"></i>
+                            <i class="ion-ios-world-outline icon-big"></i>
 
                             <h3>
                                 {!! trans( 'webpage-text.homepage-features-h3-1' ) !!}
@@ -125,7 +125,7 @@
                         <!-- COL MD 3 -->
                         <div class="col-md-3 box">
 
-                            <i class="ion-ios-stopwatch-outline icon-big"></i>
+                            <i class="ion-ios-home-outline icon-big"></i>
 
                             <h3>
                                 {!! trans( 'webpage-text.homepage-features-h3-2' ) !!}
@@ -141,7 +141,7 @@
                         <!-- COL MD 3 -->
                         <div class="col-md-3 box">
 
-                            <i class="ion-ios-nutrition-outline icon-big"></i>
+                            <i class="ion-ios-pulse icon-big"></i>
 
                             <h3>
                                 {!! trans( 'webpage-text.homepage-features-h3-3' ) !!}
@@ -378,17 +378,17 @@
 
                             <div class="city-feature">
 
-                                <i class="ion-ios-star icon-small"></i>
+                                <i class="ion-ios-home icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-2-1' ) !!}
 
                             </div>
 
-                            <div class="city-feature">
+{{--                             <div class="city-feature">
 
                                 <i class="ion-social-twitter icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-3-1' ) !!}
 
-                            </div>
+                            </div> --}}
 
                         </div>
                         <!-- COL MD 3 -->
@@ -411,18 +411,18 @@
 
                             <div class="city-feature">
 
-                                <i class="ion-ios-star icon-small"></i>
+                                <i class="ion-ios-home icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-2-2' ) !!}
 
                             </div>
 
-                            <div class="city-feature">
+ {{--                            <div class="city-feature">
 
                                 <i class="ion-social-twitter icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-3-2' ) !!}
 
                             </div>
-
+ --}}
                         </div>
                         <!-- COL MD 3 -->
 
@@ -444,17 +444,17 @@
 
                             <div class="city-feature">
 
-                                <i class="ion-ios-star icon-small"></i>
+                                <i class="ion-ios-home icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-2-3' ) !!}
 
                             </div>
 
-                            <div class="city-feature">
+{{--                             <div class="city-feature">
 
                                 <i class="ion-social-twitter icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-3-3' ) !!}
 
-                            </div>
+                            </div> --}}
 
                         </div>
                         <!-- COL MD 3 -->
@@ -477,17 +477,17 @@
 
                             <div class="city-feature">
 
-                                <i class="ion-ios-star icon-small"></i>
+                                <i class="ion-ios-home icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-2-4' ) !!}
 
                             </div>
 
-                            <div class="city-feature">
+{{--                             <div class="city-feature">
 
                                 <i class="ion-social-twitter icon-small"></i>
                                 {!! trans( 'webpage-text.homepage-cities-text-3-4' ) !!}
 
-                            </div>
+                            </div> --}}
 
                         </div>
                         <!-- COL MD 3 -->
@@ -521,7 +521,7 @@
 
                             <blockquote>
 
-                                 Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laboriosam aspernatur ad iure vel expedita rem et, eligendi sunt distinctio, culpa optio soluta sit neque exercitationem nobis voluptatem, maxime nemo.
 
                                 <cite>
                                     <img src="{{ asset( 'img/users/user-1.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Alberto Duncan
@@ -537,7 +537,7 @@
 
                             <blockquote>
 
-                                 Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolores quia a nihil eos, incidunt velit porro itaque tempore sed. Corporis maxime explicabo, iure, eius ullam id dicta nihil est!
 
                                 <cite>
                                     <img src="{{ asset( 'img/users/user-2.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Joana Silva
@@ -553,7 +553,7 @@
 
                             <blockquote>
 
-                                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eligendi inventore iusto cupiditate maxime laborum debitis voluptatem, modi laudantium eum blanditiis at distinctio quod aliquid assumenda saepe doloribus suscipit molestias.
 
                                 <cite>
                                     <img src="{{ asset( 'img/users/user-3.jpg' ) }}" alt="{!! trans( 'webpage-text.homepage-testimonials-img-alt' ) !!}">Milton Chapman
@@ -687,10 +687,6 @@
 
                                 <li>
                                     <a href="#">{!! trans( 'webpage-text.homepage-footer-link-2' ) !!}</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">{!! trans( 'webpage-text.homepage-footer-link-3' ) !!}</a>
                                 </li>
 
                             </ul>

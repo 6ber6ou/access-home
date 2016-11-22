@@ -186,6 +186,7 @@
 	.mobile-nav-icon
 		{
 		margin-right : 10px;
+		display : inline-block;
 		}
 
 	.sticky
@@ -215,11 +216,6 @@
 				color : $grey-font;
 				}
 			}
-		}
-
-	.mobile-nav-icon
-		{
-		display : none;
 		}
 
 	.hero-text-box

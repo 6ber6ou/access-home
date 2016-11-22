@@ -7,7 +7,7 @@ return
 	// META
 	// ****
 
-	'meta-description'						=>		"With Access Home exchange, rent, or buy free of charge accessible housing",
+	'meta-description'						=>		"With Access Home exchange, rent, or buy accessible housing.",
 
 	// ------------------------------------------------------------
 

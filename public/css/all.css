@@ -7818,7 +7818,8 @@ section {
         font-size: 100%;
         display: block; }
   .mobile-nav-icon {
-    margin-right: 10px; }
+    margin-right: 10px;
+    display: inline-block; }
   .sticky .logo-black {
     margin-left: 10px; }
   .sticky .main-nav {
@@ -7832,8 +7833,6 @@ section {
     margin-top: 10px; }
     .sticky .mobile-nav-icon i {
       color: #555; }
-  .mobile-nav-icon {
-    display: none; }
   .hero-text-box .btn-full, .hero-text-box .btn-ghost {
     margin-bottom: 20px; }
   .col-md-3 {
