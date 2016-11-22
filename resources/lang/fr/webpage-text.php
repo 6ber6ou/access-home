@@ -19,7 +19,7 @@ return
 	'homepage-btn-1'						=>		"Inscription",
 	'homepage-btn-2'						=>		"Connexion",
 	'homepage-top-link-1'					=>		"En savoir plus",
-	'homepage-top-link-2'					=>		"En 3 étapes",
+	'homepage-top-link-2'					=>		"3 étapes",
 	'homepage-top-link-3'					=>		"Destinations",
 	'homepage-top-link-4'					=>		"Témoignages",
 	'homepage-top-link-5'					=>		"Contact",
@@ -41,7 +41,7 @@ return
 	'homepage-alt-showcase'					=>		"Galerie photos",
 	'homepage-steps-h2'						=>		"Simple comme 1, 2, 3",
 	'homepage-alt-how-it-works'				=>		"Plan",
-	'homepage-alt-how-it-works-step-1'		=>		"Inscrivez-vous gratuitement sur le site.",
+	'homepage-alt-how-it-works-step-1'		=>		"Inscrivez-vous gratuitement.",
 	'homepage-alt-how-it-works-step-2'		=>		"Recherchez un logement accessible.",
 	'homepage-alt-how-it-works-step-3'		=>		"Profitez de vos vacances !",
 	'homepage-cities-h2'					=>		"Vos prochaines destinations",
@@ -69,7 +69,7 @@ return
 	'homepage-contact-placeholder-3'		=>		"Votre message...",
 	'homepage-contact-submit'				=>		"Envoyer",
 	'homepage-footer-link-1'				=>		"Plan du site",
-	'homepage-footer-link-2'				=>		"Conditions générales",
+	'homepage-footer-link-2'				=>		"Conditions d'utilisation",
 	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés."
 
 	];

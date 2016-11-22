@@ -21,6 +21,17 @@
 		width : 100%;
 		}
 
+	.main-nav
+		{
+		font-size : 80%;
+		}
+
+	.logo-text
+		{
+		margin-top : 35px;
+		font-size : 160%;
+		}
+
 	.row
 		{
 		padding : 0 2%;
@@ -51,6 +62,13 @@
 			margin-left : 20px;
 			}
 		}
+	.sticky
+		{
+		.logo-text
+			{
+			margin-top : 15px;
+			}
+		}
 
 	.steps-box:first-child
 		{
@@ -78,7 +96,8 @@
 
 	.logo-text
 		{
-		margin-top : 33px;
+		margin-top : 40px;
+		font-size : 160%;
 		}
 
 	section
@@ -88,18 +107,22 @@
 
 	.section-steps
 		{
-		padding-bottom : 30px;
+		/*background-color : red !important;*/
+		.works-step
+			{
+			padding-bottom : 5px;
+			}
+		}
+
+	.works-step-container
+		{
+		margin-top : 30px;
 		}
 
 	.long-copy
 		{
 		width : 80%;
 		margin-left : 10%;
-		}
-
-	.steps-box:last-child
-		{
-		margin-top : 0px;
 		}
 
 	.steps-box
@@ -134,15 +157,60 @@
 	}
 
 /* ------------------------------------------------------------ */
-/* SMALL TABLETS to BIG TABLETS from 768 to 991px */
+/* SMALL TABLETS to BIG TABLETS from 821 to 991px */
 /* ------------------------------------------------------------ */
 
 @media only screen and ( max-width : 991px )
 	{
 
-	.steps-box:first:child
+	.section-steps
 		{
-		margin-top : 0;
+			h2
+			{
+			margin-bottom : 40px;
+			}
+		}
+
+	.works-step-container
+		{
+		margin-top : -30px;
+		margin-left : 25%;
+		width : 50%;
+		display : inline-block;
+		.works-step div
+			{
+			position : relative;
+			top : 0;
+			right : 0;
+			}
+		}
+
+	}
+
+/* ------------------------------------------------------------ */
+/* SMALL TABLETS to BIG TABLETS from 768 to 820px */
+/* ------------------------------------------------------------ */
+
+@media only screen and ( max-width : 820px )
+	{
+
+	.three-steps
+		{
+		display : none !important;
+		}
+
+	.works-step-container
+		{
+		margin-top : -30px;
+		margin-left : 25%;
+		width : 50%;
+		display : inline-block;
+		.works-step div
+			{
+			position : relative;
+			top : 0;
+			right : 0;
+			}
 		}
 
 	}
@@ -194,6 +262,10 @@
 		.logo-black
 			{
 			margin-left : 10px;
+			}
+		.logo-text
+			{
+			margin-top : 15px;
 			}
 		.main-nav
 			{
@@ -250,6 +322,20 @@
 		display : none;
 		}
 
+	.works-step-container
+		{
+		margin-top : -30px;
+		margin-left : 25%;
+		width : 50%;
+		display : inline-block;
+		.works-step div
+			{
+			position : relative;
+			top : 0;
+			right : 0;
+			}
+		}
+
 	.section-cities
 		{
 		padding-bottom : 10px;
@@ -265,22 +351,6 @@
 		padding-bottom : 30px;
 		}
 
-	footer
-		{
-		padding : 40px;
-		font-size : 100%;
-		}
-
-	.footer-social-links
-		{
-		font-size : 80%;
-		}
-
-	.footer-social-links
-		{
-		margin-top : -8px;
-		}
-
 	.section-features
 		{
 		padding-left : 10px;
@@ -292,6 +362,25 @@
 		div
 			{
 			padding-top : 8px;
+			}
+		}
+
+	footer
+		{
+		.footer-nav, .footer-social-links
+			{
+			font-size : 110%;
+			text-align : center;
+			float: none;
+			clear : both;
+			}
+		ul
+			{
+			margin-bottom : 20px;
+			}
+		p
+			{
+			font-size : 110%;
 			}
 		}
 
@@ -318,26 +407,6 @@
 		{
 		padding-left : 10px;
 		padding-right : 10px;
-		}
-
-	.footer-nav
-		{
-		margin-bottom : 30px;
-		}
-
-	.footer-nav, .footer-social-links
-		{
-		width : 100% !important;
-		text-align : center;
-		}
-
-	footer
-		{
-		font-size : 110%;
-		p
-			{
-			font-size : 90%;
-			}
 		}
 
 	}

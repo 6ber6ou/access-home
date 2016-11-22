@@ -34,10 +34,10 @@
                             <ul class="main-nav js--main-nav">
 
                                 <li>
-                                    <a href="#" class=" js--scroll-to-start">{!! trans( 'webpage-text.homepage-top-link-1' ) !!}</a>
+                                    <a href="#" class="js--scroll-to-start">{!! trans( 'webpage-text.homepage-top-link-1' ) !!}</a>
                                 </li>
 
-                                <li>
+                                <li class="three-steps">
                                     <a href="#" class="js--scroll-to-how-it-works">{!! trans( 'webpage-text.homepage-top-link-2' ) !!}</a>
                                 </li>
 
@@ -300,46 +300,53 @@
                         <div class="col-md-6 steps-box">
 
                             <!-- WORKS STEP 1 -->
-                            <div class="works-step">
 
-                                <div>
-                                    1
+                            <!-- WORKS STEPS CONTAINER -->
+                            <div class="works-step-container">
+
+                                <div class="works-step">
+
+                                    <div>
+                                        1
+                                    </div>
+
+                                    <p>
+                                        {!! trans( 'webpage-text.homepage-alt-how-it-works-step-1' ) !!}
+                                    </p>
+
                                 </div>
+                                <!-- End ... WORKS STEP 1 -->
 
-                                <p>
-                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-1' ) !!}
-                                </p>
+                                <!-- WORKS STEP 2 -->
+                                <div class="works-step">
+
+                                    <div>
+                                        2
+                                    </div>
+
+                                    <p>
+                                        {!! trans( 'webpage-text.homepage-alt-how-it-works-step-2' ) !!}
+                                    </p>
+
+                                </div>
+                                <!-- End ... WORKS STEP 2 -->
+
+                                <!-- WORKS STEP 3 -->
+                                <div class="works-step">
+
+                                    <div>
+                                        3
+                                    </div>
+
+                                    <p>
+                                        {!! trans( 'webpage-text.homepage-alt-how-it-works-step-3' ) !!}
+                                    </p>
+
+                                </div>
+                                <!-- End ... WORKS STEP 3 -->
 
                             </div>
-                            <!-- End ... WORKS STEP 1 -->
-
-                            <!-- WORKS STEP 2 -->
-                            <div class="works-step">
-
-                                <div>
-                                    2
-                                </div>
-
-                                <p>
-                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-2' ) !!}
-                                </p>
-
-                            </div>
-                            <!-- End ... WORKS STEP 2 -->
-
-                            <!-- WORKS STEP 3 -->
-                            <div class="works-step">
-
-                                <div>
-                                    3
-                                </div>
-
-                                <p>
-                                    {!! trans( 'webpage-text.homepage-alt-how-it-works-step-3' ) !!}
-                                </p>
-
-                            </div>
-                            <!-- End ... WORKS STEP 3 -->
+                            <!-- End ... WORKS STEPS CONTAINER -->
 
                         </div>
                         <!-- End ... COL MD 6 -->
@@ -684,8 +691,8 @@
                     <!-- ROW -->
                     <div class="row js--section-footer">
 
-                        <!-- COL MD 4 -->
-                        <div class="col-md-4">
+                        <!-- COL SM 6 -->
+                        <div class="col-sm-6">
 
                             <ul class="footer-nav">
 
@@ -700,40 +707,10 @@
                             </ul>
 
                         </div>
-                        <!-- End ... COL MD 4 -->
+                        <!-- End ... COL SM 6 -->
 
-                        <!-- COL MD 4 -->
-                        <div class="col-md-4">
-
-                            <ul class="footer-flags">
-
-                                <li>
-                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-fr' ) !!}"></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-en.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-en' ) !!}"></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-es.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-es' ) !!}"></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-de.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-de' ) !!}"></a>
-                                </li>
-
-                                <li>
-                                    <a href="#"><img src="{{ asset( 'img/flags/icon-flag-it.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-it' ) !!}"></a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <!-- End ... COL MD 4 -->
-
-                        <!-- COL MD 4 -->
-                        <div class="col-md-4">
+                        <!-- COL SM 6 -->
+                        <div class="col-sm-6">
 
                             <ul class="footer-social-links">
 
@@ -756,20 +733,50 @@
                             </ul>
 
                         </div>
-                        <!-- End ... COL MD 4 -->
+                        <!-- End ... COL SM 6 -->
 
                     </div>
-                    <!-- End ... ROW -->
+                    <!-- End .... ROW -->
 
-                    <div class="row">
                     <!-- ROW -->
+                    <div class="row">
+
+                        <ul class="footer-flags">
+
+                            <li>
+                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-fr' ) !!}"></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-en.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-en' ) !!}"></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-es.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-es' ) !!}"></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-de.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-de' ) !!}"></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-it.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-it' ) !!}"></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- End .... ROW -->
+
+                    <!-- ROW -->
+                    <div class="row">
 
                         <p>
                             {!! trans( 'webpage-text.homepage-footer-copyright' ) !!}
                         </p>
 
                     </div>
-                    <!-- End ... ROW -->
+                    <!-- End .... ROW -->
 
                 </footer>
                 <!-- End ... FOOTER -->
