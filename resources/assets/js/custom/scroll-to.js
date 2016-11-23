@@ -5,6 +5,12 @@
 $( document ).ready( function()
 	{
 
+	var nav = $( '.js--main-nav' );
+	var icon = $( '.js--nav-icon i' );
+	var logoText = $( '.logo-text' );
+
+	/* ------------------------------------------------------------ */
+
 	/* Scroll to features */
 	/* ------------------ */
 
@@ -17,6 +23,8 @@ $( document ).ready( function()
 			scrollTop : $( '.js--section-features' ).offset().top
 
 			}, 1000 );
+
+		close_sticky_menu();
 
 		} );
 
@@ -35,6 +43,8 @@ $( document ).ready( function()
 
 			}, 1000 );
 
+		close_sticky_menu();
+
 		} );
 
 	/* ------------------------------------------------------------ */
@@ -51,6 +61,8 @@ $( document ).ready( function()
 			scrollTop : $( '.js--section-cities' ).offset().top
 
 			}, 1000 );
+
+		close_sticky_menu();
 
 		} );
 
@@ -69,6 +81,8 @@ $( document ).ready( function()
 
 			}, 1000 );
 
+		close_sticky_menu();
+
 		} );
 
 	/* ------------------------------------------------------------ */
@@ -85,6 +99,8 @@ $( document ).ready( function()
 			scrollTop : $( '.js--section-contact' ).offset().top
 
 			}, 1000 );
+
+		close_sticky_menu();
 
 		} );
 
@@ -103,6 +119,25 @@ $( document ).ready( function()
 
 			}, 1000 );
 
+		close_sticky_menu();
+
 		} );
+
+	/* ============================================================ */
+
+	function close_sticky_menu()
+		{
+
+		if( ! $( '.mobile-nav-icon i' ).hasClass( 'ion-navicon-round' ) )
+			{
+
+			nav.slideToggle( 200 );
+			icon.addClass( 'ion-navicon-round' );
+			icon.removeClass( 'ion-close-round' );
+			logoText.slideDown();
+
+			}
+
+		}
 
 	} );
