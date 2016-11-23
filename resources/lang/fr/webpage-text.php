@@ -61,7 +61,7 @@ return
 	'homepage-cities-h3-4'					=>		"London",
 	'homepage-cities-text-1-4'				=>		"_X_ échanges",
 	'homepage-cities-text-2-4'				=>		"_X_ logements",
-	'homepage-testimonials-h2'				=>		"Customer testimonials",
+	'homepage-testimonials-h2'				=>		"Témoignages",
 	'homepage-testimonials-img-alt'			=>		"Photo utilisateur",
 	'homepage-contact-h2'					=>		"Contact",
 	'homepage-contact-placeholder-1'		=>		"Votre nom...",
