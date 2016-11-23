@@ -1,16 +1,23 @@
 <?php
 
-Route::get( '/', function()
-	{
+// *******
+// WELCOME
+// *******
 
-    return view( 'welcome' );
-
-	} );
+Route::get( '/', [ 'as' => 'welcome', 'uses' => 'WelcomeController@index' ] );
 
 // ------------------------------------------------------------
+
+// **************
+// AUTHENTICATION
+// **************
 
 Auth::routes();
 
 // ------------------------------------------------------------
+
+// ****
+// HOME
+// ****
 
 Route::get( '/home', 'HomeController@index' );
