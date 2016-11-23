@@ -350,6 +350,8 @@ header {
       transition: border-bottom 0.3s; }
     .main-nav li a:hover, .main-nav li a:active {
       border-bottom: 2px solid #e67e22 !important; }
+  .main-nav li:last-child a img {
+    margin-top: -7px; }
 
 /* Mobile navigation */
 .mobile-nav-icon {

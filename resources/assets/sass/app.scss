@@ -483,6 +483,10 @@ header
 			border-bottom : 2px solid $orange !important;
 			}
 		}
+	li:last-child a img
+		{
+		margin-top : -7px;
+		}
 	}
 
 /* Mobile navigation */
