@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{!! trans( 'webpage-text.language' ) !!}">
 
     @include( 'layouts.partials._head' )
 
@@ -54,7 +54,25 @@
                                 </li>
 
                                 <li>
-                                    <a href="#" class="js--scroll-to-footer"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag' ) !!}"></a>
+
+                                    <?php
+
+                                    if( is_null( app()->getLocale() ) )
+                                        {
+
+                                        $locale = 'fr';
+
+                                        }
+                                    else
+                                        {
+
+                                        $locale = app()->getLocale();
+
+                                        }
+
+                                    ?>
+
+                                    <a href="#" class="js--scroll-to-footer"><img src="{{ asset( 'img/flags/icon-flag-' . $locale . '.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-' . $locale ) !!}"></a>
                                 </li>
 
                             </ul>
@@ -387,14 +405,14 @@
                             <div class="city-feature">
 
                                 <i class="ion-ios-person icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-1-1' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-1' ) !!}
 
                             </div>
 
                             <div class="city-feature">
 
                                 <i class="ion-ios-home icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-2-1' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-2' ) !!}
 
                             </div>
 
@@ -420,14 +438,14 @@
                             <div class="city-feature">
 
                                 <i class="ion-ios-person icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-1-2' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-1' ) !!}
 
                             </div>
 
                             <div class="city-feature">
 
                                 <i class="ion-ios-home icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-2-2' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-2' ) !!}
 
                             </div>
 
@@ -453,14 +471,14 @@
                             <div class="city-feature">
 
                                 <i class="ion-ios-person icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-1-3' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-1' ) !!}
 
                             </div>
 
                             <div class="city-feature">
 
                                 <i class="ion-ios-home icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-2-3' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-2' ) !!}
 
                             </div>
 
@@ -486,14 +504,14 @@
                             <div class="city-feature">
 
                                 <i class="ion-ios-person icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-1-4' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-1' ) !!}
 
                             </div>
 
                             <div class="city-feature">
 
                                 <i class="ion-ios-home icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-2-4' ) !!}
+                                {!! trans( 'webpage-text.homepage-cities-text-2' ) !!}
 
                             </div>
 
@@ -744,23 +762,83 @@
                         <ul class="footer-flags">
 
                             <li>
-                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-fr' ) !!}"></a>
+
+                                <form action="{{ route( 'language-chooser' ) }}" method="POST">
+
+                                    {{ csrf_field() }}
+
+                                    <input type="hidden" name="locale" id="locale" value="fr">
+
+                                    <button type="submit">
+                                        <img src="{{ asset( 'img/flags/icon-flag-fr.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-fr' ) !!}">
+                                    </button>
+
+                                </form>
+
                             </li>
 
                             <li>
-                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-en.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-en' ) !!}"></a>
+
+                                <form action="{{ route( 'language-chooser' ) }}" method="POST">
+
+                                    {{ csrf_field() }}
+
+                                    <input type="hidden" name="locale" id="locale" value="en">
+
+                                    <button type="submit">
+                                        <img src="{{ asset( 'img/flags/icon-flag-en.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-en' ) !!}">
+                                    </button>
+
+                                </form>
+
                             </li>
 
                             <li>
-                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-es.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-es' ) !!}"></a>
+
+                                <form action="{{ route( 'language-chooser' ) }}" method="POST">
+
+                                    {{ csrf_field() }}
+
+                                    <input type="hidden" name="locale" id="locale" value="es">
+
+                                    <button type="submit">
+                                        <img src="{{ asset( 'img/flags/icon-flag-es.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-es' ) !!}">
+                                    </button>
+
+                                </form>
+
                             </li>
 
                             <li>
-                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-de.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-de' ) !!}"></a>
+
+                                <form action="{{ route( 'language-chooser' ) }}" method="POST">
+
+                                    {{ csrf_field() }}
+
+                                    <input type="hidden" name="locale" id="locale" value="de">
+
+                                    <button type="submit">
+                                        <img src="{{ asset( 'img/flags/icon-flag-de.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-de' ) !!}">
+                                    </button>
+
+                                </form>
+
                             </li>
 
                             <li>
-                                <a href="#"><img src="{{ asset( 'img/flags/icon-flag-it.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-it' ) !!}"></a>
+
+                                <form action="{{ route( 'language-chooser' ) }}" method="POST">
+
+                                    {{ csrf_field() }}
+
+                                    <input type="hidden" name="locale" id="locale" value="it">
+
+                                    <button type="submit">
+                                        <img src="{{ asset( 'img/flags/icon-flag-it.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-it' ) !!}">
+                                    </button>
+
+                                </form>
+
                             </li>
 
                         </ul>

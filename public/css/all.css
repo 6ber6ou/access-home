@@ -7464,6 +7464,9 @@ footer {
 
 .footer-flags {
   text-align: center; }
+  .footer-flags button[type=submit] {
+    border: none;
+    height: 0; }
 
 .footer-nav li,
 .footer-social-links li,

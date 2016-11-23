@@ -21,3 +21,11 @@ Auth::routes();
 // ****
 
 Route::get( '/home', 'HomeController@index' );
+
+// ------------------------------------------------------------
+
+// ********
+// LANGUAGE
+// ********
+
+Route::post( '/language', [ 'as' => 'language-chooser', 'uses' => 'LanguageController@chooser' ] );
