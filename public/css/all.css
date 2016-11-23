@@ -7796,10 +7796,8 @@ section {
     font-size: 160%; }
   section {
     padding: 60px 0; }
-  .section-steps {
-    /*background-color : red !important;*/ }
-    .section-steps .works-step {
-      padding-bottom: 5px; }
+  .section-steps .works-step {
+    padding-bottom: 5px; }
   .works-step-container {
     margin-top: 30px; }
   .long-copy {
