@@ -621,7 +621,7 @@
                     <!-- ROW -->
                     <div class="row js--wp-4">
 
-                        {!! Form::open( [ 'url' => '#', 'class' => 'contact-form' ] ) !!}
+                        {!! Form::open( [ 'route' => 'post-contact', 'class' => 'contact-form' ] ) !!}
 
                             <!-- ROW -->
                             <div class="row">
@@ -659,6 +659,32 @@
                             </div>
                             <!-- End ... ROW -->
 
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                            <!-- - - - - - - - - -->
+                            <!-- ANTI SPAM FIELD -->
+                            <!-- - - - - - - - - -->
+
+                            <!-- ROW -->
+                            <div class="row address_field">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+                                        {!! Form::text( 'address', NULL, [ 'class' => 'form-control address_input', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-4' ), 'required' ] ) !!}
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
                             <!-- ROW -->
                             <div class="row">
 
@@ -667,7 +693,7 @@
 
                                     <!-- COL MD 6 -->
                                     <div class="col-md-6 col-md-offset-3">
-                                        {!! Form::textarea( 'message', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
+                                        {!! Form::textarea( 'body', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
                                     </div>
                                     <!-- COL MD 6 -->
 

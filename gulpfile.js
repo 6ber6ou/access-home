@@ -39,7 +39,8 @@ elixir( ( mix ) =>
         'custom/init_waypoint.js',
         'custom/scroll-to.js',
         'custom/animation_on_scroll.js',
-        'custom/mobile_navigation.js'
+        'custom/mobile_navigation.js',
+        'custom/hidden_field_anti_spam.js'
 
         ], 'public/js/custom.js' );
 

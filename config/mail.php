@@ -59,7 +59,7 @@ return
     'from' =>
         [
 
-        'address'       =>      'contact@access-home.com',
+        'address'       =>      'contact@access-houses.com',
         'name'          =>      'Acces Home'
 
         ],

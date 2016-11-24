@@ -69,6 +69,7 @@ return
 	'homepage-contact-placeholder-1'		=>		"Your name...",
 	'homepage-contact-placeholder-2'		=>		"Your email...",
 	'homepage-contact-placeholder-3'		=>		"Your message...",
+	'homepage-contact-placeholder-4'		=>		"Your address...",
 	'homepage-contact-submit'				=>		"Send",
 	'homepage-footer-link-1'				=>		"Sitemap",
 	'homepage-footer-link-2'				=>		"Terms of use",

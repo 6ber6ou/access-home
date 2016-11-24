@@ -75,6 +75,7 @@ return
 	'homepage-contact-placeholder-1'		=>		"Su nombre...",
 	'homepage-contact-placeholder-2'		=>		"Su email...",
 	'homepage-contact-placeholder-3'		=>		"Su mensaje...",
+	'homepage-contact-placeholder-4'		=>		"Su dirección...",
 	'homepage-contact-submit'				=>		"Enviar",
 	'homepage-footer-link-1'				=>		"Plano del sitio",
 	'homepage-footer-link-2'				=>		"Condiciones de uso",
