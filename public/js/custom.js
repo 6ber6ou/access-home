@@ -11107,7 +11107,6 @@ $( document ).ready( function()
 
 	} );
 
-
 /* ***************** */
 /* MOBILE NAVIGATION */
 /* ***************** */
@@ -11159,6 +11158,29 @@ $( document ).ready( function()
 
 	address_input.removeAttr( 'required' );
 	address_field.hide();
+
+	} );
+
+// *******************************
+// RECAPTCHA DISABLE SUBMIT BUTTON
+// *******************************
+
+$( document ).ready( function()
+	{
+
+	$( '#contact-form' ).submit( function( e )
+		{
+
+		var verified = grecaptcha.getResponse();
+
+		if( verified.length === 0 )
+			{
+
+			e.preventDefault();
+
+			}
+
+		} );
 
 	} );
 

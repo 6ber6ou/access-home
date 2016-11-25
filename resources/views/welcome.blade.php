@@ -621,7 +621,7 @@
                     <!-- ROW -->
                     <div class="row js--wp-4">
 
-                        {!! Form::open( [ 'route' => 'post-contact', 'class' => 'contact-form' ] ) !!}
+                        {!! Form::open( [ 'route' => 'post-contact', 'class' => 'contact-form', 'id' => 'contact-form' ] ) !!}
 
                             <!-- ROW -->
                             <div class="row">
@@ -711,7 +711,32 @@
 
                                     <!-- COL MD 6 -->
                                     <div class="col-md-6 col-md-offset-3">
-                                        {!! Form::submit( trans( 'webpage-text.homepage-contact-submit' ), [ 'class' => 'btn btn-full' ] ) !!}
+
+                                        <!-- RECAPTCHA -->
+                                        <div class="g-recaptcha" data-sitekey="6Lc4_QwUAAAAABI_DcCeneTNY44PjJDLpV165Jll">
+                                        </div>
+                                        <!-- End ... RECAPTCHA -->
+
+                                    </div>
+                                    <!-- COL MD 6 -->
+
+                                </div>
+                                <!-- End ... FORM GROUP -->
+
+                            </div>
+                            <!-- End ... ROW -->
+
+                            <!-- ROW -->
+                            <div class="row">
+
+                                <!-- FORM GROUP -->
+                                <div class="form-group">
+
+                                    <!-- COL MD 6 -->
+                                    <div class="col-md-6 col-md-offset-3">
+
+                                        {!! Form::submit( trans( 'webpage-text.homepage-contact-submit' ), [ 'class' => 'btn btn-full', 'id' => 'contact-submit-button' ] ) !!}
+
                                     </div>
                                     <!-- COL MD 6 -->
 

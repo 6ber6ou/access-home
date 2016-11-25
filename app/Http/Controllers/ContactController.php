@@ -2,8 +2,9 @@
 
 use Illuminate\Http\Request;
 
-use Illuminate\Mail\Mailer;
 use AH\Mail\ContactMail;
+use GuzzleHttp\Client;
+use Illuminate\Mail\Mailer;
 
 class ContactController extends Controller
     {
@@ -17,9 +18,43 @@ class ContactController extends Controller
             $name = $request->input( 'name' );
             $email = $request->input( 'email' );
             $body = $request->input( 'body' );
+            $token = $request->input( 'g-recaptcha-response' );
 
-            $mailer->to( config( 'mail.from.address' ) )
-                   ->send( new ContactMail( $name, $email, $body ) );
+            if( $token )
+                {
+
+                $client = new Client();
+                $response = $client->post( 'https://www.google.com/recaptcha/api/siteverify',
+                    [
+
+                    'form_params' =>
+                        [
+
+                        'secret' => env( 'RECAPTCHA_SECRET_KEY' ),
+                        'response' => $token
+
+                        ]
+
+                    ] );
+
+                $result = json_decode( $response->getBody()->getContents() );
+
+                if( $result->success )
+                    {
+
+                    $mailer->to( config( 'mail.from.address' ) )
+                           ->send( new ContactMail( $name, $email, $body ) );
+
+                    }
+                else
+                    {
+
+                    // dd( $result->error_codes );
+                    // dd( 'Robot...' );
+
+                    }
+
+                }
 
             }
 

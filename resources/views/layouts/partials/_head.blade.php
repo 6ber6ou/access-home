@@ -19,6 +19,9 @@
     <!-- Styles -->
     <link href="/css/all.css" rel="stylesheet">
 
+    <!-- Google Recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="{{ asset( 'css/ie/ie8.css' ) }}">
     <![endif]-->
