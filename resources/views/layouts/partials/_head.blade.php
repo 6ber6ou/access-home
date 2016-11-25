@@ -20,7 +20,7 @@
     <link href="/css/all.css" rel="stylesheet">
 
     <!-- Google Recaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl={{ app()->getLocale() }}'></script>
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="{{ asset( 'css/ie/ie8.css' ) }}">
