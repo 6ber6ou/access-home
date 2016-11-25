@@ -79,6 +79,15 @@ return
 	'homepage-contact-submit'				=>		"Enviar",
 	'homepage-footer-link-1'				=>		"Plano del sitio",
 	'homepage-footer-link-2'				=>		"Condiciones de uso",
-	'homepage-footer-copyright'				=>		"Derechos de autor y copia; 2016 <strong>www.access-home.com</strong>. Todos los derechos reservados."
+	'homepage-footer-copyright'				=>		"Derechos de autor y copia; 2016 <strong>www.access-home.com</strong>. Todos los derechos reservados.",
+
+	// ------------------------------------------------------------
+
+	// *************
+	// NOTIFICATIONS
+	// *************
+
+	'contact-success-notification'			=>      "Su mensaje ha sido enviado !",
+	'contact-error-notification'			=>      "Se ha producido un error !"
 
 	];

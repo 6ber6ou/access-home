@@ -73,6 +73,15 @@ return
 	'homepage-contact-submit'				=>		"Inviare",
 	'homepage-footer-link-1'				=>		"Mappa del sito",
 	'homepage-footer-link-2'				=>		"Condizioni di utilizzo",
-	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 da <strong>www.access-home.com</strong>. Tutti i diritti riservati."
+	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 da <strong>www.access-home.com</strong>. Tutti i diritti riservati.",
+
+	// ------------------------------------------------------------
+
+	// *************
+	// NOTIFICATIONS
+	// *************
+
+	'contact-success-notification'			=>      "Il tuo messaggio è stato inviato!",
+	'contact-error-notification'			=>      "Si è verificato un errore!"
 
 	];

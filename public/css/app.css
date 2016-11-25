@@ -470,6 +470,19 @@ a:active {
   color: #555; }
 
 /* ------------------------------------------------------------ */
+/* NOTIFICATION */
+/* ------------------------------------------------------------ */
+.peek-a-bar-success {
+  background-color: #5cb85c !important;
+  font-size: 80%;
+  color: white; }
+
+.peek-a-bar-error {
+  background-color: #d9534f !important;
+  font-size: 80%;
+  color: white; }
+
+/* ------------------------------------------------------------ */
 /* PARAGRAPHS */
 /* ------------------------------------------------------------ */
 .long-copy {

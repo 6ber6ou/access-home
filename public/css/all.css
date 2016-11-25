@@ -7690,6 +7690,19 @@ a:active {
   color: #555; }
 
 /* ------------------------------------------------------------ */
+/* NOTIFICATION */
+/* ------------------------------------------------------------ */
+.peek-a-bar-success {
+  background-color: #5cb85c !important;
+  font-size: 80%;
+  color: white; }
+
+.peek-a-bar-error {
+  background-color: #d9534f !important;
+  font-size: 80%;
+  color: white; }
+
+/* ------------------------------------------------------------ */
 /* PARAGRAPHS */
 /* ------------------------------------------------------------ */
 .long-copy {
@@ -12773,5 +12786,16 @@ section {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+.peek-a-bar
+	{
+	margin : 0;
+	position : fixed;
+	width : 100%;
+	left : 0;
+	right : 0;
+	text-align : center;
+	z-index  : 9999;
+	}
 
 /*# sourceMappingURL=all.css.map */

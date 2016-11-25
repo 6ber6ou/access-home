@@ -73,6 +73,15 @@ return
 	'homepage-contact-submit'				=>		"Send",
 	'homepage-footer-link-1'				=>		"Sitemap",
 	'homepage-footer-link-2'				=>		"Terms of use",
-	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. All rights reserved."
+	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. All rights reserved.",
+
+	// ------------------------------------------------------------
+
+	// *************
+	// NOTIFICATIONS
+	// *************
+
+	'contact-success-notification'			=>      "Your message has been sent!",
+	'contact-error-notification'			=>      "An error has occurred!"
 
 	];

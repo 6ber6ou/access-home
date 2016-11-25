@@ -45,6 +45,8 @@ class ContactController extends Controller
                     $mailer->to( config( 'mail.from.address' ) )
                            ->send( new ContactMail( $name, $email, $body ) );
 
+                    return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.contact-success-notification' ) );
+
                     }
                 else
                     {
@@ -52,13 +54,13 @@ class ContactController extends Controller
                     // dd( $result->error_codes );
                     // dd( 'Robot...' );
 
+                    return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.contact-error-notification' ) );
+
                     }
 
                 }
 
             }
-
-        return redirect()->back();
 
         }
 
