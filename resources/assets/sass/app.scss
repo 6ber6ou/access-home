@@ -170,9 +170,10 @@ input[type=submit]
 	display : inline-block;
 	-webkit-transition : background-color $transition, border $transition, color $transition;
 	transition : background-color $transition, border $transition, color $transition;
-	&:hover, &:active
+	&:hover, &:active, &:focus
 		{
 		background-color : $orange-darker;
+		color : white !important;
 		}
 	}
 
@@ -184,11 +185,11 @@ input[type=submit]
 	background-color : $orange;
 	margin-right : 15px;
 	color : white;
-	&:hover, &:active
+	&:hover, &:active, &:focus
 		{
 		border : 1px solid $orange-darker;
-		color : white;
-		};
+		color : white !important;
+		}
 	}
 
 .btn-ghost:link,
@@ -200,8 +201,8 @@ input[type=submit]
 		{
 		border : 1px solid $orange-darker;
 		background-color : $orange-darker;
-		color : white;
-		};
+		color : white !important;
+		}
 	}
 
 /* ------------------------------------------------------------ */

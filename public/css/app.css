@@ -128,12 +128,15 @@ input[type=submit] {
   display: inline-block;
   -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
   transition: background-color 0.3s, border 0.3s, color 0.3s; }
-  .btn:link:hover, .btn:link:active,
+  .btn:link:hover, .btn:link:active, .btn:link:focus,
   .btn:visited:hover,
   .btn:visited:active,
+  .btn:visited:focus,
   input[type=submit]:hover,
-  input[type=submit]:active {
-    background-color: #cf6d17; }
+  input[type=submit]:active,
+  input[type=submit]:focus {
+    background-color: #cf6d17;
+    color: white !important; }
 
 .btn-full:link,
 .btn-full:visited,
@@ -142,13 +145,15 @@ input[type=submit] {
   background-color: #e67e22;
   margin-right: 15px;
   color: white; }
-  .btn-full:link:hover, .btn-full:link:active,
+  .btn-full:link:hover, .btn-full:link:active, .btn-full:link:focus,
   .btn-full:visited:hover,
   .btn-full:visited:active,
+  .btn-full:visited:focus,
   input[type=submit]:hover,
-  input[type=submit]:active {
+  input[type=submit]:active,
+  input[type=submit]:focus {
     border: 1px solid #cf6d17;
-    color: white; }
+    color: white !important; }
 
 .btn-ghost:link,
 .btn-ghost:visited {
@@ -159,7 +164,7 @@ input[type=submit] {
   .btn-ghost:visited:active {
     border: 1px solid #cf6d17;
     background-color: #cf6d17;
-    color: white; }
+    color: white !important; }
 
 /* ------------------------------------------------------------ */
 /* CITIES */
