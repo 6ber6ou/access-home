@@ -416,13 +416,6 @@
 
                             </div>
 
-{{--                             <div class="city-feature">
-
-                                <i class="ion-social-twitter icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-3-1' ) !!}
-
-                            </div> --}}
-
                         </div>
                         <!-- COL MD 3 -->
 
@@ -449,13 +442,6 @@
 
                             </div>
 
- {{--                            <div class="city-feature">
-
-                                <i class="ion-social-twitter icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-3-2' ) !!}
-
-                            </div>
- --}}
                         </div>
                         <!-- COL MD 3 -->
 
@@ -482,13 +468,6 @@
 
                             </div>
 
-{{--                             <div class="city-feature">
-
-                                <i class="ion-social-twitter icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-3-3' ) !!}
-
-                            </div> --}}
-
                         </div>
                         <!-- COL MD 3 -->
 
@@ -514,13 +493,6 @@
                                 {!! trans( 'webpage-text.homepage-cities-text-2' ) !!}
 
                             </div>
-
-{{--                             <div class="city-feature">
-
-                                <i class="ion-social-twitter icon-small"></i>
-                                {!! trans( 'webpage-text.homepage-cities-text-3-4' ) !!}
-
-                            </div> --}}
 
                         </div>
                         <!-- COL MD 3 -->
@@ -627,11 +599,23 @@
                             <div class="row">
 
                                 <!-- FORM GROUP -->
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has( 'name' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
                                     <div class="col-md-6 col-md-offset-3">
+
                                         {!! Form::text( 'name', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-1' ), 'required' ] ) !!}
+
+                                        <!-- ERROR -->
+                                        @if( $errors->has( 'name' ) )
+
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first( 'name' ) }}</strong>
+                                            </span>
+
+                                        @endif
+                                        <!-- End ... ERROR -->
+
                                     </div>
                                     <!-- COL MD 6 -->
 
@@ -645,11 +629,23 @@
                             <div class="row">
 
                                 <!-- FORM GROUP -->
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
                                     <div class="col-md-6 col-md-offset-3">
+
                                         {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-2' ), 'required' ] ) !!}
+
+                                        <!-- ERROR -->
+                                        @if( $errors->has( 'email' ) )
+
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first( 'email' ) }}</strong>
+                                            </span>
+
+                                        @endif
+                                        <!-- End ... ERROR -->
+
                                     </div>
                                     <!-- COL MD 6 -->
 
@@ -689,11 +685,23 @@
                             <div class="row">
 
                                 <!-- FORM GROUP -->
-                                <div class="form-group">
+                                <div class="form-group{{ $errors->has( 'body' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
                                     <div class="col-md-6 col-md-offset-3">
+
                                         {!! Form::textarea( 'body', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
+
+                                        <!-- ERROR -->
+                                        @if( $errors->has( 'body' ) )
+
+                                            <span class="help-block">
+                                                <strong>{{ $errors->first( 'body' ) }}</strong>
+                                            </span>
+
+                                        @endif
+                                        <!-- End ... ERROR -->
+
                                     </div>
                                     <!-- COL MD 6 -->
 

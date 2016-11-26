@@ -23,7 +23,7 @@ $( document ).ready( function()
 		else if( type == 'error' )
 			{
 
-			var cls = 'peek-a-bar-success';
+			var cls = 'peek-a-bar-error';
 
 			}
 
@@ -31,6 +31,7 @@ $( document ).ready( function()
 			{
 
 		    autohide : true,
+		    delay : 5000,
 		    cssClass : cls,
 		    opacity : 0.9
 

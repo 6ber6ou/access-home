@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 
+use AH\Http\Requests\SendContactEmailRequest;
 use AH\Mail\ContactMail;
 use GuzzleHttp\Client;
 use Illuminate\Mail\Mailer;
@@ -9,7 +10,7 @@ use Illuminate\Mail\Mailer;
 class ContactController extends Controller
     {
 
-    public function index( Request $request, Mailer $mailer )
+    public function index( SendContactEmailRequest $request, Mailer $mailer )
         {
 
         if( ! $request->input( 'address' ) )

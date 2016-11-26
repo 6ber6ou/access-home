@@ -23,7 +23,7 @@ return
     'alpha_num'                 =>      ':attribute darf nur aus Buchstaben und Zahlen bestehen.',
     'array'                     =>      ':attribute muss ein Array sein.',
     'before'                    =>      ':attribute muss ein Datum vor dem :date sein.',
-    'before_or_equal'           =>      "Das Feld: Attribut muss ein Datum oder gleich sein. Date"
+    'before_or_equal'           =>      "Das Feld: Attribut muss ein Datum oder gleich sein. Date",
     'between'                   =>
         [
 
@@ -42,7 +42,7 @@ return
     'digits_between'            =>      ':attribute muss zwischen :min und :max Stellen haben.',
     'dimensions'                =>      ':attribute hat ungültige Bildabmessungen.',
     'distinct'                  =>      'Das Feld :attribute beinhaltet einen bereits vorhandenen Wert.',
-    'email'                     =>      ':attribute muss eine gültige E-Mail-Adresse sein.',
+    'email'                     =>      'Ungültige E-Mail-Adresse ein.',
     'exists'                    =>      'Der gewählte Wert für :attribute ist ungültig.',
     'file'                      =>      ':attribute muss eine Datei sein.',
     'filled'                    =>      ':attribute muss ausgefüllt sein.',
@@ -76,7 +76,7 @@ return
     'numeric'                   =>      ':attribute muss eine Zahl sein.',
     'present'                   =>      'Das Feld :attribute muss vorhanden sein.',
     'regex'                     =>      ':attribute Format ist ungültig.',
-    'required'                  =>      ':attribute muss ausgefüllt sein.',
+    'required'                  =>      'Dieses Feld ist obligatorisch.',
     'required_if'               =>      ':attribute muss ausgefüllt sein, wenn :other :value ist.',
     'required_unless'           =>      ':attribute muss ausgefüllt sein, wenn :other nicht :values ist.',
     'required_with'             =>      ':attribute muss angegeben werden, wenn :values ausgefüllt wurde.',

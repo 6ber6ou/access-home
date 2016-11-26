@@ -82,6 +82,7 @@ return
 	// *************
 
 	'contact-success-notification'			=>      "Your message has been sent!",
-	'contact-error-notification'			=>      "An error has occurred!"
+	'contact-error-notification'			=>      "An error has occurred!",
+	'invalid_form'							=>      "The form contains errors!"
 
 	];

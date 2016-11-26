@@ -88,7 +88,8 @@ return
 	// *************
 
 	'contact-success-notification'			=>      "Ihre Nachricht wurde versendet!",
-	'contact-error-notification'			=>      "Ist ein Fehler aufgetreten!"
+	'contact-error-notification'			=>      "Ist ein Fehler aufgetreten!",
+	'invalid_form'							=>      "Die Form hat Fehler!"
 
 
 	];
