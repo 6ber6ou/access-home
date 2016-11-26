@@ -33,6 +33,7 @@ class ContactMail extends Mailable
         {
 
         return $this->from( config( 'mail.from.address' ) )
+                    ->subject( 'Contact e-mail' )
                     ->view( 'emails.contact',
                         [
 
