@@ -93,12 +93,24 @@ return
 	// ************
 
 	'register-top-link-1'					=>		'Contatto',
-	'register-top-link-2'					=>		'Entra',
+	'register-top-link-2'					=>		'registrazione',
+	'register-top-link-3'					=>		'Entra',
 	'registration-h2'						=>		'Registrazione',
 	'registration-email-placeholder'		=>		'Il tuo e-mail ...',
-	'registration-username-placeholder'		=>		'Il suo nome ...',
+	'registration-username-placeholder'		=>		'Il tuo nickname ...',
 	'registration-password-placeholder'		=>		'La password ...',
 	'registration-password-confirmation-placeholder'		=>		'Confermare la password ...',
-	'registration-submit'					=>		'Creare'
+	'registration-submit'					=>		'Creare',
+
+	// ------------------------------------------------------------
+
+	// *****
+	// LOGIN
+	// *****
+
+	'login-h2'								=>		'Entra',
+	'login-submit'							=>		'Entra',
+	'login-username-placeholder'			=>		'Il tuo nickname ...',
+	'login-password-placeholder'			=>		'La password ...'
 
 	];

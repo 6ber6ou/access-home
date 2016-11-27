@@ -99,7 +99,7 @@
                             </h1>
 
                             <a href="{{ route( 'register' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-1' ) !!}</a>
-                            <a href="#" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
+                            <a href="{{ route( 'login' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
 
                        </div>
                         <!-- End ... ROW -->
@@ -661,27 +661,7 @@
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-                            <!-- - - - - - - - - -->
-                            <!-- ANTI SPAM FIELD -->
-                            <!-- - - - - - - - - -->
-
-                            <!-- ROW -->
-                            <div class="row address_field">
-
-                                <!-- FORM GROUP -->
-                                <div class="form-group">
-
-                                    <!-- COL MD 6 -->
-                                    <div class="col-md-6 col-md-offset-3">
-                                        {!! Form::text( 'address', NULL, [ 'class' => 'form-control address_input', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-4' ), 'required' ] ) !!}
-                                    </div>
-                                    <!-- COL MD 6 -->
-
-                                </div>
-                                <!-- End ... FORM GROUP -->
-
-                            </div>
-                            <!-- End ... ROW -->
+                            @include( 'layouts.partials._anti-spam-field' )
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

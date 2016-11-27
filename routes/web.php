@@ -15,6 +15,9 @@ Route::get( '/', [ 'as' => 'welcome', 'uses' => 'WelcomeController@index' ] );
 Route::get( '/register', [ 'as' => 'register', 'uses' => 'Auth\RegistrationController@register' ] );
 Route::post( '/register', [ 'as' => 'post-register', 'uses' => 'Auth\RegistrationController@post_register' ] );
 
+Route::get( '/login', [ 'as' => 'login', 'uses' => 'Auth\LoginController@login' ] );
+Route::post( '/login', [ 'as' => 'post-login', 'uses' => 'Auth\LoginController@post_login' ] );
+
 // ------------------------------------------------------------
 
 // *******

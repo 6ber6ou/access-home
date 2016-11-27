@@ -11,74 +11,84 @@
             <!-- CONTAINER FLUID -->
             <div class="container-fluid">
 
-                <!-- HEADER -->
-                <header class="small-navigation">
+                <!-- PAGE WRAPPER -->
+                <div class="page-wrapper">
 
-                    <!-- NAV -->
-                    <nav>
+                    <!-- HEADER -->
+                    <header class="small-navigation">
 
-                        <!-- ROW -->
-                        <div class="row">
+                        <!-- NAV -->
+                        <nav>
 
-                            <!-- LOGO -->
-                            <a href="{{ route( 'welcome' ) }}">
-                                <img src="{{ asset( 'img/logo-black.png' ) }}" class="logo-black" alt="Access Home logo">
-                                <span class="logo-text">
-                                    Access <span>Houses</span>
-                                </span>
-                            </a>
-                            <!-- End ... LOGO -->
+                            <!-- ROW -->
+                            <div class="row">
 
-                            <!-- MAIN NAV -->
-                            <ul class="main-nav js--main-nav">
+                                <!-- LOGO -->
+                                <a href="{{ route( 'welcome' ) }}">
+                                    <img src="{{ asset( 'img/logo-black.png' ) }}" class="logo-black" alt="Access Home logo">
+                                    <span class="logo-text">
+                                        Access <span>Houses</span>
+                                    </span>
+                                </a>
+                                <!-- End ... LOGO -->
 
-                                <li>
-                                    <a href="{{ url( '/#contact' ) }}">{!! trans( 'webpage-text.register-top-link-1' ) !!}</a>
-                                </li>
+                                <!-- MAIN NAV -->
+                                <ul class="main-nav js--main-nav">
 
-                                <li>
-                                    <a href="#">{!! trans( 'webpage-text.register-top-link-2' ) !!}</a>
-                                </li>
+                                    <li>
+                                        <a href="{{ url( '/#contact' ) }}">{!! trans( 'webpage-text.register-top-link-1' ) !!}</a>
+                                    </li>
 
-                                <li>
+                                    <li>
+                                        <a href="{{ route( 'register' ) }}">{!! trans( 'webpage-text.register-top-link-2' ) !!}</a>
+                                    </li>
 
-                                    <?php
+                                    <li>
+                                        <a href="{{ route( 'login' ) }}">{!! trans( 'webpage-text.register-top-link-3' ) !!}</a>
+                                    </li>
 
-                                    if( is_null( app()->getLocale() ) )
-                                        {
+                                    <li>
 
-                                        $locale = 'fr';
+                                        <?php
 
-                                        }
-                                    else
-                                        {
+                                        if( is_null( app()->getLocale() ) )
+                                            {
 
-                                        $locale = app()->getLocale();
+                                            $locale = 'fr';
 
-                                        }
+                                            }
+                                        else
+                                            {
 
-                                    ?>
+                                            $locale = app()->getLocale();
 
-                                    <a href="#" class="js--scroll-to-footer"><img src="{{ asset( 'img/flags/icon-flag-' . $locale . '.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-' . $locale ) !!}"></a>
-                                </li>
+                                            }
 
-                            </ul>
-                            <!-- End ... MAIN NAV -->
+                                        ?>
 
-                            <!-- MOBILE NAV -->
-                            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                            <!-- End ... MOBILE NAV -->
+                                        <a href="#" class="js--scroll-to-footer"><img src="{{ asset( 'img/flags/icon-flag-' . $locale . '.png' ) }}" alt="{!! trans( 'webpage-text.homepage-alt-flag-' . $locale ) !!}"></a>
+                                    </li>
 
-                        </div>
-                        <!-- End ... ROW -->
+                                </ul>
+                                <!-- End ... MAIN NAV -->
 
-                    </nav>
-                    <!-- NAV -->
+                                <!-- MOBILE NAV -->
+                                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                                <!-- End ... MOBILE NAV -->
 
-                </header>
-                <!-- End ... HEADER -->
+                            </div>
+                            <!-- End ... ROW -->
 
-                @yield( 'content' )
+                        </nav>
+                        <!-- NAV -->
+
+                    </header>
+                    <!-- End ... HEADER -->
+
+                    @yield( 'content' )
+
+                </div>
+                <!-- End ... PAGE WRAPPER -->
 
         @include( 'layouts.partials._footer' )
 

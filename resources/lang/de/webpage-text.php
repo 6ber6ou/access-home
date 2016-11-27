@@ -99,12 +99,24 @@ return
 	// ************
 
 	'register-top-link-1'					=>		'Kontakt',
-	'register-top-link-2'					=>		'Einloggen',
+	'register-top-link-2'					=>		'Anmeldung',
+	'register-top-link-3'					=>		'Einloggen',
 	'registration-h2'						=>		'Anmeldung',
 	'registration-email-placeholder'		=>		'Ihre E-Mail ...',
-	'registration-username-placeholder'		=>		'Ihr Name ...',
+	'registration-username-placeholder'		=>		'Ihr Spitzname ...',
 	'registration-password-placeholder'		=>		'Ihr Passwort ...',
 	'registration-password-confirmation-placeholder'		=>		'Kennwort bestätigen ...',
-	'registration-submit'					=>		'Schaffen'
+	'registration-submit'					=>		'Schaffen',
+
+	// ------------------------------------------------------------
+
+	// *****
+	// LOGIN
+	// *****
+
+	'login-h2'								=>		'Einloggen',
+	'login-submit'							=>		'Einloggen',
+	'login-username-placeholder'			=>		'Ihr Spitzname ...',
+	'login-password-placeholder'			=>		'Ihr Passwort ...'
 
 	];

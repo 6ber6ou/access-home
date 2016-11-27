@@ -304,6 +304,7 @@ footer
 	background-color: $grey-footer;
 	background-size : cover;
 	background-position : center;
+	width : 100%;
 	padding : 50px;
 	font-size : 80%;
 	ul
@@ -799,18 +800,22 @@ a:active
 	}
 
 /* ------------------------------------------------------------ */
-/* REGISTRATION */
+/* REGISTRATION & LOGIN */
 /* ------------------------------------------------------------ */
 
-.section-registration
+.section-registration, .section-login
 	{
 	margin : 0;
 	padding : 90px 0 100px 0;
 	}
 
-.register-form
+.register-form, .login-form
 	{
 	margin-top : 10px;
+	}
+
+.register-form
+	{
 	.g-recaptcha
 		{
 		margin-top : 5px !important;
