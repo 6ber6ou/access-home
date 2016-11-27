@@ -520,6 +520,57 @@ header
 		}
 	}
 
+/* Small navigation */
+
+.small-navigation
+	{
+	background-image : none !important;
+	background-color : rgba( 255, 255, 255, 0.98 );
+	margin-bottom : 0;
+	height : auto;
+	.main-nav
+		{
+		margin-top : 17px !important;
+		}
+	nav
+		{
+		box-shadow : 0 2px 2px #efefef;
+		li
+			{
+			letter-spacing : -1px;
+			a:link, a:visited
+				{
+				border-bottom : 3px solid transparent !important;
+				padding : 18px 0 13px 0;
+				color : $grey-font;
+				font-size : 80% !important;
+				}
+			a:hover, a:active
+				{
+				border-bottom : 3px solid $orange !important;
+				padding-bottom : 13px;
+				}
+			}
+		}
+	.logo-black
+		{
+		margin : 5px 0 10px 0;
+		height : 40px;
+		display : block;
+		}
+	.logo-text
+		{
+		margin-top : 7px;
+		color : $grey-font;
+		font-size : 150%;
+		}
+	.main-nav
+		{
+		margin-top : 23px;
+		margin-bottom : 0;
+		}
+	}
+
 /* Sticky navigation */
 
 .sticky
@@ -744,6 +795,26 @@ a:active
 			-ms-transform : scale( 1 );
 			transform : scale( 1 );
 			}
+		}
+	}
+
+/* ------------------------------------------------------------ */
+/* REGISTRATION */
+/* ------------------------------------------------------------ */
+
+.section-registration
+	{
+	margin : 0;
+	padding : 90px 0 100px 0;
+	}
+
+.register-form
+	{
+	margin-top : 10px;
+	.g-recaptcha
+		{
+		margin-top : 5px !important;
+		margin-bottom : 20px !important;
 		}
 	}
 

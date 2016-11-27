@@ -83,6 +83,22 @@ return
 
 	'contact-success-notification'			=>      "Il tuo messaggio è stato inviato!",
 	'contact-error-notification'			=>      "Si è verificato un errore!",
-	'invalid_form'							=>      "Il modulo contiene degli errori!"
+	'invalid-form'							=>      "Il modulo contiene degli errori!",
+	'register-success-notification'			=>		"Utente creato con successo!",
+
+	// ------------------------------------------------------------
+
+	// ************
+	// REGISTRATION
+	// ************
+
+	'register-top-link-1'					=>		'Contatto',
+	'register-top-link-2'					=>		'Entra',
+	'registration-h2'						=>		'Registrazione',
+	'registration-email-placeholder'		=>		'Il tuo e-mail ...',
+	'registration-username-placeholder'		=>		'Il suo nome ...',
+	'registration-password-placeholder'		=>		'La password ...',
+	'registration-password-confirmation-placeholder'		=>		'Confermare la password ...',
+	'registration-submit'					=>		'Creare'
 
 	];

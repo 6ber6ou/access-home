@@ -34,7 +34,7 @@ return
 
         ],
     'boolean'                   =>      'Il campo :attribute deve essere vero o falso.',
-    'confirmed'                 =>      'Il campo di conferma per :attribute non coincide.',
+    'confirmed'                 =>      'Il campo di conferma non coincide.',
     'date'                      =>      ':attribute non è una data valida.',
     'date_format'               =>      ':attribute non coincide con il formato :format.',
     'different'                 =>      ':attribute e :other devono essere differenti.',

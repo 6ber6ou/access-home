@@ -34,7 +34,7 @@ return
 
         ],
     'boolean'                   =>      'The :attribute field must be true or false.',
-    'confirmed'                 =>      'The :attribute confirmation does not match.',
+    'confirmed'                 =>      'The confirmation does not match.',
     'date'                      =>      'The :attribute is not a valid date.',
     'date_format'               =>      'The :attribute does not match the format :format.',
     'different'                 =>      'The :attribute and :other must be different.',

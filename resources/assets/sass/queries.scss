@@ -23,7 +23,7 @@
 
 	.main-nav
 		{
-		font-size : 80%;
+		font-size : 90%;
 		}
 
 	.logo-text
@@ -64,6 +64,18 @@
 		}
 	.sticky
 		{
+		.logo-text
+			{
+			margin-top : 15px;
+			}
+		}
+
+	.small-navigation
+		{
+		.main-nav
+			{
+			font-size : 110%;
+			}
 		.logo-text
 			{
 			margin-top : 15px;
@@ -256,6 +268,26 @@
 		display : inline-block;
 		}
 
+	.small-navigation
+		{
+		.main-nav
+			{
+			margin-top : 2px !important;
+			margin-bottom : 5px !important;
+			li
+				{
+				a
+					{
+					padding-bottom : 0 !important;
+					}
+				&:last-child
+					{
+					padding-bottom : 15px !important;
+					}
+				}
+			}
+		}
+
 	.sticky
 		{
 		.logo-black
@@ -281,7 +313,19 @@
 			}
 		.mobile-nav-icon
 			{
-			margin-top : 10px;
+			margin-top : 5px;
+			i
+				{
+				color : $grey-font;
+				}
+			}
+		}
+
+	.small-navigation
+		{
+		.mobile-nav-icon
+			{
+			margin-top : 5px;
 			i
 				{
 				color : $grey-font;

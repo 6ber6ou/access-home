@@ -83,6 +83,22 @@ return
 
 	'contact-success-notification'			=>      "Your message has been sent!",
 	'contact-error-notification'			=>      "An error has occurred!",
-	'invalid_form'							=>      "The form contains errors!"
+	'invalid-form'							=>      "The form contains errors!",
+	'register-success-notification'			=>		"User created with success!",
+
+	// ------------------------------------------------------------
+
+	// ************
+	// REGISTRATION
+	// ************
+
+	'register-top-link-1'					=>		'Contact',
+	'register-top-link-2'					=>		'Connection',
+	'registration-h2'						=>		'Registration',
+	'registration-email-placeholder'		=>		'Your email...',
+	'registration-username-placeholder'		=>		'Your name...',
+	'registration-password-placeholder'		=>		'Your password...',
+	'registration-password-confirmation-placeholder'		=>		'Confirm password...',
+	'registration-submit'					=>		'Create'
 
 	];

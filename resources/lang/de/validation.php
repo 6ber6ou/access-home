@@ -34,7 +34,7 @@ return
 
         ],
     'boolean'                   =>      ":attribute muss entweder 'true' oder 'false' sein.",
-    'confirmed'                 =>      ':attribute stimmt nicht mit der Bestätigung überein.',
+    'confirmed'                 =>      'stimmt nicht mit der Bestätigung überein.',
     'date'                      =>      ':attribute muss ein gültiges Datum sein.',
     'date_format'               =>      ':attribute entspricht nicht dem gültigen Format für :format.',
     'different'                 =>      ':attribute und :other müssen sich unterscheiden.',

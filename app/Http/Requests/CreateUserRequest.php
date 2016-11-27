@@ -4,12 +4,14 @@ use Illuminate\Foundation\Http\FormRequest;
 
 use Illuminate\Http\Request;
 
-class SendContactEmailRequest extends FormRequest
+class CreateUserRequest extends FormRequest
     {
 
     public function authorize()
         {
+
         return TRUE;
+
         }
 
     // ------------------------------------------------------------
@@ -22,9 +24,9 @@ class SendContactEmailRequest extends FormRequest
         return
             [
 
-            'name'      =>      'required',
-            'email'     =>      'required|email',
-            'body'      =>      'required'
+            'username'      =>      'required',
+            'email'         =>      'required|email',
+            'password'      =>      'required|confirmed'
 
             ];
 

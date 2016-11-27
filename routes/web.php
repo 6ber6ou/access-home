@@ -12,7 +12,8 @@ Route::get( '/', [ 'as' => 'welcome', 'uses' => 'WelcomeController@index' ] );
 // AUTHENTICATION
 // **************
 
-Auth::routes();
+Route::get( '/register', [ 'as' => 'register', 'uses' => 'Auth\RegistrationController@register' ] );
+Route::post( '/register', [ 'as' => 'post-register', 'uses' => 'Auth\RegistrationController@post_register' ] );
 
 // ------------------------------------------------------------
 

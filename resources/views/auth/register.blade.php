@@ -1,161 +1,214 @@
 @extends( 'layouts.default' )
 
-<!-- ============================================================ -->
+<!-- ========== -->
 
 @section( 'content' )
 
-    <!-- CONTAINER -->
-    <div class="container">
+    <!-- SECTION -->
+    <section class="section-registration">
 
-        <!-- ROW -->
-        <div class="row">
+	    <!-- ROW -->
+	    <div class="row">
 
-            <!-- COL MD 8 -->
-            <div class="col-md-8 col-md-offset-2">
+	        <!-- COL MD 6 -->
+	        <div class="col-md-6 col-md-offset-3">
 
-                <!-- PANEL -->
-                <div class="panel panel-default">
+	            <h2>
+	                {!! trans( 'webpage-text.registration-h2' ) !!}
+	            </h2>
 
-                    <!-- PANEL HEADING -->
-                    <div class="panel-heading">
-                        Inscription
+	        </div>
+	        <!-- End ... COL MD 6 -->
+
+	    </div>
+	    <!-- End ... ROW -->
+
+	    <!-- ROW -->
+	    <div class="row">
+
+	        {!! Form::open( [ 'route' => 'post-register', 'class' => 'register-form', 'id' => 'register-form' ] ) !!}
+
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		        <!-- ROW -->
+		        <div class="row">
+
+	                <!-- COL MD 4 -->
+	                <div class="col-md-4 col-md-offset-4">
+
+			            <!-- FORM GROUP -->
+			            <div class="form-group{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
+
+		                    {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-username-placeholder' ), 'required' ] ) !!}
+
+		                    <!-- ERROR -->
+		                    @if( $errors->has( 'username' ) )
+
+		                        <span class="help-block">
+		                            <strong>{{ $errors->first( 'username' ) }}</strong>
+		                        </span>
+
+		                    @endif
+		                    <!-- End ... ERROR -->
+
+			            </div>
+			            <!-- End ... FORM GROUP -->
+
+	                </div>
+	                <!-- COL MD 4 -->
+
+		        </div>
+		        <!-- End ... ROW -->
+
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		        <!-- ROW -->
+		        <div class="row">
+
+	                <!-- COL MD 4 -->
+	                <div class="col-md-4 col-md-offset-4">
+
+			            <!-- FORM GROUP -->
+			            <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
+
+		                    {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-email-placeholder' ), 'required' ] ) !!}
+
+		                    <!-- ERROR -->
+		                    @if( $errors->has( 'email' ) )
+
+		                        <span class="help-block">
+		                            <strong>{{ $errors->first( 'email' ) }}</strong>
+		                        </span>
+
+		                    @endif
+		                    <!-- End ... ERROR -->
+
+			            </div>
+			            <!-- End ... FORM GROUP -->
+
+	                </div>
+	                <!-- COL MD 4 -->
+
+		        </div>
+		        <!-- End ... ROW -->
+
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		        <!-- ROW -->
+		        <div class="row">
+
+	                <!-- COL MD 4 -->
+	                <div class="col-md-4 col-md-offset-4">
+
+			            <!-- FORM GROUP -->
+			            <div class="form-group{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
+
+		                    {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-placeholder' ), 'required' ] ) !!}
+
+		                    <!-- ERROR -->
+		                    @if( $errors->has( 'password' ) )
+
+		                        <span class="help-block">
+		                            <strong>{{ $errors->first( 'password' ) }}</strong>
+		                        </span>
+
+		                    @endif
+		                    <!-- End ... ERROR -->
+
+			            </div>
+			            <!-- End ... FORM GROUP -->
+
+	                </div>
+	                <!-- COL MD 4 -->
+
+		        </div>
+		        <!-- End ... ROW -->
+
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+		        <!-- ROW -->
+		        <div class="row">
+
+	                <!-- COL MD 4 -->
+	                <div class="col-md-4 col-md-offset-4">
+
+			            <!-- FORM GROUP -->
+			            <div class="form-group{{ $errors->has( 'password_confirmation' ) ? ' has-error' : '' }}">
+
+		                    {!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-confirmation-placeholder' ), 'required' ] ) !!}
+
+		                    <!-- ERROR -->
+		                    @if( $errors->has( 'password_confirmation' ) )
+
+		                        <span class="help-block">
+		                            <strong>{{ $errors->first( 'password_confirmation' ) }}</strong>
+		                        </span>
+
+		                    @endif
+		                    <!-- End ... ERROR -->
+
+			            </div>
+			            <!-- End ... FORM GROUP -->
+
+	                </div>
+	                <!-- COL MD 4 -->
+
+		        </div>
+		        <!-- End ... ROW -->
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+                <!-- ROW -->
+                <div class="row">
+
+                    <!-- FORM GROUP -->
+                    <div class="form-group">
+
+                        <!-- COL MD 4 -->
+                        <div class="col-md-4 col-md-offset-4">
+
+                            <!-- RECAPTCHA -->
+                            <div class="g-recaptcha" data-sitekey="6Lc4_QwUAAAAABI_DcCeneTNY44PjJDLpV165Jll">
+                            </div>
+                            <!-- End ... RECAPTCHA -->
+
+                        </div>
+                        <!-- COL MD 4 -->
+
                     </div>
-                    <!-- End ... PANEL HEADING -->
-
-                    <!-- PANEL BODY -->
-                    <div class="panel-body">
-
-                        <!-- FORM -->
-                        <form class="form-horizontal" role="form" method="POST" action="{{ url( '/register' ) }}">
-
-                            {{ csrf_field() }}
-
-                            <!-- FORM GROUP -->
-                            <div class="form-group{{ $errors->has( 'name' ) ? ' has-error' : '' }}">
-
-                                <label for="name" class="col-md-4 control-label">Nom</label>
-
-                                <!-- COL MD 6 -->
-                                <div class="col-md-6">
-
-                                    <input id="name" type="text" class="form-control" name="name" value="{{ old( 'name' ) }}" required autofocus>
-
-                                    <!-- ERROR -->
-                                    @if( $errors->has( 'name' ) )
-
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first( 'name' ) }}</strong>
-                                        </span>
-
-                                    @endif
-                                    <!-- End ... ERROR -->
-
-                                </div>
-                                <!-- End ... COL MD 6 -->
-
-                            </div>
-                            <!-- End ... FORM GROUP -->
-
-                            <!-- FORM GROUP -->
-                            <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
-
-                                <label for="email" class="col-md-4 control-label">E-Mail</label>
-
-                                <!-- COL MD 6 -->
-                                <div class="col-md-6">
-
-                                    <input id="email" type="email" class="form-control" name="email" value="{{ old( 'email' ) }}" required>
-
-                                    <!-- ERROR -->
-                                    @if( $errors->has( 'email' ) )
-
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first( 'email' ) }}</strong>
-                                        </span>
-
-                                    @endif
-                                    <!-- End ... ERROR -->
-
-                                </div>
-                                <!-- End ... COL MD 6 -->
-
-                            </div>
-                            <!-- End ... FORM GROUP -->
-
-                            <!-- FORM GROUP -->
-                            <div class="form-group{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
-
-                                <label for="password" class="col-md-4 control-label">Mot de passe</label>
-
-                                <!-- COL MD 6 -->
-                                <div class="col-md-6">
-
-                                    <input id="password" type="password" class="form-control" name="password" required>
-
-                                    <!-- ERROR -->
-                                    @if( $errors->has( 'password' ) )
-
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first( 'password' ) }}</strong>
-                                        </span>
-
-                                    @endif
-                                    <!-- End ... ERROR -->
-
-                                </div>
-                                <!-- COL MD 6 -->
-
-                            </div>
-                            <!-- End ... FORM GROUP -->
-
-                            <!-- FORM GROUP -->
-                            <div class="form-group">
-
-                                <label for="password-confirm" class="col-md-4 control-label">Confirmez le mot de passe</label>
-
-                                <!-- COL MD 6 -->
-                                <div class="col-md-6">
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                                </div>
-                                <!-- End ... COL MD 6 -->
-
-                            </div>
-                            <!-- End ... FORM GROUP -->
-
-                            <!-- FORM GROUP -->
-                            <div class="form-group">
-
-                                <!-- COL MD 6 -->
-                                <div class="col-md-6 col-md-offset-4">
-
-                                    <!-- SUBMIT -->
-                                    <button type="submit" class="btn btn-primary">
-                                        Enregistrer
-                                    </button>
-                                    <!-- End ... SUBMIT -->
-
-                                </div>
-                                <!-- End ... COL MD 6 -->
-
-                            </div>
-                            <!-- End ... FORM GROUP -->
-
-                        </form>
-                        <!-- End ... FORM -->
-
-                    </div>
-                    <!-- End ... PANEL BODY -->
+                    <!-- End ... FORM GROUP -->
 
                 </div>
-                <!-- End ... PANEL -->
+                <!-- End ... ROW -->
 
-            </div>
-            <!-- End ... COL MD 8 -->
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        </div>
-        <!-- End ... ROW -->
+	            <!-- ROW -->
+	            <div class="row">
 
-    </div>
-    <!-- End ... CONTAINER -->
+	                <!-- FORM GROUP -->
+	                <div class="form-group">
+
+	                    <!-- COL MD 4 -->
+	                    <div class="col-md-4 col-md-offset-4">
+
+	                        {!! Form::submit( trans( 'webpage-text.registration-submit' ), [ 'class' => 'btn btn-full', 'id' => 'registration-submit-button' ] ) !!}
+
+	                    </div>
+	                    <!-- COL MD 4 -->
+
+	                </div>
+	                <!-- End ... FORM GROUP -->
+
+	            </div>
+	            <!-- End ... ROW -->
+
+	        {!! Form::close() !!}
+
+	    </div>
+	    <!-- End ... ROW -->
+
+    </section>
+    <!-- End ... SECTION -->
 
 @stop

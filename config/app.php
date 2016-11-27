@@ -168,6 +168,7 @@ return
         /*
          * Package Service Providers...
          */
+        Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
 
@@ -229,8 +230,11 @@ return
         'Validator'         =>      Illuminate\Support\Facades\Validator::class,
         'View'              =>      Illuminate\Support\Facades\View::class,
 
+        'Activation'        =>      Cartalyst\Sentinel\Laravel\Facades\Activation::class,
         'Form'              =>      Collective\Html\FormFacade::class,
-        'Html'              =>      Collective\Html\HtmlFacade::class
+        'Html'              =>      Collective\Html\HtmlFacade::class,
+        'Reminder'          =>      Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
+        'Sentinel'          =>      Cartalyst\Sentinel\Laravel\Facades\Sentinel::class
 
         ]
 

@@ -73,7 +73,7 @@ return
 	'homepage-testimonials-img-alt'			=>		"Photo utilisateur",
 	'homepage-contact-h2'					=>		"Contact",
 	'homepage-contact-placeholder-1'		=>		"Votre nom...",
-	'homepage-contact-placeholder-2'		=>		"Votre email...",
+	'homepage-contact-placeholder-2'		=>		"Votre e-mail...",
 	'homepage-contact-placeholder-3'		=>		"Votre message...",
 	'homepage-contact-placeholder-4'		=>		"Votre adresse...",
 	'homepage-contact-submit'				=>		"Envoyer",
@@ -89,6 +89,22 @@ return
 
 	'contact-success-notification'			=>      "Votre message a été envoyé !",
 	'contact-error-notification'			=>      "Une erreur s'est produite !",
-	'invalid_form'							=>      "Le formulaire contient des erreurs !"
+	'invalid-form'							=>      "Le formulaire contient des erreurs !",
+	'register-success-notification'			=>		"Utilisateur créé avec success !",
+
+	// ------------------------------------------------------------
+
+	// ************
+	// REGISTRATION
+	// ************
+
+	'register-top-link-1'					=>		'Contact',
+	'register-top-link-2'					=>		'Connexion',
+	'registration-h2'						=>		'Inscription',
+	'registration-email-placeholder'		=>		'Votre e-mail...',
+	'registration-username-placeholder'		=>		'Votre nom...',
+	'registration-password-placeholder'		=>		'Votre mot de passe...',
+	'registration-password-confirmation-placeholder'		=>		'Confirmer le  mot de passe...',
+	'registration-submit'					=>		'Créer'
 
 	];

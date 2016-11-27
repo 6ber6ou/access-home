@@ -89,6 +89,22 @@ return
 
 	'contact-success-notification'			=>      "Su mensaje ha sido enviado!",
 	'contact-error-notification'			=>      "Se ha producido un error!",
-	'invalid_form'							=>      "El formulario tiene errores!"
+	'invalid-form'							=>      "El formulario tiene errores!",
+	'register-success-notification'			=>		"Usuario creado con éxito!",
+
+	// ------------------------------------------------------------
+
+	// ************
+	// REGISTRATION
+	// ************
+
+	'register-top-link-1'					=>		'Contacto',
+	'register-top-link-2'					=>		'Iniciar la sesión',
+	'registration-h2'						=>		'Registro',
+	'registration-email-placeholder'		=>		'Su email...',
+	'registration-username-placeholder'		=>		'Su nombre...',
+	'registration-password-placeholder'		=>		'Su contraseña...',
+	'registration-password-confirmation-placeholder'		=>		'Confirmar la contraseña...',
+	'registration-submit'					=>		'Crear'
 
 	];
