@@ -29,6 +29,8 @@ Route::post( '/login', [ 'as' => 'post-login', 'uses' => 'Auth\LoginController@p
 
 Route::post( '/logout', [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout' ] );
 
+Route::get( '/activate/{email}/{code}', [ 'as' => 'activate', 'uses' => 'Auth\ActivationController@activate' ] );
+
 // ------------------------------------------------------------
 
 // *******

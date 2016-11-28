@@ -129,13 +129,14 @@ return
 	'contact-success-notification'			=>      "Votre message a été envoyé !",
 	'contact-error-notification'			=>      "Une erreur s'est produite !",
 	'invalid-form'							=>      "Le formulaire contient des erreurs !",
-	'register-success-notification'			=>		"L'utilisateur a été créé avec success !",
+	'register-success-notification'			=>		"L'utilisateur a été créé avec success ! Vous allez reçevoir un e-mail pour activer votre compte.",
 	'login-success-notification'			=>		"Vous êtes connecté  !",
 	'logout-success-notification'			=>		"Vous êtes déconnecté  !",
 	'login-error-notification'				=>		"Erreur lors de la connexion  !",
 	'authenticated-error-notification'		=>		"Connectez-vous pour accéder à cette page !",
 	'admin-error-notification'				=>		"Vous devez être administrateur pour accéder à cette page !",
 	'guest-error-notification'				=>		"Déconnectez-vous pour accéder à cette page !",
+	'activation-success-notification'		=>		"Votre compte a été activé avec succès !",
 
 	// ------------------------------------------------------------
 

@@ -3,7 +3,9 @@
 use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
+use Activation;
 use AH\Http\Requests\CreateUserRequest;
+use AH\User;
 use Sentinel;
 
 class RegistrationController extends Controller
@@ -34,7 +36,8 @@ class RegistrationController extends Controller
 	public function post_register( CreateUserRequest $request )
 		{
 
-		$user = Sentinel::registerAndActivate( $request->all() );
+		$user = Sentinel::register( $request->all() );
+		$activation = Activation::create( $user );
 		$role = Sentinel::findRoleBySlug( 'user' );
 
 		$role->users()->attach( $user );
