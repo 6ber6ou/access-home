@@ -35,16 +35,59 @@
                                 <!-- MAIN NAV -->
                                 <ul class="main-nav js--main-nav">
 
+                                    @if( ! Sentinel::check() )
+
+                                        @if( $page == 'login' )
+
+                                            <li>
+                                                <a href="{{ route( 'register' ) }}">{!! trans( 'webpage-text.register-top-link-2' ) !!}</a>
+                                            </li>
+
+                                        @elseif( $page == 'register' )
+
+                                            <li>
+                                                <a href="{{ route( 'login' ) }}">{!! trans( 'webpage-text.register-top-link-3' ) !!}</a>
+                                            </li>
+
+                                        @endif()
+
+                                    @else
+
+                                        <li>
+                                            <a href="{{ route( 'adds' ) }}" class="{{ $page == 'adds' ? 'actif' : '' }}">{!! trans( 'webpage-text.top-link-1' ) !!}</a>
+                                        </li>
+
+                                        <li>
+
+                                            <!-- DROPDOWN -->
+                                            <div class="dropdown">
+
+                                                <a href="" onclick="return false;" class="{{ $page == 'profil' || $page == 'my-adds' ? 'actif' : '' }}">{!! ucfirst( str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.top-link-2' ) ) ) !!}</a>
+
+                                                <!-- DROPDOWN CONTENT -->
+                                                <div class="dropdown-content">
+
+                                                    <a href="{{ route( 'profil' ) }}">{!! trans( 'webpage-text.top-link-2-1' ) !!}</a>
+                                                    <a href="{{ route( 'my-adds' ) }}">{!! trans( 'webpage-text.top-link-2-2' ) !!}</a>
+
+                                                    {!! Form::open( [ 'route' => 'logout', 'id' => 'logout-form' ] ) !!}
+
+                                                        <a href="#" onclick="$( '#logout-form' ).submit()">{!! trans( 'webpage-text.top-link-2-3' ) !!}</a>
+
+                                                    {!! Form::close() !!}
+
+                                                </div>
+                                                <!-- End ... DROPDOWN CONTENT -->
+
+                                            </div>
+                                            <!-- End ... DROPDOWN -->
+
+                                        </li>
+
+                                    @endif
+
                                     <li>
                                         <a href="{{ url( '/#contact' ) }}">{!! trans( 'webpage-text.register-top-link-1' ) !!}</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{ route( 'register' ) }}">{!! trans( 'webpage-text.register-top-link-2' ) !!}</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="{{ route( 'login' ) }}">{!! trans( 'webpage-text.register-top-link-3' ) !!}</a>
                                     </li>
 
                                     <li>

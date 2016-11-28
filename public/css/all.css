@@ -7253,6 +7253,8 @@ button.close {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  *.actif {
+    color: #e67e22 !important; }
 
 blockquote {
   margin-top: 40px;
@@ -7433,6 +7435,33 @@ input[type=submit] {
 .row {
   max-width: 1140px;
   margin: 0 auto; }
+
+/* ------------------------------------------------------------ */
+/* DROPDOWN MENU */
+/* ------------------------------------------------------------ */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: absolute;
+  top: 35px;
+  min-width: 160px;
+  display: none; }
+
+.dropdown-content a {
+  padding: 12px 16px !important;
+  color: black;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
 
 /* ------------------------------------------------------------ */
 /* ERROR MESSAGE */

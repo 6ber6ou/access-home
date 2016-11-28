@@ -9,12 +9,23 @@ use Sentinel;
 class RegistrationController extends Controller
 	{
 
+	public function __construct()
+		{
+
+		$this->middleware( 'sentinel.guest' );
+
+		}
+
+	// ------------------------------------------------------------
+
 	public function register()
 		{
 
 		show_notification();
 
-		return view( 'auth.register' );
+		$page = 'register';
+
+		return view( 'auth.register', compact( 'page' ) );
 
 		}
 
@@ -24,8 +35,11 @@ class RegistrationController extends Controller
 		{
 
 		$user = Sentinel::registerAndActivate( $request->all() );
+		$role = Sentinel::findRoleBySlug( 'user' );
 
-		return redirect()->route( 'register' )->with( 'message', 'success|' . trans( 'webpage-text.register-success-notification' ) );
+		$role->users()->attach( $user );
+
+		return redirect()->route( 'login' )->with( 'message', 'success|' . trans( 'webpage-text.register-success-notification' ) );
 
 		}
 

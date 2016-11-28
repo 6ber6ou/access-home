@@ -1,6 +1,7 @@
-<?php namespace AH\Http\Controllers;
+<?php namespace AH\Http\Controllers\Contact;
 
 use Illuminate\Http\Request;
+use AH\Http\Controllers\Controller;
 
 use AH\Http\Requests\SendContactEmailRequest;
 use AH\Mail\ContactMail;

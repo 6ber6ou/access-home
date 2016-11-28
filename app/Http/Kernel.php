@@ -61,12 +61,16 @@ class Kernel extends HttpKernel
     protected $routeMiddleware =
         [
 
-        'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \AH\Http\Middleware\RedirectIfAuthenticated::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class
+        'auth'                  =>      \Illuminate\Auth\Middleware\Authenticate::class,
+        'auth.basic'            =>      \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'bindings'              =>      \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        'can'                   =>      \Illuminate\Auth\Middleware\Authorize::class,
+        'guest'                 =>      \AH\Http\Middleware\RedirectIfAuthenticated::class,
+        'throttle'              =>      \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        'sentinel.admin'        =>      \AH\Http\Middleware\AdminMiddleware::class,
+        'sentinel.auth'         =>      \AH\Http\Middleware\AuthenticatedMiddleware::class,
+        'sentinel.guest'        =>      \AH\Http\Middleware\GuestMiddleware::class
 
         ];
 

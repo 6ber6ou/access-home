@@ -95,7 +95,7 @@ return
         ],
     'string'                    =>      ':attribute deve essere una stringa.',
     'timezone'                  =>      ':attribute deve essere una zona valida.',
-    'unique'                    =>      ':attribute è stato già utilizzato.',
+    'unique'                    =>      'Valore già in uso.',
     'uploaded'                  =>      ':attribute non è stato caricato.',
     'url'                       =>      'Il formato del campo :attribute non è valido.',
 

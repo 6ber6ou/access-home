@@ -1,11 +1,20 @@
 <?php namespace AH;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Cartalyst\Sentinel\Users\EloquentUser as SentinelUser;
 
-class User extends Authenticatable
-    {
+class User extends SentinelUser
+	{
 
-    use Notifiable;
+    protected $fillable =
+    	[
 
-    }
+        'username',
+        'email',
+        'password',
+        'permissions'
+
+    	];
+
+    protected $loginNames = [ 'username' ];
+
+	}

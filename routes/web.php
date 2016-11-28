@@ -1,10 +1,19 @@
 <?php
 
-// *******
-// WELCOME
-// *******
+// ****
+// ADDS
+// ****
 
-Route::get( '/', [ 'as' => 'welcome', 'uses' => 'WelcomeController@index' ] );
+Route::get( '/adds', [ 'as' => 'adds', 'uses' => 'User\AdsController@index' ] );
+Route::get( '/my-adds', [ 'as' => 'my-adds', 'uses' => 'User\AdsController@my_adds' ] );
+
+// ------------------------------------------------------------
+
+// **************
+// ADMINISTRATION
+// **************
+
+Route::get( '/administration', [ 'as' => 'administration', 'uses' => 'Admin\AdminController@index' ] );
 
 // ------------------------------------------------------------
 
@@ -18,21 +27,15 @@ Route::post( '/register', [ 'as' => 'post-register', 'uses' => 'Auth\Registratio
 Route::get( '/login', [ 'as' => 'login', 'uses' => 'Auth\LoginController@login' ] );
 Route::post( '/login', [ 'as' => 'post-login', 'uses' => 'Auth\LoginController@post_login' ] );
 
+Route::post( '/logout', [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout' ] );
+
 // ------------------------------------------------------------
 
 // *******
 // CONTACT
 // *******
 
-Route::post( '/contact', [ 'as' => 'post-contact', 'uses' => 'ContactController@index' ] );
-
-// ------------------------------------------------------------
-
-// ****
-// HOME
-// ****
-
-Route::get( '/home', 'HomeController@index' );
+Route::post( '/contact', [ 'as' => 'post-contact', 'uses' => 'Contact\ContactController@index' ] );
 
 // ------------------------------------------------------------
 
@@ -40,4 +43,21 @@ Route::get( '/home', 'HomeController@index' );
 // LANGUAGE
 // ********
 
-Route::post( '/language', [ 'as' => 'language-chooser', 'uses' => 'LanguageController@chooser' ] );
+Route::post( '/language', [ 'as' => 'language-chooser', 'uses' => 'Language\LanguageController@chooser' ] );
+
+// ------------------------------------------------------------
+
+// ****
+// USER
+// ****
+
+Route::get( '/profil', [ 'as' => 'profil', 'uses' => 'User\UserController@profil' ] );
+
+// ------------------------------------------------------------
+
+// *******
+// WELCOME
+// *******
+
+Route::get( '/', [ 'as' => 'welcome', 'uses' => 'Welcome\WelcomeController@index' ] );
+

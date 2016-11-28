@@ -31,7 +31,7 @@ $( document ).ready( function()
 			{
 
 		    autohide : true,
-		    delay : 5000,
+		    delay : 4000,
 		    cssClass : cls,
 		    opacity : 0.9
 

@@ -95,7 +95,7 @@ return
         ],
     'string'                    =>      'Le champ :attribute doit être une chaîne de caractères.',
     'timezone'                  =>      'Le champ :attribute doit être un fuseau horaire valide.',
-    'unique'                    =>      'La valeur du champ :attribute est déjà utilisée.',
+    'unique'                    =>      'Valeur déjà utilisée.',
     'uploaded'                  =>      "Le fichier du champ :attribute n'a pu être téléchargé.",
     'url'                       =>      "Le format de l'URL de :attribute n'est pas valide.",
 

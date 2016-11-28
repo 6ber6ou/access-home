@@ -19,6 +19,22 @@ return
 
 	// ------------------------------------------------------------
 
+	// ****
+	// ADDS
+	// ****
+
+	'adds-h2'							=>		'Annonces',
+
+	// ------------------------------------------------------------
+
+	// **************
+	// ADMINISTRATION
+	// **************
+
+	'admin-h2'							=>		'Administration',
+
+	// ------------------------------------------------------------
+
 	// ********
 	// HOMEPAGE
 	// ********
@@ -26,11 +42,14 @@ return
 	'homepage-h1'							=>      "échange de logements accessibles aux handicapés.",
 	'homepage-btn-1'						=>		"Inscription",
 	'homepage-btn-2'						=>		"Connexion",
+	'homepage-btn-3'						=>		"Annonces",
+	'homepage-btn-4'						=>		"Mes annonces",
 	'homepage-top-link-1'					=>		"En savoir plus",
 	'homepage-top-link-2'					=>		"3 étapes",
 	'homepage-top-link-3'					=>		"Destinations",
 	'homepage-top-link-4'					=>		"Témoignages",
 	'homepage-top-link-5'					=>		"Contact",
+	'homepage-top-link-6'					=>		"__USERNAME__",
 	'homepage-alt-flag-fr'					=>		"Drapeau français",
 	'homepage-alt-flag-en'					=>		"Drapeau anglais",
 	'homepage-alt-flag-es'					=>		"Drapeau espagnol",
@@ -77,9 +96,29 @@ return
 	'homepage-contact-placeholder-3'		=>		"Votre message...",
 	'homepage-contact-placeholder-4'		=>		"Votre adresse...",
 	'homepage-contact-submit'				=>		"Envoyer",
-	'homepage-footer-link-1'				=>		"Plan du site",
-	'homepage-footer-link-2'				=>		"Conditions d'utilisation",
-	'homepage-footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+
+	// ------------------------------------------------------------
+
+	// ******
+	// FOOTER
+	// ******
+
+	'footer-link-1'				=>		"Plan du site",
+	'footer-link-2'				=>		"Conditions d'utilisation",
+	'footer-link-3'				=>		"Administrer",
+	'footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+
+	// ------------------------------------------------------------
+
+	// *****
+	// LOGIN
+	// *****
+
+	'login-h2'								=>		'Connexion',
+	'login-submit'							=>		'Connexion',
+	'login-username-placeholder'			=>		'Votre pseudo...',
+	'login-password-placeholder'			=>		'Votre mot de passe...',
+	'login-not-valid'						=>		'Identifiant incorrect !',
 
 	// ------------------------------------------------------------
 
@@ -90,7 +129,13 @@ return
 	'contact-success-notification'			=>      "Votre message a été envoyé !",
 	'contact-error-notification'			=>      "Une erreur s'est produite !",
 	'invalid-form'							=>      "Le formulaire contient des erreurs !",
-	'register-success-notification'			=>		"Utilisateur créé avec success !",
+	'register-success-notification'			=>		"L'utilisateur a été créé avec success !",
+	'login-success-notification'			=>		"Vous êtes connecté  !",
+	'logout-success-notification'			=>		"Vous êtes déconnecté  !",
+	'login-error-notification'				=>		"Erreur lors de la connexion  !",
+	'authenticated-error-notification'		=>		"Connectez-vous pour accéder à cette page !",
+	'admin-error-notification'				=>		"Vous devez être administrateur pour accéder à cette page !",
+	'guest-error-notification'				=>		"Déconnectez-vous pour accéder à cette page !",
 
 	// ------------------------------------------------------------
 
@@ -111,12 +156,31 @@ return
 	// ------------------------------------------------------------
 
 	// *****
-	// LOGIN
+	// ROLES
 	// *****
 
-	'login-h2'								=>		'Connexion',
-	'login-submit'							=>		'Connexion',
-	'login-username-placeholder'			=>		'Votre pseudo...',
-	'login-password-placeholder'			=>		'Votre mot de passe...',
+	'role-1'								=>		'Administrateur',
+	'role-2'								=>		'Utilisateur',
+
+	// ------------------------------------------------------------
+
+	// *********
+	// TOP LINKS
+	// *********
+
+	'top-link-1'							=>		'Annonces',
+	'top-link-2'							=>		'__USERNAME__',
+	'top-link-2-1'							=>		'Profil',
+	'top-link-2-2'							=>		'Mes annonces',
+	'top-link-2-3'							=>		'Déconnexion',
+
+	// ------------------------------------------------------------
+
+	// ****
+	// USER
+	// ****
+
+	'user-profil-h2'						=>		'Mon profil',
+	'user-my-adds-h2'						=>		'Mes annonces'
 
 	];

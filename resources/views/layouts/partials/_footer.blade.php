@@ -10,12 +10,20 @@
                     <ul class="footer-nav">
 
                         <li>
-                            <a href="#">{!! trans( 'webpage-text.homepage-footer-link-1' ) !!}</a>
+                            <a href="#">{!! trans( 'webpage-text.footer-link-1' ) !!}</a>
                         </li>
 
                         <li>
-                            <a href="#">{!! trans( 'webpage-text.homepage-footer-link-2' ) !!}</a>
+                            <a href="#">{!! trans( 'webpage-text.footer-link-2' ) !!}</a>
                         </li>
+
+                        @if( Sentinel::check() && Sentinel::getUser()->roles()->first()->slug == 'admin' )
+
+                            <li>
+                                <a href="{{ route( 'administration' ) }}">{!! trans( 'webpage-text.footer-link-3' ) !!}</a>
+                            </li>
+
+                        @endif
 
                     </ul>
 
@@ -145,7 +153,7 @@
             <div class="row">
 
                 <p>
-                    {!! trans( 'webpage-text.homepage-footer-copyright' ) !!}
+                    {!! trans( 'webpage-text.footer-copyright' ) !!}
                 </p>
 
             </div>

@@ -4,7 +4,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 use Illuminate\Http\Request;
 
-class CreateUserRequest extends FormRequest
+class LoginUserRequest extends FormRequest
     {
 
     public function authorize()
@@ -24,9 +24,8 @@ class CreateUserRequest extends FormRequest
         return
             [
 
-            'username'      =>      'required|unique:users',
-            'email'         =>      'required|email|unique:users',
-            'password'      =>      'required|confirmed'
+            'username'      =>      'required',
+            'password'      =>      'required'
 
             ];
 

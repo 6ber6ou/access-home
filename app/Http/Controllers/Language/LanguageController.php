@@ -1,6 +1,7 @@
-<?php namespace AH\Http\Controllers;
+<?php namespace AH\Http\Controllers\Language;
 
 use Illuminate\Http\Request;
+use AH\Http\Controllers\Controller;
 
 use \Cookie;
 

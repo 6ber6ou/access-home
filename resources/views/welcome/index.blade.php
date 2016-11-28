@@ -46,7 +46,17 @@
                                 </li>
 
                                 <li>
-                                    <a href="#" class="js--scroll-to-testimonials">{!! trans( 'webpage-text.homepage-top-link-4' ) !!}</a>
+
+                                    @if( Sentinel::check() )
+
+                                        <a href="{{ route( 'profil' ) }}">{!! str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.homepage-top-link-6' ) ) !!}</a>
+
+                                    @else
+
+                                        <a href="#" class="js--scroll-to-testimonials">{!! trans( 'webpage-text.homepage-top-link-4' ) !!}</a>
+
+                                    @endif
+
                                 </li>
 
                                 <li>
@@ -98,8 +108,17 @@
                                 {!! trans( 'webpage-text.homepage-h1' ) !!}
                             </h1>
 
-                            <a href="{{ route( 'register' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-1' ) !!}</a>
-                            <a href="{{ route( 'login' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
+                            @if( Sentinel::check() )
+
+                                <a href="{{ route( 'adds' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-3' ) !!}</a>
+                                <a href="{{ route( 'my-adds' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-4' )!!}</a>
+
+                            @else
+
+                                <a href="{{ route( 'register' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-1' ) !!}</a>
+                                <a href="{{ route( 'login' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-2' ) !!}</a>
+
+                            @endif
 
                        </div>
                         <!-- End ... ROW -->
