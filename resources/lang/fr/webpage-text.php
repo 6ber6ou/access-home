@@ -190,11 +190,10 @@ return
 	// TOP LINKS
 	// *********
 
-	'top-link-1'							=>		'Annonces',
-	'top-link-2'							=>		'__USERNAME__',
-	'top-link-2-1'							=>		'Profil',
-	'top-link-2-2'							=>		'Mes annonces',
-	'top-link-2-3'							=>		'Déconnexion',
+	'top-link-1'							=>		'__USERNAME__',
+	'top-link-1-1'							=>		'Profil',
+	'top-link-1-2'							=>		'Mes &nbsp; annonces',
+	'top-link-1-3'							=>		'Déconnexion',
 
 	// ------------------------------------------------------------
 

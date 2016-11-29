@@ -38,7 +38,7 @@
 .small-avatar {
   border-radius: 50%;
   width: 32px;
-  padding-right: 5px; }
+  margin-right: 5px; }
 
 #image-avatar {
   border: 1px solid #ddd;
@@ -94,7 +94,6 @@ form {
     margin-bottom: 20px; }
 
 html, body {
-  background-color: white;
   color: #555;
   font-weight: 300;
   font-size: 20px;
@@ -103,14 +102,15 @@ html, body {
 body {
   font-family: 'Lato', 'Arial', sans-serif; }
 
-h1, h2, h3 {
-  margin: 0; }
-
 h1,
-h2,
-h3 {
+h2 {
+  margin: 0;
   font-weight: 300;
   text-transform: uppercase; }
+
+h3 {
+  margin: 0;
+  font-weight: 300; }
 
 h1 {
   margin-top: 0;
@@ -256,12 +256,14 @@ input[type=submit] {
   position: absolute;
   top: 38px;
   min-width: 160px;
+  font-size: 90%;
   display: none; }
 
 .dropdown-content a {
   padding: 12px 16px !important;
   color: black;
   text-decoration: none;
+  height: 45px;
   display: block; }
 
 .dropdown-content a:hover {
@@ -664,6 +666,30 @@ section {
   padding: 80px 0; }
 
 /* ------------------------------------------------------------ */
+/* SIDE BAR */
+/* ------------------------------------------------------------ */
+#sidebar {
+  border-right: 1px solid #ddd !important;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  font-size: 100%; }
+  #sidebar h3 {
+    color: #e67e22; }
+  #sidebar li {
+    list-style: none;
+    text-align: right;
+    line-height: 150%; }
+    #sidebar li a:link, #sidebar li a:visited {
+      border-bottom: 2px solid transparent !important;
+      font-size: 80%;
+      color: #555 !important;
+      text-decoration: none !important; }
+    #sidebar li a:hover, #sidebar li a:active {
+      border-bottom: 2px solid #e67e22 !important; }
+
+/* ------------------------------------------------------------ */
 /* TESTIMONIALS */
 /* ------------------------------------------------------------ */
 .section-testimonials {
@@ -753,6 +779,15 @@ section {
 /* SMALL TABLETS to BIG TABLETS from 821 to 991px */
 /* ------------------------------------------------------------ */
 @media only screen and (max-width: 991px) {
+  #sidebar {
+    border-right: none !important;
+    border-left: 2px solid #ddd !important;
+    margin-bottom: -40px;
+    margin-left: 30px;
+    font-size: 110%;
+    text-align: left; }
+    #sidebar ul li {
+      text-align: left; }
   .section-steps h2 {
     margin-bottom: 40px; }
   .works-step-container {
@@ -764,7 +799,7 @@ section {
       position: relative;
       top: 0;
       right: 0; }
-  .profile-form .form-group {
+  .profile-form .form-group, .new-password-form .form-group {
     margin-bottom: 0; } }
 
 /* ------------------------------------------------------------ */

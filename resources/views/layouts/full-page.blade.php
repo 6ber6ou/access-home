@@ -16,21 +16,7 @@
 
                     @include( 'layouts.partials._header' )
 
-                    <div class="row">
-
-                        <div class="col-md-2" id="sidebar">
-
-                            @include( 'layouts.partials._sidebar' )
-
-                        </div>
-
-                        <div class="col-md-10" id="content">
-
-                            @yield( 'content' )
-
-                        </div>
-
-                    </div>
+                    @yield( 'content' )
 
                 </div>
                 <!-- End ... PAGE WRAPPER -->
