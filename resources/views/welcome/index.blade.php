@@ -525,7 +525,7 @@
                 <!-- ============================================================ -->
 
                 <!-- SECTION -->
-                <section class="section-testimonials js--section-testimonials">
+                <section class="section-testimonials js--section-testimonials" id="testimonials">
 
                     <!-- ROW -->
                     <div class="row">

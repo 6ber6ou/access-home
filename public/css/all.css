@@ -7703,11 +7703,11 @@ header {
     font-size: 80%; }
     .sticky .main-nav li a:link, .sticky .main-nav li a:visited {
       border-bottom: 3px solid transparent !important;
-      padding: 8px 0 13px 0;
+      padding: 8px 0 16px 0;
       color: #555; }
     .sticky .main-nav li a:hover, .sticky .main-nav li a:active {
       border-bottom: 3px solid #e67e22 !important;
-      padding-bottom: 13px; }
+      padding-bottom: 16px; }
   .sticky .logo-black {
     margin: 5px 0 10px 0;
     height: 40px;
