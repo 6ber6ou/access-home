@@ -17,7 +17,7 @@
                             <a href="#">{!! trans( 'webpage-text.footer-link-2' ) !!}</a>
                         </li>
 
-                        @if( Sentinel::check() && Sentinel::getUser()->roles()->first()->slug == 'admin' )
+                        @if( Sentinel::check() && Sentinel::getUser()->inRole( 'admin' ) )
 
                             <li>
                                 <a href="{{ route( 'administration' ) }}">{!! trans( 'webpage-text.footer-link-3' ) !!}</a>
