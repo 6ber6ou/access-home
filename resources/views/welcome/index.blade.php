@@ -49,7 +49,7 @@
 
                                     @if( Sentinel::check() )
 
-                                        <a href="{{ route( 'profil' ) }}">{!! str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.homepage-top-link-6' ) ) !!}</a>
+                                        <a href="{{ route( 'profile' ) }}"><img src="{{ asset( Sentinel::getUser()->avatar ) }}" class="small-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}"> {!! str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.homepage-top-link-6' ) ) !!}</a>
 
                                     @else
 

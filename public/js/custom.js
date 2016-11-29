@@ -11420,4 +11420,20 @@ $( document ).ready( function()
 
 	} );
 
+// ******************
+// UPLOAD USER AVATAR
+// ******************
+
+$( document ).ready( function()
+	{
+
+	$( '#avatar' ).on( 'change', function()
+		{
+
+		$( '#avatar-form' ).submit();
+
+		} );
+
+	} );
+
 //# sourceMappingURL=custom.js.map

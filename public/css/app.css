@@ -27,6 +27,29 @@
   opacity: 1; }
 
 /* ------------------------------------------------------------ */
+/* AVATAR */
+/* ------------------------------------------------------------ */
+.section-avatar {
+  padding: 0 0 20px 0; }
+
+#avatar-form {
+  margin-top: 0; }
+
+.small-avatar {
+  border-radius: 50%;
+  width: 32px;
+  padding-right: 5px; }
+
+.image-upload > input {
+  display: none; }
+
+.image-upload label {
+  cursor: pointer; }
+
+.image-upload img {
+  border-radius: 50%; }
+
+/* ------------------------------------------------------------ */
 /* BALISES */
 /* ------------------------------------------------------------ */
 * {
@@ -725,7 +748,9 @@ section {
     .works-step-container .works-step div {
       position: relative;
       top: 0;
-      right: 0; } }
+      right: 0; }
+  .profile-form .form-group {
+    margin-bottom: 0; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 768 to 820px */

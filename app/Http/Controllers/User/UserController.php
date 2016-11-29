@@ -6,6 +6,7 @@ use AH\Http\Controllers\Controller;
 use AH\Http\Requests\ModifyUserPasswordRequest;
 use AH\Http\Requests\ModifyUserProfileRequest;
 use AH\User;
+use Image;
 use Sentinel;
 
 class UserController extends Controller
@@ -20,14 +21,14 @@ class UserController extends Controller
 
 	// ------------------------------------------------------------
 
-	public function profil()
+	public function profile()
 		{
 
 		show_notification();
 
-		$page = 'profil';
+		$page = 'profile';
 
-		return view( 'users.profil', compact( 'page' ) );
+		return view( 'users.profile', compact( 'page' ) );
 
 		}
 
@@ -88,6 +89,39 @@ class UserController extends Controller
         Sentinel::update($user, array('password' => $password));
 
 		return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.user-new-password-notification' ) );
+
+		}
+
+	// ------------------------------------------------------------
+
+	public function upload_avatar( Request $request )
+		{
+
+		// Faire validation pour JPG, GIF, PNG, BMP, TIFF, TGA
+
+		if( $request->hasFile( 'avatar' ) )
+			{
+
+			$user = Sentinel::getUser();
+
+			if( ! preg_match( '/default\.jpg/i', $user->avatar ) )
+				{
+
+				@unlink( public_path() . $user->avatar );
+
+				}
+
+			$avatar = $request->file( 'avatar' );
+			$filename = time() . '.' . $avatar->getClientOriginalExtension();
+
+			Image::make( $avatar )->fit( 128, 128 )->save( public_path( '/uploads/avatars/' ) . $filename );
+
+			$user->avatar = '/uploads/avatars/' . $filename;
+			$user->save();
+
+			return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.avatar-upload-notification' ) );
+
+			}
 
 		}
 

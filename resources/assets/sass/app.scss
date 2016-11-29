@@ -35,6 +35,49 @@
 	}
 
 /* ------------------------------------------------------------ */
+/* AVATAR */
+/* ------------------------------------------------------------ */
+
+.section-avatar
+	{
+	padding : 0 0 20px 0;
+	}
+
+#avatar-form
+	{
+	margin-top : 0;
+	}
+
+.small-avatar
+	{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width : 32px;
+	padding-right: 5px;
+	}
+
+.image-upload > input
+	{
+    display : none;
+	}
+
+.image-upload label
+	{
+	cursor : pointer;
+	}
+
+.image-upload
+	{
+	img
+		{
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		}
+	}
+
+/* ------------------------------------------------------------ */
 /* BALISES */
 /* ------------------------------------------------------------ */
 

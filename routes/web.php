@@ -53,9 +53,10 @@ Route::post( '/language', [ 'as' => 'language-chooser', 'uses' => 'Language\Lang
 // USER
 // ****
 
-Route::get( '/profil', [ 'as' => 'profil', 'uses' => 'User\UserController@profil' ] );
-Route::post( '/profil', [ 'as' => 'post-profile', 'uses' => 'User\UserController@post_profile' ] );
+Route::get( '/profile', [ 'as' => 'profile', 'uses' => 'User\UserController@profile' ] );
+Route::post( '/profile', [ 'as' => 'post-profile', 'uses' => 'User\UserController@post_profile' ] );
 Route::post( '/new-password', [ 'as' => 'new-password', 'uses' => 'User\UserController@new_password' ] );
+Route::post( '/upload-avatar', [ 'as' => 'upload-avatar', 'uses' => 'User\UserController@upload_avatar' ] );
 
 // ------------------------------------------------------------
 

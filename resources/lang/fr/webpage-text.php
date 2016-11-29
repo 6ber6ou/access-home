@@ -143,6 +143,7 @@ return
 	'user-not-found-notification'			=>		"Utilisateur introuvable !",
 	'user-new-password-error-notification'	=>		"Mot de passe actuel inccorect !",
 	'user-new-password-notification'		=>		"Votre mot de passe a été changé avec succès !",
+	'avatar-upload-notification'			=>		"Votre avatar a bien été uploadé !",
 
 	// ------------------------------------------------------------
 
@@ -202,6 +203,7 @@ return
 	// ****
 
 	'user-profil-h2'						=>		'Mon profil',
-	'user-my-adds-h2'						=>		'Mes annonces'
+	'user-my-adds-h2'						=>		'Mes annonces',
+	'user-avatar-alt'						=>		'Avatar'
 
 	];

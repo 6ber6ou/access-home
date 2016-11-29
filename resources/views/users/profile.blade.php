@@ -20,6 +20,36 @@
         <!-- ROW -->
         <div class="row">
 
+            <!-- COL MD 4 -->
+            <div class="col-md-4 col-md-offset-4 text-center">
+
+                <section class="section-avatar">
+
+                    {!! Form::open( [ 'route' => 'upload-avatar', 'class' => 'avatar-form', 'id' => 'avatar-form', 'files' => TRUE ] ) !!}
+
+                        <div class="image-upload">
+
+                            <label for="avatar">
+                                <img src="{{ asset( Sentinel::getUser()->avatar ) }}" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}">
+                            </label>
+
+                            <input id="avatar" name="avatar" type="file">
+
+                        </div>
+
+                    {!! Form::close() !!}
+
+                </section>
+
+            </div>
+            <!-- End ... COL MD 4 -->
+
+        </div>
+        <!-- End ...ROW -->
+
+        <!-- ROW -->
+        <div class="row">
+
             {!! Form::model( Sentinel::getUser(), [ 'route' => 'post-profile', 'class' => 'profile-form', 'id' => 'profile-form' ] ) !!}
 
                 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -114,8 +144,6 @@
 
         </div>
         <!-- End ...ROW -->
-
-        <!-- ============================================================ -->
 
         <!-- ROW -->
         <div class="row">
@@ -246,22 +274,5 @@
 
         </div>
         <!-- End ...ROW -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @stop

@@ -62,12 +62,12 @@
                                             <!-- DROPDOWN -->
                                             <div class="dropdown">
 
-                                                <a href="" onclick="return false;" class="{{ $page == 'profil' || $page == 'my-adds' ? 'actif' : '' }}">{!! ucfirst( str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.top-link-2' ) ) ) !!}</a>
+                                                <a href="" onclick="return false;" class="{{ $page == 'profil' || $page == 'my-adds' ? 'actif' : '' }}"><img src="{{ asset( Sentinel::getUser()->avatar ) }}" class="small-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}"> {!! ucfirst( str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.top-link-2' ) ) ) !!}</a>
 
                                                 <!-- DROPDOWN CONTENT -->
                                                 <div class="dropdown-content">
 
-                                                    <a href="{{ route( 'profil' ) }}">{!! trans( 'webpage-text.top-link-2-1' ) !!}</a>
+                                                    <a href="{{ route( 'profile' ) }}">{!! trans( 'webpage-text.top-link-2-1' ) !!}</a>
                                                     <a href="{{ route( 'my-adds' ) }}">{!! trans( 'webpage-text.top-link-2-2' ) !!}</a>
 
                                                     {!! Form::open( [ 'route' => 'logout', 'id' => 'logout-form' ] ) !!}
