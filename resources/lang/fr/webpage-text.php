@@ -139,8 +139,10 @@ return
 	'activation-success-notification'		=>		"Votre compte a été activé avec succès !",
 	'user-update-success-notification'		=>		"Votre profil a été modifié avec succès !",
 	'user-update-error-notification'		=>		"Votre profil n'a pas été modifié !",
-	'user-update-not-found-notification'	=>		"Utilisateur introuvable !",
 	'user-update-notification'				=>		"L'utilisateur a été modifié avec succès !",
+	'user-not-found-notification'			=>		"Utilisateur introuvable !",
+	'user-new-password-error-notification'	=>		"Mot de passe actuel inccorect !",
+	'user-new-password-notification'		=>		"Votre mot de passe a été changé avec succès !",
 
 	// ------------------------------------------------------------
 
@@ -151,6 +153,10 @@ return
 	'profile-placeholder-1'					=>		'Votre nom...',
 	'profile-placeholder-2'					=>		'Votre e-mail...',
 	'profile-submit'						=>		'Modifier',
+	'new-password-placeholder-1'			=>		'Mot de passe actuel...',
+	'new-password-placeholder-2'			=>		'Nouveau mot de passe...',
+	'new-password-placeholder-3'			=>		'Confirmer le mot de passe...',
+	'new-password-submit'					=>		'Modifier',
 
 	// ------------------------------------------------------------
 

@@ -39,7 +39,7 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group{{ ( $errors->has( 'username' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-username-placeholder' ) ] ) !!}
+		                    {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-username-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'username' ) )
@@ -77,7 +77,7 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group{{ ( $errors->has( 'password' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-password-placeholder' ) ] ) !!}
+		                    {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-password-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password' ) )

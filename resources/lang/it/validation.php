@@ -68,7 +68,7 @@ return
 
         'numeric'                   =>      ':attribute deve essere almeno :min.',
         'file'                      =>      ':attribute deve essere almeno di :min kilobytes.',
-        'string'                    =>      ':attribute deve contenere almeno :min caratteri.',
+        'string'                    =>      'Deve contenere almeno :min caratteri.',
         'array'                     =>      ':attribute deve avere almeno :min elementi.'
 
         ],

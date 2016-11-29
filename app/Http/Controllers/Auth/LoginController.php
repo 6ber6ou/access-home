@@ -40,7 +40,7 @@ class LoginController extends Controller
 		if( ! Sentinel::check() )
 			{
 
-			return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.login-error-notification' ) );
+			return redirect()->back()->withInput()->with( 'message', 'error|' . trans( 'webpage-text.login-error-notification' ) );
 
 			}
 

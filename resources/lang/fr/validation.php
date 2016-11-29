@@ -68,7 +68,7 @@ return
 
         'numeric'                   =>      'La valeur de :attribute doit être supérieure à :min.',
         'file'                      =>      'La taille du fichier de :attribute doit être supérieure à :min kilo-octets.',
-        'string'                    =>      'Le texte :attribute doit contenir au moins :min caractères.',
+        'string'                    =>      'Doit contenir au moins :min caractères.',
         'array'                     =>      'Le tableau :attribute doit contenir au moins :min éléments.'
 
         ],

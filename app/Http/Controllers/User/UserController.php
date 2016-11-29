@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
+use AH\Http\Requests\ModifyUserPasswordRequest;
 use AH\Http\Requests\ModifyUserProfileRequest;
 use AH\User;
 use Sentinel;
@@ -51,7 +52,7 @@ class UserController extends Controller
 		    else
 		    	{
 
-
+				return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.user-update-error-notification' ) );
 
 		    	}
 
@@ -59,9 +60,34 @@ class UserController extends Controller
 		catch( Cartalyst\Sentry\Users\UserNotFoundException $e )
 			{
 
-			return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.user-update-not-found-notification' ) );
+			return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.user-not-found-notification' ) );
 
 			}
+
+		}
+
+	// ------------------------------------------------------------
+
+	public function new_password( ModifyUserPasswordRequest $request )
+		{
+
+        $hasher = Sentinel::getHasher();
+
+        $oldPassword = $request->input('old_password');
+        $password = $request->input('password');
+        $passwordConf = $request->input('password_confirmation');
+        $user = Sentinel::getUser();
+
+        if( ! $hasher->check( $oldPassword, $user->password ) )
+        	{
+
+			return redirect()->back()->withErrors( [ 'old_password' => trans( 'webpage-text.user-new-password-error-notification' ) ] )->with( 'message', 'error|' . trans( 'webpage-text.invalid-form' ) );
+
+        	}
+
+        Sentinel::update($user, array('password' => $password));
+
+		return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.user-new-password-notification' ) );
 
 		}
 
