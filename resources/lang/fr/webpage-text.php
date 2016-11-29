@@ -192,8 +192,7 @@ return
 
 	'top-link-1'							=>		'__USERNAME__',
 	'top-link-1-1'							=>		'Profil',
-	'top-link-1-2'							=>		'Mes &nbsp; annonces',
-	'top-link-1-3'							=>		'Déconnexion',
+	'top-link-1-2'							=>		'Déconnexion',
 
 	// ------------------------------------------------------------
 
