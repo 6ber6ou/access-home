@@ -103,10 +103,10 @@ return
 	// FOOTER
 	// ******
 
-	'footer-link-1'				=>		"Plan du site",
-	'footer-link-2'				=>		"Conditions d'utilisation",
-	'footer-link-3'				=>		"Administrer",
-	'footer-copyright'				=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+	'footer-link-1'						=>		"Plan du site",
+	'footer-link-2'						=>		"Conditions d'utilisation",
+	'footer-link-3'						=>		"Administrer",
+	'footer-copyright'					=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
 
 	// ------------------------------------------------------------
 
@@ -137,6 +137,20 @@ return
 	'admin-error-notification'				=>		"Vous devez être administrateur pour accéder à cette page !",
 	'guest-error-notification'				=>		"Déconnectez-vous pour accéder à cette page !",
 	'activation-success-notification'		=>		"Votre compte a été activé avec succès !",
+	'user-update-success-notification'		=>		"Votre profil a été modifié avec succès !",
+	'user-update-error-notification'		=>		"Votre profil n'a pas été modifié !",
+	'user-update-not-found-notification'	=>		"Utilisateur introuvable !",
+	'user-update-notification'				=>		"L'utilisateur a été modifié avec succès !",
+
+	// ------------------------------------------------------------
+
+	// *******
+	// PROFILE
+	// *******
+
+	'profile-placeholder-1'					=>		'Votre nom...',
+	'profile-placeholder-2'					=>		'Votre e-mail...',
+	'profile-submit'						=>		'Modifier',
 
 	// ------------------------------------------------------------
 

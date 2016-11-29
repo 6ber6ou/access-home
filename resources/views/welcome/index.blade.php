@@ -612,7 +612,7 @@
                     <!-- ROW -->
                     <div class="row js--wp-4">
 
-                        {!! Form::open( [ 'route' => 'post-contact', 'class' => 'contact-form', 'id' => 'register-form' ] ) !!}
+                        {!! Form::open( [ 'route' => 'post-contact', 'class' => 'contact-form', 'id' => 'contact-form' ] ) !!}
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -680,7 +680,11 @@
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-                            @include( 'layouts.partials._anti-spam-field' )
+                            @if( ! Sentinel::check() )
+
+                                @include( 'layouts.partials._anti-spam-field' )
+
+                            @endif
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -716,28 +720,32 @@
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-                            <!-- ROW -->
-                            <div class="row">
+                            @if( ! Sentinel::check() )
 
-                                <!-- FORM GROUP -->
-                                <div class="form-group">
+                                <!-- ROW -->
+                                <div class="row">
 
-                                    <!-- COL MD 6 -->
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <!-- FORM GROUP -->
+                                    <div class="form-group">
 
-                                        <!-- RECAPTCHA -->
-                                        <div class="g-recaptcha" data-sitekey="6Lc4_QwUAAAAABI_DcCeneTNY44PjJDLpV165Jll">
+                                        <!-- COL MD 6 -->
+                                        <div class="col-md-6 col-md-offset-3">
+
+                                            <!-- RECAPTCHA -->
+                                            <div class="g-recaptcha" data-sitekey="6Lc4_QwUAAAAABI_DcCeneTNY44PjJDLpV165Jll">
+                                            </div>
+                                            <!-- End ... RECAPTCHA -->
+
                                         </div>
-                                        <!-- End ... RECAPTCHA -->
+                                        <!-- COL MD 6 -->
 
                                     </div>
-                                    <!-- COL MD 6 -->
+                                    <!-- End ... FORM GROUP -->
 
                                 </div>
-                                <!-- End ... FORM GROUP -->
+                                <!-- End ... ROW -->
 
-                            </div>
-                            <!-- End ... ROW -->
+                            @endif
 
                             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

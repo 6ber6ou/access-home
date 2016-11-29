@@ -5,15 +5,7 @@ use Cartalyst\Sentinel\Users\EloquentUser as SentinelUser;
 class User extends SentinelUser
 	{
 
-    protected $fillable =
-    	[
-
-        'username',
-        'email',
-        'password',
-        'permissions'
-
-    	];
+    protected $fillable = [ 'username', 'email', 'password', 'permissions' ];
 
     protected $loginNames = [ 'username' ];
 

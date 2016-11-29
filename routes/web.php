@@ -54,6 +54,7 @@ Route::post( '/language', [ 'as' => 'language-chooser', 'uses' => 'Language\Lang
 // ****
 
 Route::get( '/profil', [ 'as' => 'profil', 'uses' => 'User\UserController@profil' ] );
+Route::post( '/profil', [ 'as' => 'post-profile', 'uses' => 'User\UserController@post_profile' ] );
 
 // ------------------------------------------------------------
 

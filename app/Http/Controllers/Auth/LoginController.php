@@ -35,7 +35,7 @@ class LoginController extends Controller
 	public function post_login( LoginUserRequest $request )
 		{
 
-		Sentinel::authenticate( $request->all() );
+		Sentinel::authenticateAndRemember( $request->all() );
 
 		if( ! Sentinel::check() )
 			{

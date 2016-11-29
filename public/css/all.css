@@ -7281,6 +7281,11 @@ cite {
     height: 45px;
     vertical-align: middle; }
 
+form {
+  margin-top: 10px; }
+  form .row {
+    margin-bottom: 20px; }
+
 html, body {
   background-color: white;
   color: #555;
@@ -7407,11 +7412,6 @@ input[type=submit] {
   background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url("img/contact.jpg");
   background-position: center;
   background-size: cover; }
-
-.contact-form {
-  margin-top: 10px; }
-  .contact-form .row {
-    margin-bottom: 20px; }
 
 /* ------------------------------------------------------------ */
 /* CLEARFIX */
@@ -7822,6 +7822,9 @@ a:active {
       transform: scale(1); }
 
 /* ------------------------------------------------------------ */
+/* PROFILE */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
 /* REGISTRATION & LOGIN */
 /* ------------------------------------------------------------ */
 .section-registration, .section-login {
@@ -7830,10 +7833,11 @@ a:active {
 
 .register-form, .login-form {
   margin-top: 10px; }
+  .register-form .form-group, .login-form .form-group {
+    margin-bottom: 0; }
 
 .register-form .g-recaptcha {
-  margin-top: 5px !important;
-  margin-bottom: 20px !important; }
+  margin-top: 5px !important; }
 
 /* ------------------------------------------------------------ */
 /* SECTIONS */

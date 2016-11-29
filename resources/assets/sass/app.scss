@@ -82,6 +82,15 @@ cite
 		}
 	}
 
+form
+	{
+	margin-top : 10px;
+	.row
+		{
+		margin-bottom : 20px;
+		}
+	}
+
 html, body
 	{
 	background-color : white;
@@ -235,15 +244,6 @@ input[type=submit]
     background-image : linear-gradient( rgba( 255, 255, 255, 0.87 ), rgba( 255, 255, 255, 0.87 ) ), url( 'img/contact.jpg' );
 	background-position : center;
 	background-size : cover;
-	}
-
-.contact-form
-	{
-	margin-top : 10px;
-	.row
-		{
-		margin-bottom : 20px;
-		}
 	}
 
 /* ------------------------------------------------------------ */
@@ -842,6 +842,12 @@ a:active
 	}
 
 /* ------------------------------------------------------------ */
+/* PROFILE */
+/* ------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------ */
 /* REGISTRATION & LOGIN */
 /* ------------------------------------------------------------ */
 
@@ -854,6 +860,10 @@ a:active
 .register-form, .login-form
 	{
 	margin-top : 10px;
+	.form-group
+		{
+		margin-bottom : 0;
+		}
 	}
 
 .register-form
@@ -861,7 +871,6 @@ a:active
 	.g-recaptcha
 		{
 		margin-top : 5px !important;
-		margin-bottom : 20px !important;
 		}
 	}
 
