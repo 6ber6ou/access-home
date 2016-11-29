@@ -97,7 +97,7 @@ class UserController extends Controller
 	public function upload_avatar( Request $request )
 		{
 
-		// Faire validation pour JPG, GIF, PNG, BMP, TIFF, TGA
+		// Faire validation pour JPG, JPEG, GIF, PNG, BMP, TIFF, TGA
 
 		if( $request->hasFile( 'avatar' ) )
 			{
@@ -119,7 +119,9 @@ class UserController extends Controller
 			$user->avatar = '/uploads/avatars/' . $filename;
 			$user->save();
 
-			return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.avatar-upload-notification' ) );
+			$request->session()->flash( 'message', 'success|' . trans( 'webpage-text.avatar-upload-notification' ) );
+
+			return asset( Sentinel::getUser()->avatar );
 
 			}
 

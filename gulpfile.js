@@ -46,6 +46,7 @@ elixir( ( mix ) =>
         'jquery-peek-a-bar/dist/js/jquery.peekabar.js',
         'custom/init_peek_a_bar.js',
         'custom/sticky_footer.js',
+        'jquery-form/jquery-form.js',
         'custom/upload_user_avatar.js'
 
         ], 'public/js/custom.js' );

@@ -7260,6 +7260,10 @@ button.close {
   width: 32px;
   padding-right: 5px; }
 
+#image-avatar {
+  border: 1px solid #ddd;
+  padding: 5px; }
+
 .image-upload > input {
   display: none; }
 
@@ -7845,8 +7849,19 @@ a:active {
       transform: scale(1); }
 
 /* ------------------------------------------------------------ */
-/* PROFILE */
+/* PROFILE FORM */
 /* ------------------------------------------------------------ */
+.profile-form {
+  margin-bottom: 25px; }
+
+/* ------------------------------------------------------------ */
+/* PROGRESS BAR */
+/* ------------------------------------------------------------ */
+.progress {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  height: 5px; }
+
 /* ------------------------------------------------------------ */
 /* REGISTRATION & LOGIN */
 /* ------------------------------------------------------------ */

@@ -50,11 +50,15 @@
 
 .small-avatar
 	{
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
 	width : 32px;
 	padding-right: 5px;
+	}
+
+#image-avatar
+	{
+	border : 1px solid $light-grey-footer;
+	padding: 5px;
 	}
 
 .image-upload > input
@@ -71,8 +75,6 @@
 	{
 	img
 		{
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
 		border-radius: 50%;
 		}
 	}
@@ -885,10 +887,24 @@ a:active
 	}
 
 /* ------------------------------------------------------------ */
-/* PROFILE */
+/* PROFILE FORM */
 /* ------------------------------------------------------------ */
 
+.profile-form
+	{
+	margin-bottom : 25px;
+	}
 
+/* ------------------------------------------------------------ */
+/* PROGRESS BAR */
+/* ------------------------------------------------------------ */
+
+.progress
+	{
+	margin-bottom : 5px;
+	margin-top : 10px;
+	height: 5px;
+	}
 
 /* ------------------------------------------------------------ */
 /* REGISTRATION & LOGIN */

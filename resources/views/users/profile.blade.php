@@ -30,7 +30,7 @@
                         <div class="image-upload">
 
                             <label for="avatar">
-                                <img src="{{ asset( Sentinel::getUser()->avatar ) }}" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}">
+                                <img src="{{ asset( Sentinel::getUser()->avatar ) }}?{{ rand() }}" id="image-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}">
                             </label>
 
                             <input id="avatar" name="avatar" type="file">
@@ -38,6 +38,14 @@
                         </div>
 
                     {!! Form::close() !!}
+
+                    <div class="progress">
+
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                            <span class="sr-only">0%</span>
+                        </div>
+
+                    </div>
 
                 </section>
 
