@@ -952,12 +952,13 @@ section
 	{
 	border-right : 1px solid $light-grey-footer !important;
 	margin-top : 30px;
-	padding-top : 20px;
 	padding-bottom : 20px;
 	padding-right : 30px;
-	font-size : 100%;
+	font-size : 95%;
 	h3
 		{
+		margin-top : 30px;
+		margin-bottom : 10px;
 		color : $orange;
 		}
 	li

@@ -17,3 +17,19 @@
 	</li>
 
 </ul>
+
+<h3>
+	Témoignages
+</h3>
+
+<ul>
+
+	<li>
+		<a href="#">Voir les témoignages</a>
+	</li>
+
+	<li>
+		<a href="#">Nouveau témoignage</a>
+	</li>
+
+</ul>
