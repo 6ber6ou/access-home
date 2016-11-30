@@ -90,7 +90,7 @@ $style = [
                                                 @if ($level == 'error')
                                                     Whoops!
                                                 @else
-                                                    Hello!
+                                                    {!! trans( 'webpage-text.email-template-hello' ) !!}
                                                 @endif
                                             @endif
                                         </h1>
@@ -140,7 +140,7 @@ $style = [
 
                                         <!-- Salutation -->
                                         <p style="{{ $style['paragraph'] }}">
-                                            Regards,<br>{{ config('app.name') }}
+                                            {!! trans( 'webpage-text.email-template-regards' ) !!},<br>{{ config('app.name') }}
                                         </p>
 
                                         <!-- Sub Copy -->
@@ -149,8 +149,7 @@ $style = [
                                                 <tr>
                                                     <td style="{{ $fontFamily }}">
                                                         <p style="{{ $style['paragraph-sub'] }}">
-                                                            If you’re having trouble clicking the "{{ $actionText }}" button,
-                                                            copy and paste the URL below into your web browser:
+                                                            {!! trans( 'webpage-text.email-template-warning' ) !!}
                                                         </p>
 
                                                         <p style="{{ $style['paragraph-sub'] }}">
@@ -175,9 +174,9 @@ $style = [
                                 <tr>
                                     <td style="{{ $fontFamily }} {{ $style['email-footer_cell'] }}">
                                         <p style="{{ $style['paragraph-sub'] }}">
-                                            &copy; {{ date('Y') }}
+                                            &copy; 2016
                                             <a style="{{ $style['anchor'] }}" href="{{ url('/') }}" target="_blank">{{ config('app.name') }}</a>.
-                                            All rights reserved.
+                                            {!! trans( 'webpage-text.email-template-copyright' ) !!}
                                         </p>
                                     </td>
                                 </tr>

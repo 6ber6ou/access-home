@@ -35,6 +35,17 @@ return
 
 	// ------------------------------------------------------------
 
+	// ******
+	// FOOTER
+	// ******
+
+	'footer-link-1'						=>		"Plan du site",
+	'footer-link-2'						=>		"Conditions d'utilisation",
+	'footer-link-3'						=>		"Administrer",
+	'footer-copyright'					=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+
+	// ------------------------------------------------------------
+
 	// ********
 	// HOMEPAGE
 	// ********
@@ -100,13 +111,17 @@ return
 	// ------------------------------------------------------------
 
 	// ******
-	// FOOTER
+	// EMAILS
 	// ******
 
-	'footer-link-1'						=>		"Plan du site",
-	'footer-link-2'						=>		"Conditions d'utilisation",
-	'footer-link-3'						=>		"Administrer",
-	'footer-copyright'					=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+	'email-account-activation-subject'		=>		"Activez votre compte",
+	'email-account-activation-line-1'		=>		"Votre compte sur Access Houses a bien été créé, vous devez maintenant l'activer en cliquant sur le lien ci-dessous :",
+	'email-account-activation-line-2'		=>		"Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet e-mail.",
+	'email-account-activation-link-text'	=>		"Activer mon compte",
+	'email-template-hello'					=>		"Bonjour !",
+	'email-template-regards'				=>		"Cordialment",
+	'email-template-warning'				=>		'Si vous rencontrez un problème en cliquant sur le bouton "Activer mon compte", copier coller l\'URL ci-dessous dans votre navigateur :',
+	'email-template-copyright'				=>		'Tous droits réservés',
 
 	// ------------------------------------------------------------
 
@@ -137,6 +152,7 @@ return
 	'admin-error-notification'				=>		"Vous devez être administrateur pour accéder à cette page !",
 	'guest-error-notification'				=>		"Déconnectez-vous pour accéder à cette page !",
 	'activation-success-notification'		=>		"Votre compte a été activé avec succès !",
+	'activation-error-notification'			=>		"Votre compte a déjà été activé !",
 	'user-update-success-notification'		=>		"Votre profil a été modifié avec succès !",
 	'user-update-error-notification'		=>		"Votre profil n'a pas été modifié !",
 	'user-update-notification'				=>		"L'utilisateur a été modifié avec succès !",
@@ -172,7 +188,7 @@ return
 	'registration-email-placeholder'		=>		'Votre e-mail...',
 	'registration-username-placeholder'		=>		'Votre pseudo...',
 	'registration-password-placeholder'		=>		'Votre mot de passe...',
-	'registration-password-confirmation-placeholder'		=>		'Confirmer le  mot de passe...',
+	'registration-password-confirmation-placeholder'	=>		'Confirmer le  mot de passe...',
 	'registration-submit'					=>		'Créer',
 
 	// ------------------------------------------------------------
