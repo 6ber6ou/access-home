@@ -167,13 +167,14 @@ return
 	// PROFILE
 	// *******
 
-	'profile-placeholder-1'					=>		'Votre nom...',
-	'profile-placeholder-2'					=>		'Votre e-mail...',
-	'profile-submit'						=>		'Modifier',
-	'new-password-placeholder-1'			=>		'Mot de passe actuel...',
-	'new-password-placeholder-2'			=>		'Nouveau mot de passe...',
-	'new-password-placeholder-3'			=>		'Confirmer le mot de passe...',
-	'new-password-submit'					=>		'Modifier',
+	'profile-upload-text'					=>		"Cliquer sur l'image pour uploader votre avatar.",
+	'profile-placeholder-1'					=>		"Votre nom...",
+	'profile-placeholder-2'					=>		"Votre e-mail...",
+	'profile-submit'						=>		"Modifier",
+	'new-password-placeholder-1'			=>		"Mot de passe actuel...",
+	'new-password-placeholder-2'			=>		"Nouveau mot de passe...",
+	'new-password-placeholder-3'			=>		"Confirmer le mot de passe...",
+	'new-password-submit'					=>		"Modifier",
 
 	// ------------------------------------------------------------
 
@@ -181,15 +182,15 @@ return
 	// REGISTRATION
 	// ************
 
-	'register-top-link-1'					=>		'Contact',
-	'register-top-link-2'					=>		'Inscription',
-	'register-top-link-3'					=>		'Connexion',
-	'registration-h2'						=>		'Inscription',
-	'registration-email-placeholder'		=>		'Votre e-mail...',
-	'registration-username-placeholder'		=>		'Votre pseudo...',
-	'registration-password-placeholder'		=>		'Votre mot de passe...',
-	'registration-password-confirmation-placeholder'	=>		'Confirmer le  mot de passe...',
-	'registration-submit'					=>		'Créer',
+	'register-top-link-1'					=>		"Contact",
+	'register-top-link-2'					=>		"Inscription",
+	'register-top-link-3'					=>		"Connexion",
+	'registration-h2'						=>		"Inscription",
+	'registration-email-placeholder'		=>		"Votre e-mail...",
+	'registration-username-placeholder'		=>		"Votre pseudo...",
+	'registration-password-placeholder'		=>		"Votre mot de passe...",
+	'registration-password-confirmation-placeholder'	=>		"Confirmer le  mot de passe...",
+	'registration-submit'					=>		"Créer",
 
 	// ------------------------------------------------------------
 
@@ -197,8 +198,8 @@ return
 	// ROLES
 	// *****
 
-	'role-1'								=>		'Administrateur',
-	'role-2'								=>		'Utilisateur',
+	'role-1'								=>		"Administrateur",
+	'role-2'								=>		"Utilisateur",
 
 	// ------------------------------------------------------------
 
@@ -206,9 +207,9 @@ return
 	// TOP LINKS
 	// *********
 
-	'top-link-1'							=>		'__USERNAME__',
-	'top-link-1-1'							=>		'Profil',
-	'top-link-1-2'							=>		'Déconnexion',
+	'top-link-1'							=>		"__USERNAME__",
+	'top-link-1-1'							=>		"Profil",
+	'top-link-1-2'							=>		"Déconnexion",
 
 	// ------------------------------------------------------------
 
@@ -216,8 +217,8 @@ return
 	// USER
 	// ****
 
-	'user-profil-h2'						=>		'Mon profil',
-	'user-my-adds-h2'						=>		'Mes annonces',
-	'user-avatar-alt'						=>		'Avatar'
+	'user-profil-h2'						=>		"Mon profil",
+	'user-my-adds-h2'						=>		"Mes annonces",
+	'user-avatar-alt'						=>		"Avatar"
 
 	];

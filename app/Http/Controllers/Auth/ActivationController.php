@@ -24,7 +24,7 @@ class ActivationController extends Controller
 		else
 			{
 
-			return redirect()->route( 'login' )->with( 'message', 'error|' . trans( 'webpage-text.activation-success-notification' ) );
+			return redirect()->route( 'login' )->with( 'message', 'error|' . trans( 'webpage-text.activation-error-notification' ) );
 
 			}
 

@@ -20,8 +20,8 @@
         <!-- ROW -->
         <div class="row">
 
-            <!-- COL MD 4 -->
-            <div class="col-md-4 col-md-offset-4 text-center">
+            <!-- COL MD 6 -->
+            <div class="col-md-6 col-md-offset-3 text-center">
 
                 <section class="section-avatar">
 
@@ -47,10 +47,14 @@
 
                     </div>
 
+                    <p>
+                        {!! trans( 'webpage-text.profile-upload-text' ) !!}
+                    </p>
+
                 </section>
 
             </div>
-            <!-- End ... COL MD 4 -->
+            <!-- End ... COL MD 6 -->
 
         </div>
         <!-- End ...ROW -->

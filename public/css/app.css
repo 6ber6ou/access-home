@@ -31,6 +31,8 @@
 /* ------------------------------------------------------------ */
 .section-avatar {
   padding: 0 0 20px 0; }
+  .section-avatar p {
+    font-size: 80%; }
 
 #avatar-form {
   margin-top: 0; }
