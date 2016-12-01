@@ -45,7 +45,7 @@ class ContactController extends Controller
                     {
 
                     $mailer->to( config( 'mail.from.address' ) )
-                           ->queue( new ContactMail( $name, $email, $body ) );
+                           ->send( new ContactMail( $name, $email, $body ) );
 
                     return redirect( '/#contact' )->with( 'message', 'success|' . trans( 'webpage-text.contact-success-notification' ) );
 
