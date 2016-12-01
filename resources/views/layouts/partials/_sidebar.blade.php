@@ -5,15 +5,15 @@
 <ul>
 
 	<li>
-		<a href="#">Voir les annonces</a>
+		<a href="{{ route( 'ads.index' ) }}">{!! trans( 'webpage-text.show-ads-link' ) !!}</a>
 	</li>
 
 	<li>
-		<a href="#">Nouvelle annonce</a>
+		<a href="{{ route( 'ads.create' ) }}">{!! trans( 'webpage-text.create-ad-link' ) !!}</a>
 	</li>
 
 	<li>
-		<a href="#">Mes annonces</a>
+		<a href="{{ route( 'my-ads' ) }}">{!! trans( 'webpage-text.my-ads-link' ) !!}</a>
 	</li>
 
 </ul>
@@ -29,7 +29,7 @@
 	</li>
 
 	<li>
-		<a href="#">Nouveau témoignage</a>
+		<a href="#">Poster un témoignage</a>
 	</li>
 
 </ul>

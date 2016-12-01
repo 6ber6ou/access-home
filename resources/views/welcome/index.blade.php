@@ -110,8 +110,8 @@
 
                             @if( Sentinel::check() )
 
-                                <a href="{{ route( 'adds' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-3' ) !!}</a>
-                                <a href="{{ route( 'my-adds' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-4' )!!}</a>
+                                <a href="{{ route( 'ads.index' ) }}" class="btn btn-full">{!! trans( 'webpage-text.homepage-btn-3' ) !!}</a>
+                                <a href="{{ route( 'my-ads' ) }}" class="btn btn-ghost">{!! trans( 'webpage-text.homepage-btn-4' )!!}</a>
 
                             @else
 

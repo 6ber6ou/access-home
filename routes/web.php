@@ -4,8 +4,9 @@
 // ADDS
 // ****
 
-Route::get( '/adds', [ 'as' => 'adds', 'uses' => 'User\AdsController@index' ] );
-Route::get( '/my-adds', [ 'as' => 'my-adds', 'uses' => 'User\AdsController@my_adds' ] );
+Route::resource( 'ads', 'User\AdsController' );
+
+Route::get( '/my-ads', [ 'as' => 'my-ads', 'uses' => 'User\AdsController@my_adds' ] );
 
 // ------------------------------------------------------------
 

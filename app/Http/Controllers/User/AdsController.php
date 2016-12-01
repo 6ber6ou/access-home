@@ -4,39 +4,82 @@ use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
 class AdsController extends Controller
-	{
+    {
 
-	public function __construct()
-		{
+    public function __construct()
+        {
 
-		$this->middleware( 'sentinel.auth', [ 'except' => [ 'index' ] ] );
+        $this->middleware( 'sentinel.auth', [ 'except' => [ 'index', 'show' ] ] );
 
-		}
+        }
 
-	// ------------------------------------------------------------
+    // ------------------------------------------------------------
 
-	public function index()
-		{
+    public function index()
+        {
 
-		show_notification();
+        show_notification();
 
-		$page = 'adds';
+        $page = 'adds';
 
-		return view( 'adds.index', compact( 'page' ) );
+        return view( 'ads.index', compact( 'page' ) );
 
-		}
+        }
 
-	// ------------------------------------------------------------
+    // ------------------------------------------------------------
 
-	public function my_adds()
-		{
+    public function create()
+        {
 
-		show_notification();
+        show_notification();
 
-		$page = 'my-adds';
+        $page = 'adds';
 
-		return view( 'adds.my-adds', compact( 'page' ) );
+        return view( 'ads.create', compact( 'page' ) );
 
-		}
+        }
 
-	}
+    // ------------------------------------------------------------
+
+    public function store( Request $request )
+        {
+        }
+
+    // ------------------------------------------------------------
+
+    public function show( $id )
+        {
+        }
+
+    // ------------------------------------------------------------
+
+    public function edit( $id )
+        {
+        }
+
+    // ------------------------------------------------------------
+
+    public function update( Request $request, $id )
+        {
+        }
+
+    // ------------------------------------------------------------
+
+    public function destroy( $id )
+        {
+        }
+
+    // ------------------------------------------------------------
+
+    public function my_adds()
+        {
+
+        show_notification();
+
+        $page = 'my-ads';
+
+        return view( 'ads.my-ads', compact( 'page' ) );
+
+        }
+
+    }
