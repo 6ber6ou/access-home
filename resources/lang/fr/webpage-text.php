@@ -39,6 +39,19 @@ return
 
 	// ------------------------------------------------------------
 
+	// ****
+	// CARD
+	// ****
+
+	'card-image-alt'					=>		'Photo logement',
+	'card-currency'						=>		'€',
+	'card-period'						=>		'jour',
+	'card-exchange-text'				=>		'échanges',
+	'card-comments-text'				=>		'commentaires',
+	'card-see-all-text'					=>		'voir la suite',
+
+	// ------------------------------------------------------------
+
 	// ******
 	// FOOTER
 	// ******
@@ -216,7 +229,8 @@ return
 
 	'top-link-1'							=>		"__USERNAME__",
 	'top-link-1-1'							=>		"Profil",
-	'top-link-1-2'							=>		"Déconnexion",
+	'top-link-1-2'							=>		"Mes annonces",
+	'top-link-1-3'							=>		"Déconnexion",
 
 	// ------------------------------------------------------------
 

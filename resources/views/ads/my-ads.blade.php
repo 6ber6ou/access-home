@@ -5,7 +5,7 @@
 @section( 'content' )
 
    <!-- SECTION -->
-    <section class="section-my-adds">
+    <section class="section-my-ads">
 
         <!-- ROW -->
         <div class="row">
@@ -20,22 +20,7 @@
         <!-- ROW -->
         <div class="row">
 
-            <div class="col-md-4 col-md-offset-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
+            @include( 'layouts.partials._card' )
 
         </div>
         <!-- End ...ROW -->

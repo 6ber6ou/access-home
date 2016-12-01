@@ -59,9 +59,11 @@
 
                                 <a href="{{ route( 'profile' ) }}">{!! trans( 'webpage-text.top-link-1-1' ) !!}</a>
 
+                                <a href="{{ route( 'my-ads' ) }}">{!! trans( 'webpage-text.top-link-1-2' ) !!}</a>
+
                                 {!! Form::open( [ 'route' => 'logout', 'id' => 'logout-form' ] ) !!}
 
-                                    <a href="#" onclick="$( '#logout-form' ).submit()">{!! trans( 'webpage-text.top-link-1-2' ) !!}</a>
+                                    <a href="#" onclick="$( '#logout-form' ).submit()">{!! trans( 'webpage-text.top-link-1-3' ) !!}</a>
 
                                 {!! Form::close() !!}
 

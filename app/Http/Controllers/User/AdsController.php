@@ -20,7 +20,7 @@ class AdsController extends Controller
 
         show_notification();
 
-        $page = 'adds';
+        $page = 'ads';
 
         return view( 'ads.index', compact( 'page' ) );
 
@@ -33,7 +33,7 @@ class AdsController extends Controller
 
         show_notification();
 
-        $page = 'adds';
+        $page = 'create-ads';
 
         return view( 'ads.create', compact( 'page' ) );
 

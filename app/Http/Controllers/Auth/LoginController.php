@@ -44,7 +44,7 @@ class LoginController extends Controller
 
 			}
 
-		return redirect()->route( 'adds' )->with( 'message', 'success|' . trans( 'webpage-text.login-success-notification' ) );
+		return redirect()->route( 'ads.index' )->with( 'message', 'success|' . trans( 'webpage-text.login-success-notification' ) );
 
 		}
 
