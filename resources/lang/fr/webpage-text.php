@@ -134,6 +134,9 @@ return
 	'login-username-placeholder'			=>		'Votre pseudo...',
 	'login-password-placeholder'			=>		'Votre mot de passe...',
 	'login-not-valid'						=>		'Identifiant incorrect !',
+	'reset-password-h2'						=>		'Mot de passe oublié',
+	'reset-password-email-placeholder'		=>		'Votre e-mail...',
+	'reset-password-submit'					=>		'Envoyer',
 
 	// ------------------------------------------------------------
 

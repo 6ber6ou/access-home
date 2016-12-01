@@ -33,6 +33,16 @@
                             <a href="{{ route( 'login' ) }}">{!! trans( 'webpage-text.register-top-link-3' ) !!}</a>
                         </li>
 
+                    @elseif( $page == 'reset-password' )
+
+                        <li>
+                            <a href="{{ route( 'register' ) }}">{!! trans( 'webpage-text.register-top-link-2' ) !!}</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route( 'login' ) }}">{!! trans( 'webpage-text.register-top-link-3' ) !!}</a>
+                        </li>
+
                     @endif()
 
                 @else

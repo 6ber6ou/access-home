@@ -811,6 +811,20 @@ a:active
 	color : $grey-font;
 	}
 
+a.simple-link:link,
+a.simple-link:visited
+	{
+	border-bottom : 1px solid transparent;
+	color : $grey-font !important;
+	font-size : 80%;
+	}
+
+a.simple-link:hover,
+a.simple-link:active
+	{
+	border-bottom : 1px solid $orange;
+	}
+
 /* ------------------------------------------------------------ */
 /* NOTIFICATION */
 /* ------------------------------------------------------------ */
@@ -913,16 +927,16 @@ a:active
 	}
 
 /* ------------------------------------------------------------ */
-/* REGISTRATION & LOGIN */
+/* REGISTRATION, LOGIN, & RESET PASSWORD */
 /* ------------------------------------------------------------ */
 
-.section-registration, .section-login
+.section-registration, .section-login, .section-reset-password
 	{
 	margin : 0;
 	padding : 90px 0 100px 0;
 	}
 
-.register-form, .login-form
+.register-form, .login-form, .reset-password-form
 	{
 	margin-top : 10px;
 	.form-group

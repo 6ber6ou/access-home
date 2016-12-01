@@ -7794,6 +7794,16 @@ a:active {
   border-bottom: 1px solid transparent;
   color: #555; }
 
+a.simple-link:link,
+a.simple-link:visited {
+  border-bottom: 1px solid transparent;
+  color: #555 !important;
+  font-size: 80%; }
+
+a.simple-link:hover,
+a.simple-link:active {
+  border-bottom: 1px solid #e67e22; }
+
 /* ------------------------------------------------------------ */
 /* NOTIFICATION */
 /* ------------------------------------------------------------ */
@@ -7867,15 +7877,15 @@ a:active {
   height: 5px; }
 
 /* ------------------------------------------------------------ */
-/* REGISTRATION & LOGIN */
+/* REGISTRATION, LOGIN, & RESET PASSWORD */
 /* ------------------------------------------------------------ */
-.section-registration, .section-login {
+.section-registration, .section-login, .section-reset-password {
   margin: 0;
   padding: 90px 0 100px 0; }
 
-.register-form, .login-form {
+.register-form, .login-form, .reset-password-form {
   margin-top: 10px; }
-  .register-form .form-group, .login-form .form-group {
+  .register-form .form-group, .login-form .form-group, .reset-password-form .form-group {
     margin-bottom: 0; }
 
 .register-form .g-recaptcha {

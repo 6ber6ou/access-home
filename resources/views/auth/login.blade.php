@@ -117,6 +117,8 @@
 
 	                        {!! Form::submit( trans( 'webpage-text.login-submit' ), [ 'class' => 'btn btn-full', 'id' => 'registration-submit-button' ] ) !!}
 
+							<a href="{{ route( 'reset-password' ) }}" class="simple-link">Mot de passe oublié ?</a>
+
 	                    </div>
 	                    <!-- COL MD 4 -->
 

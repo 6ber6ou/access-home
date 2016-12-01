@@ -59,4 +59,26 @@ class LoginController extends Controller
 
 		}
 
+	// ------------------------------------------------------------
+
+	public function reset_password()
+		{
+
+		show_notification();
+
+		$page = 'reset-password';
+
+		return view( 'auth.reset_password', compact( 'page' ) );
+
+		}
+
+	// ------------------------------------------------------------
+
+	public function post_reset_password()
+		{
+
+		dd( 'reset password' );
+
+		}
+
 	}

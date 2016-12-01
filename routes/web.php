@@ -27,6 +27,9 @@ Route::post( '/register', [ 'as' => 'post-register', 'uses' => 'Auth\Registratio
 Route::get( '/login', [ 'as' => 'login', 'uses' => 'Auth\LoginController@login' ] );
 Route::post( '/login', [ 'as' => 'post-login', 'uses' => 'Auth\LoginController@post_login' ] );
 
+Route::get( '/reset-password', [ 'as' => 'reset-password', 'uses' => 'Auth\LoginController@reset_password' ] );
+Route::post( '/reset-password', [ 'as' => 'post-reset-password', 'uses' => 'Auth\LoginController@post_reset_password' ] );
+
 Route::post( '/logout', [ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout' ] );
 
 Route::get( '/activate/{email}/{code}', [ 'as' => 'activate', 'uses' => 'Auth\ActivationController@activate' ] );
