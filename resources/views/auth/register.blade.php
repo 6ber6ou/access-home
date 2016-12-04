@@ -37,9 +37,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
 
-		                    {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-username-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-username-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'username' ) )
@@ -69,9 +69,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
 
-		                    {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-email-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-email-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'email' ) )
@@ -105,9 +105,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
 
-		                    {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password' ) )
@@ -137,9 +137,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ $errors->has( 'password_confirmation' ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ $errors->has( 'password_confirmation' ) ? ' has-error' : '' }}">
 
-		                    {!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-confirmation-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-confirmation-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password_confirmation' ) )

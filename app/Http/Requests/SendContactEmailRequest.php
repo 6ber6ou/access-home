@@ -17,8 +17,6 @@ class SendContactEmailRequest extends FormRequest
     public function rules( Request $request )
         {
 
-        $request->session()->flash( 'message', 'error|' . trans( 'webpage-text.invalid-form' ) );
-
         return
             [
 
@@ -27,6 +25,17 @@ class SendContactEmailRequest extends FormRequest
             'body'      =>      'required'
 
             ];
+
+        }
+
+    // ------------------------------------------------------------
+
+    public function response(array $errors )
+        {
+
+        session()->flash( 'message', 'error|' . trans( 'webpage-text.invalid-form' ) );
+
+        return $this->redirector->to( $this->getRedirectUrl() )->withInput( $this->except( $this->dontFlash ) )->withErrors( $errors, $this->errorBag );
 
         }
 

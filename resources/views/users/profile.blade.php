@@ -88,9 +88,9 @@
                         <div class="form-group{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
 
                             <!-- COL MD 8 -->
-                            <div class="col-md-8 col-md-offset-4">
+                            <div class="col-md-8 col-md-offset-4 relative">
 
-                                {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-1' ), 'required' ] ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-1' ), 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'username' ) )
@@ -120,9 +120,9 @@
                         <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
 
                             <!-- COL MD 8 -->
-                            <div class="col-md-8 col-md-offset-4">
+                            <div class="col-md-8 col-md-offset-4 relative">
 
-                                {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-2' ), 'required' ] ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-2' ), 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'email' ) )
@@ -198,9 +198,9 @@
                         <div class="form-group{{ $errors->has( 'old_password' ) ? ' has-error' : '' }}">
 
                             <!-- COL MD 8 -->
-                            <div class="col-md-8">
+                            <div class="col-md-8 relative">
 
-                                {!! Form::password( 'old_password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-1' ), 'required' ] ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'old_password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-1' ), 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'old_password' ) )
@@ -230,9 +230,9 @@
                         <div class="form-group{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
 
                             <!-- COL MD 8 -->
-                            <div class="col-md-8">
+                            <div class="col-md-8 relative">
 
-                                {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-2' ), 'required' ] ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-2' ), 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'password' ) )
@@ -262,9 +262,9 @@
                         <div class="form-group{{ $errors->has( 'password_confirmation' ) ? ' has-error' : '' }}">
 
                             <!-- COL MD 8 -->
-                            <div class="col-md-8">
+                            <div class="col-md-8 relative">
 
-                                {!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-3' ), 'required' ] ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-3' ), 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'password_confirmation' ) )

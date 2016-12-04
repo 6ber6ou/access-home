@@ -37,9 +37,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ $errors->has( 'reset-password' ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ $errors->has( 'reset-password' ) ? ' has-error' : '' }}">
 
-		                    {!! Form::email( 'reset-password', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.reset-password-email-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::email( 'reset-password', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.reset-password-email-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'reset-password' ) )

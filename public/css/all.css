@@ -7627,6 +7627,19 @@ input[type=submit] {
   margin-bottom: 5px; }
 
 /* ------------------------------------------------------------ */
+/* CLASSES */
+/* ------------------------------------------------------------ */
+.mandatory {
+  position: absolute !important;
+  top: 6px;
+  left: -15px;
+  color: #d9534f;
+  font-size: 60%; }
+
+.relative {
+  position: relative !important; }
+
+/* ------------------------------------------------------------ */
 /* CONTACT FORM */
 /* ------------------------------------------------------------ */
 .section-contact {

@@ -16,10 +16,8 @@ class LoginUserRequest extends FormRequest
 
     // ------------------------------------------------------------
 
-    public function rules( Request $request )
+    public function rules()
         {
-
-        $request->session()->flash( 'message', 'error|' . trans( 'webpage-text.invalid-form' ) );
 
         return
             [
@@ -28,6 +26,17 @@ class LoginUserRequest extends FormRequest
             'password'      =>      'required'
 
             ];
+
+        }
+
+    // ------------------------------------------------------------
+
+    public function response(array $errors )
+        {
+
+        session()->flash( 'message', 'error|' . trans( 'webpage-text.invalid-form' ) );
+
+        return $this->redirector->to( $this->getRedirectUrl() )->withInput( $this->except( $this->dontFlash ) )->withErrors( $errors, $this->errorBag );
 
         }
 

@@ -623,9 +623,9 @@
                                 <div class="form-group{{ $errors->has( 'name' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <div class="col-md-6 col-md-offset-3 relative">
 
-                                        {!! Form::text( 'name', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-1' ), 'required' ] ) !!}
+                                        <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::text( 'name', Sentinel::getUser() ? Sentinel::getUser()->username : NULL , [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-1' ), 'required' ] ) !!}
 
                                         <!-- ERROR -->
                                         @if( $errors->has( 'name' ) )
@@ -655,9 +655,9 @@
                                 <div class="form-group{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <div class="col-md-6 col-md-offset-3 relative">
 
-                                        {!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-2' ), 'required' ] ) !!}
+                                        <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::email( 'email', Sentinel::getUser() ? Sentinel::getUser()->email : NULL , [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-2' ), 'required' ] ) !!}
 
                                         <!-- ERROR -->
                                         @if( $errors->has( 'email' ) )
@@ -695,9 +695,9 @@
                                 <div class="form-group{{ $errors->has( 'body' ) ? ' has-error' : '' }}">
 
                                     <!-- COL MD 6 -->
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <div class="col-md-6 col-md-offset-3 relative">
 
-                                        {!! Form::textarea( 'body', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
+                                        <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::textarea( 'body', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.homepage-contact-placeholder-3' ), 'required' ] ) !!}
 
                                         <!-- ERROR -->
                                         @if( $errors->has( 'body' ) )

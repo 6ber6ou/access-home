@@ -37,9 +37,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ ( $errors->has( 'username' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ ( $errors->has( 'username' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    {!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-username-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-username-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'username' ) )
@@ -75,9 +75,9 @@
 	                <div class="col-md-4 col-md-offset-4">
 
 			            <!-- FORM GROUP -->
-			            <div class="form-group{{ ( $errors->has( 'password' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
+			            <div class="form-group relative{{ ( $errors->has( 'password' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    {!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-password-placeholder' ), 'required' ] ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-password-placeholder' ), 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password' ) )
@@ -86,7 +86,7 @@
 		                            <strong>{{ $errors->first( 'password' ) }}</strong>
 		                        </span>
 
-		                    @elseif( preg_match( '/error/', session( 'message' ) ) )
+		                    @elseif( preg_match( '/error|Erreur/i', session( 'message' ) ) )
 
 		                        <span class="help-block">
 		                            <strong>{{ trans( 'webpage-text.login-not-valid' ) }}</strong>

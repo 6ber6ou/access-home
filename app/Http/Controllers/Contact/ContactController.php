@@ -44,8 +44,7 @@ class ContactController extends Controller
                 if( $result->success )
                     {
 
-                    $mailer->to( config( 'mail.from.address' ) )
-                           ->send( new ContactMail( $name, $email, $body ) );
+                    $this->sendEmail( $mailer, $name, $email, $body );
 
                     return redirect( '/#contact' )->with( 'message', 'success|' . trans( 'webpage-text.contact-success-notification' ) );
 
@@ -62,7 +61,26 @@ class ContactController extends Controller
 
                 }
 
+            else
+                {
+
+                $this->sendEmail( $mailer, $name, $email, $body );
+
+                return redirect( '/#contact' )->with( 'message', 'success|' . trans( 'webpage-text.contact-success-notification' ) );
+
+                }
+
             }
+
+        }
+
+    // ============================================================
+
+    private function sendEmail( $mailer, $name, $email, $body )
+        {
+
+        $mailer->to( config( 'mail.from.address' ) )
+               ->send( new ContactMail( $name, $email, $body ) );
 
         }
 
