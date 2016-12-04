@@ -7839,6 +7839,10 @@ header {
   list-style: none;
   font-size: 90%;
   float: right; }
+  .main-nav .dropdown-content {
+    top: 34px; }
+    .main-nav .dropdown-content a {
+      color: #555 !important; }
   .main-nav li {
     margin-left: 25px;
     display: inline-block; }
@@ -7873,18 +7877,18 @@ header {
   height: auto; }
   .small-navigation .main-nav {
     margin-top: 17px !important; }
+    .small-navigation .main-nav .dropdown-content {
+      top: 39px; }
   .small-navigation nav {
     box-shadow: 0 2px 2px #efefef; }
-    .small-navigation nav li {
-      letter-spacing: -1px; }
-      .small-navigation nav li a:link, .small-navigation nav li a:visited {
-        border-bottom: 3px solid transparent !important;
-        padding: 18px 0 13px 0;
-        color: #555;
-        font-size: 80% !important; }
-      .small-navigation nav li a:hover, .small-navigation nav li a:active {
-        border-bottom: 3px solid #e67e22 !important;
-        padding-bottom: 13px; }
+    .small-navigation nav li a:link, .small-navigation nav li a:visited {
+      border-bottom: 3px solid transparent !important;
+      padding: 18px 0 13px 0;
+      color: #555;
+      font-size: 80% !important; }
+    .small-navigation nav li a:hover, .small-navigation nav li a:active {
+      border-bottom: 3px solid #e67e22 !important;
+      padding-bottom: 13px; }
   .small-navigation .logo-black {
     margin: 5px 0 10px 0;
     height: 40px;
@@ -7909,6 +7913,8 @@ header {
   .sticky .main-nav {
     margin-top: 20px;
     font-size: 80%; }
+    .sticky .main-nav .dropdown-content {
+      top: 42px; }
     .sticky .main-nav li a:link, .sticky .main-nav li a:visited {
       border-bottom: 3px solid transparent !important;
       padding: 8px 0 16px 0;

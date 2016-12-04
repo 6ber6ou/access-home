@@ -49,7 +49,31 @@
 
                                     @if( Sentinel::check() )
 
-                                        <a href="{{ route( 'profile' ) }}"><img src="{{ asset( Sentinel::getUser()->avatar ) }}" class="small-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}"> {!! str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.homepage-top-link-6' ) ) !!}</a>
+                                        {{-- <a href="{{ route( 'profile' ) }}"><img src="{{ asset( Sentinel::getUser()->avatar ) }}" class="small-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}"> {!! str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.homepage-top-link-6' ) ) !!}</a> --}}
+
+                                        <!-- DROPDOWN -->
+                                        <div class="dropdown">
+
+                                            <a href="" onclick="return false;"><img src="{{ asset( Sentinel::getUser()->avatar ) }}" class="small-avatar" alt="{!! trans( 'webpage-text.user-avatar-alt' ) !!}"> {!! ucfirst( str_replace( '__USERNAME__', Sentinel::getUser()->username, trans( 'webpage-text.top-link-1' ) ) ) !!}</a>
+
+                                            <!-- DROPDOWN CONTENT -->
+                                            <div class="dropdown-content" style="z-index : 9999;">
+
+                                                <a href="{{ route( 'profile' ) }}">{!! trans( 'webpage-text.top-link-1-1' ) !!}</a>
+
+                                                <a href="{{ route( 'my-ads' ) }}">{!! trans( 'webpage-text.top-link-1-2' ) !!}</a>
+
+                                                {!! Form::open( [ 'route' => 'logout', 'id' => 'logout-form' ] ) !!}
+
+                                                    <a href="#" onclick="$( '#logout-form' ).submit()">{!! trans( 'webpage-text.top-link-1-3' ) !!}</a>
+
+                                                {!! Form::close() !!}
+
+                                            </div>
+                                            <!-- End ... DROPDOWN CONTENT -->
+
+                                        </div>
+                                        <!-- End ... DROPDOWN -->
 
                                     @else
 

@@ -868,6 +868,14 @@ header
 	list-style : none;
 	font-size : 90%;
 	float : right;
+	.dropdown-content
+		{
+		top : 34px;
+		a
+			{
+			color : $grey-font !important;
+			}
+		}
 	li
 		{
 		margin-left : 25px;
@@ -919,13 +927,16 @@ header
 	.main-nav
 		{
 		margin-top : 17px !important;
+		.dropdown-content
+			{
+			top : 39px;
+			}
 		}
 	nav
 		{
 		box-shadow : 0 2px 2px #efefef;
 		li
 			{
-			letter-spacing : -1px;
 			a:link, a:visited
 				{
 				border-bottom : 3px solid transparent !important;
@@ -974,6 +985,10 @@ header
 		{
 		margin-top : 20px;
 		font-size : 80%;
+		.dropdown-content
+			{
+			top : 42px;
+			}
 		li
 			{
 			a:link, a:visited
