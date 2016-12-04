@@ -47,7 +47,9 @@ elixir( ( mix ) =>
         'custom/init_peek_a_bar.js',
         'custom/sticky_footer.js',
         'jquery-form/jquery-form.js',
-        'custom/upload_user_avatar.js'
+        'custom/upload_user_avatar.js',
+        'illbeback/illbeback.min.js',
+        'custom/init_illbeback.js'
 
         ], 'public/js/custom.js' );
 

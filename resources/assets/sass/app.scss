@@ -1106,7 +1106,9 @@ a:active
 	}
 
 a.simple-link:link,
-a.simple-link:visited
+a.simple-link:visited,
+a.link-invisible:link,
+a.link-invisible:visited
 	{
 	border-bottom : 1px solid transparent;
 	color : $grey-font !important;
@@ -1117,6 +1119,12 @@ a.simple-link:hover,
 a.simple-link:active
 	{
 	border-bottom : 1px solid $orange;
+	}
+
+a.link-invisible:hover,
+a.link-invisible:active
+	{
+	border-bottom : 1px solid transparent;
 	}
 
 /* ------------------------------------------------------------ */

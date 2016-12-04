@@ -162,6 +162,10 @@
         </footer>
         <!-- End ... FOOTER -->
 
+        <!-- SCROLL TO TOP -->
+        <a href="" class="link-invisible" id="scroll-to-top"></a>
+        <!-- End ...SCROLL TO TOP -->
+
     </div>
     <!-- End ... CONTAINER FLUID -->
 
