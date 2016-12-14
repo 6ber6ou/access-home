@@ -263,6 +263,7 @@ input[type=submit] {
 
 .card-thumb {
   background-color: black;
+  border-bottom: 2px solid #f4f4f4 !important;
   height: 235px;
   overflow: hidden;
   -webkit-transition: height 0.3s;
@@ -287,7 +288,7 @@ input[type=submit] {
 .card-location {
   background-color: #e67e22;
   position: absolute;
-  top: -25px;
+  top: -27px;
   left: 0;
   padding: 0 15px;
   height: 25px;

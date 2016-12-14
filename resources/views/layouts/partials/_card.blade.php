@@ -4,7 +4,7 @@
     <article class="card">
 
         <div class="card-thumb">
-            <a href="#"><img src="{{ asset( 'uploads/housing/housing-1.jpg' ) }}" alt="{!! trans( 'webpage-text.card-image-alt' ); !!}"></a>
+            <a href="#"><img src="{{ asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.card-image-alt' ); !!}"></a>
         </div>
 
         <div class="card-date">
