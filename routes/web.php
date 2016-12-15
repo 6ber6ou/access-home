@@ -61,6 +61,8 @@ Route::get( '/profile', [ 'as' => 'profile', 'uses' => 'User\UserController@prof
 Route::post( '/profile', [ 'as' => 'post-profile', 'uses' => 'User\UserController@post_profile' ] );
 Route::post( '/new-password', [ 'as' => 'new-password', 'uses' => 'User\UserController@new_password' ] );
 Route::post( '/upload-avatar', [ 'as' => 'upload-avatar', 'uses' => 'User\UserController@upload_avatar' ] );
+// Route::post( '/exchange-type', [ 'as' => 'exchange-type', 'uses' => 'User\UserController@exchange_type' ] );
+Route::post( '/user-description', [ 'as' => 'user-description', 'uses' => 'User\UserController@user_description' ] );
 
 // ------------------------------------------------------------
 

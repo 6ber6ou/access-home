@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
+use Sentinel;
+
 class AdsController extends Controller
     {
 
@@ -49,6 +51,13 @@ class AdsController extends Controller
 
     public function show( $id )
         {
+
+        show_notification();
+
+        $page = 'show-ads';
+
+        return view( 'ads.show', compact( 'page' ) );
+
         }
 
     // ------------------------------------------------------------

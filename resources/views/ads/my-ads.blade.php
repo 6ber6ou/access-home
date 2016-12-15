@@ -11,7 +11,7 @@
         <div class="row">
 
             <h2>
-                {!! trans( 'webpage-text.user-my-adds-h2' ) !!}
+                {!! trans( 'webpage-text.user-my-ads-h2' ) !!}
             </h2>
 
         </div>

@@ -23,11 +23,19 @@ return
 	// ADDS
 	// ****
 
-	'adds-h2'							=>		'Annonces',
-	'create-adds-h2'					=>		'Créer une annonces',
+	'ads-h2'							=>		'Annonces',
+	'create-ads-h2'						=>		'Créer une annonces',
 	'show-ads-link'						=>		'Voir les annonces',
 	'create-ad-link'					=>		'Créer une annonce',
 	'my-ads-link'						=>		'Mes annonces',
+	'show-ads-h2'						=>		'Annonce',
+	'ad-tab-accessibility'				=>		'Accessibilité',
+	'ad-tab-equipments'					=>		'Equipements',
+	'ad-tab-rooms'						=>		'Pièces',
+	'ad-tab-environment'				=>		'Environnement',
+	'ad-tab-rules'						=>		'Règlement',
+	'ad-tab-map'						=>		'Carte',
+	'ad-picture-alt'					=>		'Photo annonce',
 
 	// ------------------------------------------------------------
 
@@ -209,7 +217,7 @@ return
 	'registration-email-placeholder'		=>		"Votre e-mail...",
 	'registration-username-placeholder'		=>		"Votre pseudo...",
 	'registration-password-placeholder'		=>		"Votre mot de passe...",
-	'registration-password-confirmation-placeholder'	=>		"Confirmer le  mot de passe...",
+	'registration-password-confirmation-placeholder' =>		"Confirmer le  mot de passe...",
 	'registration-submit'					=>		"Créer",
 
 	// ------------------------------------------------------------
@@ -239,7 +247,9 @@ return
 	// ****
 
 	'user-profil-h2'						=>		"Mon profil",
-	'user-my-adds-h2'						=>		"Mes annonces",
-	'user-avatar-alt'						=>		"Avatar"
+	'user-my-ads-h2'						=>		"Mes annonces",
+	'user-avatar-alt'						=>		"Avatar",
+	'user-description-placeholder'			=>		"Quel type de logement adapté recherchez-vous...",
+	'user-description-submit'				=>		"Valider"
 
 	];

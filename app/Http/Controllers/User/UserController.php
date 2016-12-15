@@ -5,6 +5,7 @@ use AH\Http\Controllers\Controller;
 
 use AH\Http\Requests\ModifyUserPasswordRequest;
 use AH\Http\Requests\ModifyUserProfileRequest;
+use AH\Http\Requests\UserDescriptionRequest;
 use AH\User;
 use Image;
 use Sentinel;
@@ -97,8 +98,6 @@ class UserController extends Controller
 	public function upload_avatar( Request $request )
 		{
 
-		// Faire validation pour JPG, JPEG, GIF, PNG, BMP, TIFF, TGA
-
 		if( $request->hasFile( 'avatar' ) )
 			{
 
@@ -122,6 +121,41 @@ class UserController extends Controller
 			$request->session()->flash( 'message', 'success|' . trans( 'webpage-text.avatar-upload-notification' ) );
 
 			return asset( Sentinel::getUser()->avatar );
+
+			}
+
+		}
+
+	// ------------------------------------------------------------
+
+	public function user_description( UserDescriptionRequest $request )
+		{
+
+		try
+			{
+
+		    $user = Sentinel::findUserById( Sentinel::getUser()->id );
+		    $user->description = $request->input( 'description' );
+
+
+		    if( $user->update() )
+		    	{
+
+				return redirect()->back()->with( 'message', 'success|' . trans( 'webpage-text.user-update-notification' ) );
+
+		    	}
+		    else
+		    	{
+
+				return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.user-update-error-notification' ) );
+
+		    	}
+
+			}
+		catch( Cartalyst\Sentry\Users\UserNotFoundException $e )
+			{
+
+			return redirect()->back()->with( 'message', 'error|' . trans( 'webpage-text.user-not-found-notification' ) );
 
 			}
 

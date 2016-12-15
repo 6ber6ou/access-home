@@ -41,7 +41,7 @@
             &nbsp; - &nbsp;
             <a href="#"><i class="ion-ios-chatbubble-outline">&nbsp; 2 {!! trans( 'webpage-text.card-comments-text' ) !!}</i></a>
             &nbsp; - &nbsp;
-            <a href="#"><i class="ion-ios-eye-outline">&nbsp; {!! trans( 'webpage-text.card-see-all-text' ) !!}</i></a>
+            <a href="{{ route( 'ads.show', 1 ) }}"><i class="ion-ios-eye-outline">&nbsp; {!! trans( 'webpage-text.card-see-all-text' ) !!}</i></a>
 
         </div>
 

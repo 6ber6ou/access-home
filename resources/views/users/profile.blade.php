@@ -317,4 +317,80 @@
         </div>
         <!-- End ...ROW -->
 
+        <!-- ROW -->
+        <div class="row">
+
+            <!-- COL MD 8 -->
+            <div class="col-md-8 col-md-offset-2 text-center">
+
+                <h3 class="text-center" style="margin-top : 20px;">
+                    Description
+                </h3>
+
+            </div>
+            <!-- End ... COL MD 8 -->
+
+        </div>
+        <!-- End ... ROW -->
+
+        {!! Form::model( Sentinel::getUser(), [ 'route' => 'user-description', 'class' => 'new-password-form', 'id' => 'new-password-form' ] ) !!}
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- ROW -->
+            <div class="row">
+
+                <!-- FORM GROUP -->
+                <div class="form-group{{ $errors->has( 'description' ) ? ' has-error' : '' }}">
+
+                    <!-- COL MD 8 -->
+                    <div class="col-md-8 col-md-offset-2 relative">
+
+                        <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::textarea( 'description', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.user-description-placeholder' ), 'required' ] ) !!}
+
+                        <!-- ERROR -->
+                        @if( $errors->has( 'description' ) )
+
+                            <span class="help-block">
+                                <strong>{{ $errors->first( 'description' ) }}</strong>
+                            </span>
+
+                        @endif
+                        <!-- End ... ERROR -->
+
+                    </div>
+                    <!-- COL MD 8 -->
+
+                </div>
+                <!-- End ... FORM GROUP -->
+
+            </div>
+            <!-- End ... ROW -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- ROW -->
+            <div class="row">
+
+                <!-- FORM GROUP -->
+                <div class="form-group">
+
+                    <!-- COL MD 8 -->
+                    <div class="col-md-8 col-md-offset-2">
+
+                        {!! Form::submit( trans( 'webpage-text.user-description-submit' ), [ 'class' => 'btn btn-full', 'id' => 'profile-submit-button' ] ) !!}
+
+                    </div>
+                    <!-- COL MD 8 -->
+
+                </div>
+                <!-- End ... FORM GROUP -->
+
+            </div>
+            <!-- End ... ROW -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            {!! Form::close() !!}
+
 @stop

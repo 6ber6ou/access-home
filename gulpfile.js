@@ -36,6 +36,7 @@ elixir( ( mix ) =>
         [
 
         'jquery/dist/jquery.js',
+        'bootstrap/bootstrap.js',
         'waypoints/lib/jquery.waypoints.js',
         'custom/init_waypoint.js',
         'custom/scroll-to.js',

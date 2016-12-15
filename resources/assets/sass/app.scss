@@ -9,6 +9,60 @@
  @import "variables";
 
 /* ------------------------------------------------------------ */
+/* ADS */
+/* ------------------------------------------------------------ */
+
+.section-show-ads
+	{
+	.subtitle
+		{
+		color : $orange;
+		text-align : center !important;
+		}
+	img
+		{
+		margin-top : 30px;
+		}
+	.description
+		{
+		margin-top : 30px;
+		font-size : 80%;
+		text-align : justify;
+		}
+	.profile
+		{
+		margin-top : 30px;
+		text-align : center;
+		img
+			{
+			border : 2px solid $light-grey !important;
+			border-radius : 50%;
+			margin-top : 0;
+			padding : 5px;
+			}
+		}
+	ul
+		{
+		margin-top : 30px;
+		li a
+			{
+			font-size : 80%;
+			}
+		}
+	.tab-content
+		{
+		margin-top : 10px;
+		font-size : 80%;
+		}
+	.user-description
+		{
+		margin-bottom : 30px;
+		font-size : 80%;
+		text-align : justify;
+		}
+	}
+
+/* ------------------------------------------------------------ */
 /* ANIMATIONS */
 /* ------------------------------------------------------------ */
 
