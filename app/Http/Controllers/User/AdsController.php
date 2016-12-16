@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
+use AH\Ad;
 use Sentinel;
 
 class AdsController extends Controller
@@ -55,8 +56,9 @@ class AdsController extends Controller
         show_notification();
 
         $page = 'show-ads';
+        $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
 
-        return view( 'ads.show', compact( 'page' ) );
+        return view( 'ads.show', compact( 'page', 'ad' ) );
 
         }
 

@@ -137,7 +137,6 @@ class UserController extends Controller
 		    $user = Sentinel::findUserById( Sentinel::getUser()->id );
 		    $user->description = $request->input( 'description' );
 
-
 		    if( $user->update() )
 		    	{
 

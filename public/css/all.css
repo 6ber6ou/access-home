@@ -7265,6 +7265,28 @@ button.close {
   font-size: 80%;
   text-align: justify; }
 
+.section-show-ads .price {
+  background-color: #e67e22;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: 130px;
+  padding-top: 15px;
+  width: 80px;
+  height: 80px;
+  line-height: 25px;
+  color: white;
+  text-align: center; }
+
+.section-show-ads .tab-content {
+  margin-top: 20px; }
+  .section-show-ads .tab-content i {
+    padding-left: 10px; }
+  .section-show-ads .tab-content .row {
+    margin-bottom: 15px; }
+  .section-show-ads .tab-content strong {
+    padding-left: 10px; }
+
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
 /* ------------------------------------------------------------ */
@@ -7677,6 +7699,12 @@ input[type=submit] {
 
 .relative {
   position: relative !important; }
+
+.success {
+  color: #5cb85c; }
+
+.error {
+  color: #d9534f; }
 
 /* ------------------------------------------------------------ */
 /* CONTACT FORM */
