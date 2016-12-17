@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use AH\Http\Controllers\Controller;
 
 use AH\Ad;
+use JavaScript;
 use Sentinel;
 
 class AdsController extends Controller
@@ -57,6 +58,13 @@ class AdsController extends Controller
 
         $page = 'show-ads';
         $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
+
+        JavaScript::put(
+            [
+
+            'my_address' => $ad->address . ' ' . $ad->zip . ' ' . $ad->city . ' ' . $ad->country
+
+            ] );
 
         return view( 'ads.show', compact( 'page', 'ad' ) );
 

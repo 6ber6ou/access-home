@@ -145,23 +145,23 @@
                 <ul class="nav nav-tabs nav-justified">
 
                     <li class="active">
-                        <a href="#accessibility" data-toggle="tab">{!! trans( 'webpage-text.ad-tab-accessibility' ) !!}</a>
+                        <a href="#accessibility" data-toggle="tab" id="tab_1">{!! trans( 'webpage-text.ad-tab-accessibility' ) !!}</a>
                     </li>
 
                     <li>
-                        <a href="#equipments" data-toggle="tab">{!! trans( 'webpage-text.ad-tab-equipments' ) !!}</a>
+                        <a href="#equipments" data-toggle="tab" id="tab_2">{!! trans( 'webpage-text.ad-tab-equipments' ) !!}</a>
                     </li>
 
                     <li>
-                        <a href="#rooms" data-toggle="tab">{!! trans( 'webpage-text.ad-tab-rooms' ) !!}</a>
+                        <a href="#rooms" data-toggle="tab" id="tab_3">{!! trans( 'webpage-text.ad-tab-rooms' ) !!}</a>
                     </li>
 
                     <li>
-                        <a href="#rules" data-toggle="tab">{!! trans( 'webpage-text.ad-tab-rules' ) !!}</a>
+                        <a href="#rules" data-toggle="tab" id="tab_4">{!! trans( 'webpage-text.ad-tab-rules' ) !!}</a>
                     </li>
 
                     <li>
-                        <a href="#map" data-toggle="tab">{!! trans( 'webpage-text.ad-tab-map' ) !!}</a>
+                        <a href="#address" data-toggle="tab" id="tab_5">{!! trans( 'webpage-text.ad-tab-map' ) !!}</a>
                     </li>
 
                 </ul>
@@ -479,7 +479,7 @@
                     <!-- End ... RULES -->
 
                     <!-- MAP -->
-                    <div class="tab-pane fade text-center" id="map">
+                    <div class="tab-pane fade text-center" id="address">
 
                         {{ $ad->address }}
                         <br>
@@ -491,10 +491,69 @@
                 </div>
                 <!-- End ... TAB CONTENT -->
 
+                <!-- MAP -->
+                <div id="map">
+                </div>
+                <!-- End ...MAP -->
+
             </div>
             <!-- End ... COL MD 12 -->
 
         </div>
         <!-- End ... ROW -->
+
+        <script>
+
+            var map;
+
+            function initMap()
+                {
+
+                map = new google.maps.Map( document.getElementById( 'map' ),
+                    {
+
+                    center: { lat : 35, lng : -85 },
+                    zoom: 16
+
+                    } );
+
+                var geocoder = new google.maps.Geocoder();
+                var address = my_address;
+
+                geocoder.geocode( { address : address }, function( results, status )
+                    {
+
+                    if( status === google.maps.GeocoderStatus.OK  )
+                        {
+
+                        var myOptions =
+                            {
+
+                            zoom: 16,
+                            center: results[0].geometry.location,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+
+                            }
+
+                        map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+                        var marker = new google.maps.Marker(
+                            {
+
+                            map: map,
+                            position: results[ 0 ].geometry.location
+
+                            } );
+
+                        }
+
+                    } );
+
+                }
+
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCloPB2xIw-U4mx1zx_Z4FHpz3INzAP06U&callback=initMap"
+        async defer></script>
 
 @stop

@@ -50,7 +50,8 @@ elixir( ( mix ) =>
         'jquery-form/jquery-form.js',
         'custom/upload_user_avatar.js',
         'illbeback/illbeback.min.js',
-        'custom/init_illbeback.js'
+        'custom/init_illbeback.js',
+        'custom/show_map.js'
 
         ], 'public/js/custom.js' );
 
