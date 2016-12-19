@@ -31,7 +31,7 @@
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		        <!-- ROW -->
-		        <div class="row">
+		        <div class="row" style="margin-bottom : 0;">
 
 	                <!-- COL MD 4 -->
 	                <div class="col-md-4 col-md-offset-4">
@@ -39,7 +39,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ ( $errors->has( 'username' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-username-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'username', trans( 'webpage-text.login-username-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'username' ) )
@@ -77,7 +78,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ ( $errors->has( 'password' ) || preg_match( '/error/', session( 'message' ) ) ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.login-password-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'password', trans( 'webpage-text.login-password-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password' ) )

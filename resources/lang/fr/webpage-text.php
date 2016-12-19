@@ -24,7 +24,7 @@ return
 	// ****
 
 	'ads-h2'							=>		'Annonces',
-	'create-ads-h2'						=>		'Créer une annonces',
+	'create-ads-h2'						=>		'Créer une annonce',
 	'show-ads-link'						=>		'Voir les annonces',
 	'create-ad-link'					=>		'Créer une annonce',
 	'my-ads-link'						=>		'Mes annonces',

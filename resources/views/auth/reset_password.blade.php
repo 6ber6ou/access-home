@@ -39,7 +39,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ $errors->has( 'reset-password' ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::email( 'reset-password', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.reset-password-email-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'reset-password', trans( 'webpage-text.reset-password-email-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::email( 'reset-password', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'reset-password' ) )

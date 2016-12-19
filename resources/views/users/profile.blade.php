@@ -77,12 +77,12 @@
 
                 </div>
 
-                {!! Form::model( Sentinel::getUser(), [ 'route' => 'post-profile', 'class' => 'profile-form', 'id' => 'profile-form' ] ) !!}
+                {!! Form::model( Sentinel::getUser(), [ 'route' => 'post-profile', 'class' => 'profile-form', 'style' => 'margin-top : 0', 'id' => 'profile-form' ] ) !!}
 
                     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
                     <!-- ROW -->
-                    <div class="row">
+                    <div class="row" style="margin-bottom : 0;">
 
                         <!-- FORM GROUP -->
                         <div class="form-group{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
@@ -90,7 +90,8 @@
                             <!-- COL MD 8 -->
                             <div class="col-md-8 col-md-offset-4 relative">
 
-                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-1' ), 'required' ] ) !!}
+                                {!! Form::label( 'username', trans( 'webpage-text.profile-placeholder-1' ) ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'username' ) )
@@ -122,7 +123,8 @@
                             <!-- COL MD 8 -->
                             <div class="col-md-8 col-md-offset-4 relative">
 
-                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.profile-placeholder-2' ), 'required' ] ) !!}
+                               {!! Form::label( 'email', trans( 'webpage-text.profile-placeholder-2' ) ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'email' ) )
@@ -187,12 +189,12 @@
 
                 </div>
 
-                {!! Form::open( [ 'route' => 'new-password', 'class' => 'new-password-form', 'id' => 'new-password-form' ] ) !!}
+                {!! Form::open( [ 'route' => 'new-password', 'class' => 'new-password-form', 'style' => 'margin-top : 0', 'id' => 'new-password-form' ] ) !!}
 
                     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
                     <!-- ROW -->
-                    <div class="row">
+                    <div class="row" style="margin-bottom : 0">
 
                         <!-- FORM GROUP -->
                         <div class="form-group{{ $errors->has( 'old_password' ) ? ' has-error' : '' }}">
@@ -200,7 +202,8 @@
                             <!-- COL MD 8 -->
                             <div class="col-md-8 relative">
 
-                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'old_password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-1' ), 'required' ] ) !!}
+                               {!! Form::label( 'old_password', trans( 'webpage-text.new-password-placeholder-1' ) ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'old_password', [ 'class' => 'form-control', 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'old_password' ) )
@@ -224,7 +227,7 @@
                     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
                     <!-- ROW -->
-                    <div class="row">
+                    <div class="row" style="margin-bottom : 0">
 
                         <!-- FORM GROUP -->
                         <div class="form-group{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
@@ -232,7 +235,8 @@
                             <!-- COL MD 8 -->
                             <div class="col-md-8 relative">
 
-                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-2' ), 'required' ] ) !!}
+                              {!! Form::label( 'password', trans( 'webpage-text.new-password-placeholder-2' ) ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'password' ) )
@@ -264,7 +268,8 @@
                             <!-- COL MD 8 -->
                             <div class="col-md-8 relative">
 
-                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.new-password-placeholder-3' ), 'required' ] ) !!}
+                                {!! Form::label( 'password_confirmation', trans( 'webpage-text.new-password-placeholder-3' ) ) !!}
+                                <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'required' ] ) !!}
 
                                 <!-- ERROR -->
                                 @if( $errors->has( 'password_confirmation' ) )
@@ -323,7 +328,7 @@
             <!-- COL MD 8 -->
             <div class="col-md-8 col-md-offset-2 text-center">
 
-                <h3 class="text-center" style="margin-top : 20px;">
+                <h3 class="text-center" style="margin-top : 20px; margin-bottom : 4px;">
                     Description
                 </h3>
 
@@ -333,7 +338,7 @@
         </div>
         <!-- End ... ROW -->
 
-        {!! Form::model( Sentinel::getUser(), [ 'route' => 'user-description', 'class' => 'new-password-form', 'id' => 'new-password-form' ] ) !!}
+        {!! Form::model( Sentinel::getUser(), [ 'route' => 'user-description', 'class' => 'new-password-form', 'top' => 'margin-top : 0;', 'id' => 'new-password-form' ] ) !!}
 
             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -346,7 +351,8 @@
                     <!-- COL MD 8 -->
                     <div class="col-md-8 col-md-offset-2 relative">
 
-                        <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::textarea( 'description', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.user-description-placeholder' ), 'required' ] ) !!}
+                        {!! Form::label( 'description', trans( 'webpage-text.user-description-placeholder' ) ) !!}
+                         <i class="ion-star mandatory" style="left : -3px;"></i>{!! Form::textarea( 'description', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
                         <!-- ERROR -->
                         @if( $errors->has( 'description' ) )

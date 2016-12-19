@@ -31,7 +31,7 @@
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		        <!-- ROW -->
-		        <div class="row">
+		        <div class="row" style="margin-bottom : 0;">
 
 	                <!-- COL MD 4 -->
 	                <div class="col-md-4 col-md-offset-4">
@@ -39,7 +39,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ $errors->has( 'username' ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-username-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'username', trans( 'webpage-text.registration-username-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::text( 'username', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'username' ) )
@@ -63,7 +64,7 @@
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		        <!-- ROW -->
-		        <div class="row">
+		        <div class="row" style="margin-bottom : 0;">
 
 	                <!-- COL MD 4 -->
 	                <div class="col-md-4 col-md-offset-4">
@@ -71,7 +72,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ $errors->has( 'email' ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-email-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'email', trans( 'webpage-text.registration-email-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::email( 'email', NULL, [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'email' ) )
@@ -99,7 +101,7 @@
 				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		        <!-- ROW -->
-		        <div class="row">
+		        <div class="row" style="margin-bottom : 0;">
 
 	                <!-- COL MD 4 -->
 	                <div class="col-md-4 col-md-offset-4">
@@ -107,7 +109,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ $errors->has( 'password' ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'password', trans( 'webpage-text.registration-password-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password', [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password' ) )
@@ -139,7 +142,8 @@
 			            <!-- FORM GROUP -->
 			            <div class="form-group relative{{ $errors->has( 'password_confirmation' ) ? ' has-error' : '' }}">
 
-		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'placeholder' => trans( 'webpage-text.registration-password-confirmation-placeholder' ), 'required' ] ) !!}
+							{!! Form::label( 'password_confirmation', trans( 'webpage-text.registration-password-confirmation-placeholder' ) ) !!}
+		                    <i class="ion-star mandatory"></i>{!! Form::password( 'password_confirmation', [ 'class' => 'form-control', 'required' ] ) !!}
 
 		                    <!-- ERROR -->
 		                    @if( $errors->has( 'password_confirmation' ) )
