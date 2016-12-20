@@ -51,7 +51,14 @@ elixir( ( mix ) =>
         'custom/upload_user_avatar.js',
         'illbeback/illbeback.min.js',
         'custom/init_illbeback.js',
-        'custom/show_map.js'
+        'custom/show_map.js',
+        'custom/upload_ad_photo.js',
+        'custom/upload_ad_photo_1.js',
+        'custom/upload_ad_photo_2.js',
+        'custom/upload_ad_photo_3.js',
+        'custom/upload_ad_photo_4.js',
+        'custom/upload_ad_photo_5.js',
+        'custom/upload_ad_photo_6.js'
 
         ], 'public/js/custom.js' );
 

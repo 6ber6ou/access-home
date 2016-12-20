@@ -8,6 +8,27 @@ Route::resource( 'ads', 'User\AdsController' );
 
 Route::get( '/my-ads', [ 'as' => 'my-ads', 'uses' => 'User\AdsController@my_adds' ] );
 
+Route::post( '/upload-ad-primary-photo', [ 'as' => 'upload-ad-primary-photo', 'uses' => 'User\AdsController@upload_ad_primary_photo' ] );
+Route::post( '/delete-ad-primary-photo', [ 'as' => 'delete-ad-primary-photo', 'uses' => 'User\AdsController@delete_ad_primary_photo' ] );
+
+Route::post( '/upload-ad-photo-1', [ 'as' => 'upload-ad-photo-1', 'uses' => 'User\AdsController@upload_ad_photo_1' ] );
+Route::post( '/delete-ad-photo-1', [ 'as' => 'delete-ad-photo-1', 'uses' => 'User\AdsController@delete_ad_photo_1' ] );
+
+Route::post( '/upload-ad-photo-2', [ 'as' => 'upload-ad-photo-2', 'uses' => 'User\AdsController@upload_ad_photo_2' ] );
+Route::post( '/delete-ad-photo-2', [ 'as' => 'delete-ad-photo-2', 'uses' => 'User\AdsController@delete_ad_photo_2' ] );
+
+Route::post( '/upload-ad-photo-3', [ 'as' => 'upload-ad-photo-3', 'uses' => 'User\AdsController@upload_ad_photo_3' ] );
+Route::post( '/delete-ad-photo-3', [ 'as' => 'delete-ad-photo-3', 'uses' => 'User\AdsController@delete_ad_photo_3' ] );
+
+Route::post( '/upload-ad-photo-4', [ 'as' => 'upload-ad-photo-4', 'uses' => 'User\AdsController@upload_ad_photo_4' ] );
+Route::post( '/delete-ad-photo-4', [ 'as' => 'delete-ad-photo-4', 'uses' => 'User\AdsController@delete_ad_photo_4' ] );
+
+Route::post( '/upload-ad-photo-5', [ 'as' => 'upload-ad-photo-5', 'uses' => 'User\AdsController@upload_ad_photo_5' ] );
+Route::post( '/delete-ad-photo-5', [ 'as' => 'delete-ad-photo-5', 'uses' => 'User\AdsController@delete_ad_photo_5' ] );
+
+Route::post( '/upload-ad-photo-6', [ 'as' => 'upload-ad-photo-6', 'uses' => 'User\AdsController@upload_ad_photo_6' ] );
+Route::post( '/delete-ad-photo-6', [ 'as' => 'delete-ad-photo-6', 'uses' => 'User\AdsController@delete_ad_photo_6' ] );
+
 // ------------------------------------------------------------
 
 // **************

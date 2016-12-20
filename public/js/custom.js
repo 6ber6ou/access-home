@@ -12812,4 +12812,396 @@ $( document ).ready( function()
 
 	} );
 
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-primary-photo' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-primary-photo-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-primary-photo' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-primary-photo' ).on( 'change', function()
+		{
+
+		$( '#ad-primary-photo-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-1' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-1-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-1' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-1' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-1-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-2' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-2-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-2' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-2' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-2-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-3' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-3-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-3' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-3' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-3-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-4' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-4-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-4' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-4' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-4-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-5' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-5-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-5' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-5' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-5-form' ).submit();
+
+		} );
+
+	} );
+
+// ***************
+// UPLOAD AD PHOTO
+// ***************
+
+$( document ).ready( function()
+	{
+
+	$( '.progress-photo-6' ).hide();
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-6-form' ).ajaxForm(
+		{
+
+		beforeSend : function()
+			{
+
+			$( '.progress-photo-6' ).show();
+
+			},
+		uploadProgress : function( event, position, total, percentComplete )
+			{
+
+			$( '.progress-bar' ).width( percentComplete + '%' );
+			$( '.progress-bar .sr-only' ).html( percentComplete + '%' );
+
+			},
+		success : function()
+			{
+
+			$( '.progress' ).hide();
+
+			},
+		complete : function( response )
+			{
+
+			$( '.progress-bar' ).width( '0%' );
+			$( '.progress-bar .sr-only' ).html( '0%' );
+
+			window.location = $( '#redirect' ).val();
+
+			}
+
+		} );
+
+	// ------------------------------------------------------------
+
+	$( '#ad-photo-6' ).on( 'change', function()
+		{
+
+		$( '#ad-photo-6-form' ).submit();
+
+		} );
+
+	} );
+
 //# sourceMappingURL=custom.js.map

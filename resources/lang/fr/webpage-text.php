@@ -15,27 +15,89 @@ return
 	// META
 	// ****
 
-	'meta-description'						=>		"Avec Access Home échanger des logements accessibles aux handicapés.",
+	'meta-description'					=>		"Avec Access Home échanger des logements accessibles aux handicapés.",
 
 	// ------------------------------------------------------------
 
-	// ****
-	// ADDS
-	// ****
+	// ***
+	// ADS
+	// ***
 
-	'ads-h2'							=>		'Annonces',
-	'create-ads-h2'						=>		'Créer une annonce',
-	'show-ads-link'						=>		'Voir les annonces',
-	'create-ad-link'					=>		'Créer une annonce',
-	'my-ads-link'						=>		'Mes annonces',
-	'show-ads-h2'						=>		'Annonce',
-	'ad-tab-accessibility'				=>		'Accessibilité',
-	'ad-tab-equipments'					=>		'Equipements',
-	'ad-tab-rooms'						=>		'Pièces',
-	'ad-tab-environment'				=>		'Environnement',
-	'ad-tab-rules'						=>		'Règlement',
-	'ad-tab-map'						=>		'Carte',
-	'ad-picture-alt'					=>		'Photo annonce',
+	'ads-h2'							=>		"Annonces",
+	'create-ads-h2'						=>		"Créer une annonce",
+	'show-ads-link'						=>		"Voir les annonces",
+	'create-ad-link'					=>		"Créer une annonce",
+	'my-ads-link'						=>		"Mes annonces",
+	'show-ads-h2'						=>		"Annonce",
+	'ad-tab-accessibility'				=>		"Accessibilité",
+	'ad-tab-equipments'					=>		"Equipements",
+	'ad-tab-rooms'						=>		"Pièces",
+	'ad-tab-environment'				=>		"Environnement",
+	'ad-tab-rules'						=>		"Règlement",
+	'ad-tab-map'						=>		"Carte",
+	'ad-picture-alt'					=>		"Photo annonce",
+	'upload-explication'				=>		"Cliquer sur les images pour uploader vos photos.",
+	'create-ad-phase-1-h3'				=>		"Informations générales",
+	'create-ad-title-placeholder'		=>		"Titre",
+	'create-ad-subtitle-placeholder'	=>		"Sous titre",
+	'create-ad-description-placeholder'	=>		"Description",
+	'create-ad-price-placeholder'		=>		"Prix",
+	'create-ad-currency-placeholder'	=>		"Devise",
+	'create-ad-period-placeholder'		=>		"Période",
+	'card-period-day'					=>		"jour",
+	'card-period-week'					=>		"semaine",
+	'card-period-month'					=>		"mois",
+	'create-ad-country-placeholder'		=>		"Pays",
+	'create-ad-city-placeholder'		=>		"Ville",
+	'create-ad-zip-placeholder'			=>		"Code postal",
+	'create-ad-address-placeholder'		=>		"Adresse",
+	'create-ad-phase-2-h3'				=>		"Accessibilité",
+	'create-ad-accessibility-1'			=>		"Rampe d'accès aux normes",
+	'create-ad-accessibility-2'			=>		"Ascenseur accessible",
+	'create-ad-accessibility-3'			=>		"Parking aux normes",
+	'create-ad-accessibility-4'			=>		"Jardin / cour accessible",
+	'create-ad-accessibility-5'			=>		"Chambres accessibles",
+	'create-ad-accessibility-6'			=>		"Couloirs aux normes",
+	'create-ad-accessibility-7'			=>		"Cuisine accessible",
+	'create-ad-accessibility-8'			=>		"Salle de bain accessible",
+	'create-ad-accessibility-9'			=>		"Douche accessible",
+	'create-ad-accessibility-10'		=>		"Baignoire accessible",
+	'create-ad-accessibility-11'		=>		"WC accessible",
+	'create-ad-accessibility-12'		=>		"Transports en communs accessible",
+	'create-ad-phase-3-h3'				=>		"Equipements",
+	'create-ad-equpement-1'				=>		"Télévision",
+	'create-ad-equpement-2'				=>		"Home cinéma",
+	'create-ad-equpement-3'				=>		"Ordinateur",
+	'create-ad-equpement-4'				=>		"Internet",
+	'create-ad-equpement-5'				=>		"WiFi",
+	'create-ad-equpement-6'				=>		"Téléphone",
+	'create-ad-equpement-7'				=>		"Lave vaisselle",
+	'create-ad-equpement-8'				=>		"Lave linge",
+	'create-ad-equpement-9'				=>		"Sèche linge",
+	'create-ad-equpement-10'			=>		"Four",
+	'create-ad-equpement-11'			=>		"Réfrigérateur",
+	'create-ad-equpement-12'			=>		"Congélateur",
+	'create-ad-equpement-13'			=>		"Micro ondes",
+	'create-ad-equpement-14'			=>		"Machine à café",
+	'create-ad-phase-4-h3'				=>		"Pièces",
+	'create-ad-room-1'					=>		"Salon",
+	'create-ad-room-2'					=>		"Salle à manger",
+	'create-ad-room-3'					=>		"Cuisine",
+	'create-ad-room-4'					=>		"Kitchenette",
+	'create-ad-room-5'					=>		"Salle de bain",
+	'create-ad-room-6'					=>		"WC séparé",
+	'create-ad-room-7'					=>		"Chambre double",
+	'create-ad-room-8'					=>		"Chambre simple",
+	'create-ad-room-9'					=>		"Garage",
+	'create-ad-room-10'					=>		"Cave",
+	'create-ad-nb-double-bed-placeholder' =>	"Nb. lits doubles",
+	'create-ad-nb-simple-bed-placeholder' =>	"Nb. lits simples",
+	'create-ad-nb-baby-bed-placeholder' =>		"Nb. lits d'enfants",
+	'create-ad-nb-sofa-bed-placeholder'	=>		"Nb. canapés lit",
+	'create-ad-housing-area-placeholder'=>		"Sureface",
+	'create-ad-m2-placeholder'			=>		"m2...",
+	'create-ad-nb-placeholder'			=>		"nb...",
+	'create-ad-create'					=>		"Créer",
 
 	// ------------------------------------------------------------
 
@@ -43,7 +105,7 @@ return
 	// ADMINISTRATION
 	// **************
 
-	'admin-h2'							=>		'Administration',
+	'admin-h2'								=>		"dministration",
 
 	// ------------------------------------------------------------
 
@@ -51,12 +113,12 @@ return
 	// CARD
 	// ****
 
-	'card-image-alt'					=>		'Photo logement',
-	'card-currency'						=>		'€',
-	'card-period'						=>		'jour',
-	'card-exchange-text'				=>		'échanges',
-	'card-comments-text'				=>		'commentaires',
-	'card-see-all-text'					=>		'voir la suite',
+	'card-image-alt'						=>		"Photo logement",
+	'card-currency'							=>		"€",
+	'card-period'							=>		"jour",
+	'card-exchange-text'					=>		"échanges",
+	'card-comments-text'					=>		"commentaires",
+	'card-see-all-text'						=>		"voir la suite",
 
 	// ------------------------------------------------------------
 
@@ -64,10 +126,10 @@ return
 	// FOOTER
 	// ******
 
-	'footer-link-1'						=>		"Plan du site",
-	'footer-link-2'						=>		"Conditions d'utilisation",
-	'footer-link-3'						=>		"Administrer",
-	'footer-copyright'					=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
+	'footer-link-1'							=>		"Plan du site",
+	'footer-link-2'							=>		"Conditions d'utilisation",
+	'footer-link-3'							=>		"Administrer",
+	'footer-copyright'						=>		"Copyright &copy; 2016 by <strong>www.access-home.com</strong>. Tous droits réservés.",
 
 	// ------------------------------------------------------------
 
@@ -154,14 +216,14 @@ return
 	// LOGIN
 	// *****
 
-	'login-h2'								=>		'Connexion',
-	'login-submit'							=>		'Connexion',
-	'login-username-placeholder'			=>		'Votre pseudo...',
-	'login-password-placeholder'			=>		'Votre mot de passe...',
-	'login-not-valid'						=>		'Identifiant incorrect !',
-	'reset-password-h2'						=>		'Mot de passe oublié',
-	'reset-password-email-placeholder'		=>		'Votre e-mail...',
-	'reset-password-submit'					=>		'Envoyer',
+	'login-h2'								=>		"Connexion",
+	'login-submit'							=>		"Connexion",
+	'login-username-placeholder'			=>		"Votre pseudo...",
+	'login-password-placeholder'			=>		"Votre mot de passe...",
+	'login-not-valid'						=>		"Identifiant incorrect !",
+	'reset-password-h2'						=>		"Mot de passe oublié",
+	'reset-password-email-placeholder'		=>		"Votre e-mail...",
+	'reset-password-submit'					=>		"Envoyer",
 
 	// ------------------------------------------------------------
 
@@ -188,6 +250,8 @@ return
 	'user-new-password-error-notification'	=>		"Mot de passe actuel inccorect !",
 	'user-new-password-notification'		=>		"Votre mot de passe a été changé avec succès !",
 	'avatar-upload-notification'			=>		"Votre avatar a bien été uploadé !",
+	'photo-upload-notification'				=>		"La photo a bien été uploadée !",
+	'ad-photo-deleted-notification'			=>		"La photo a bien été supprimée !",
 
 	// ------------------------------------------------------------
 
