@@ -58,7 +58,9 @@ elixir( ( mix ) =>
         'custom/upload_ad_photo_3.js',
         'custom/upload_ad_photo_4.js',
         'custom/upload_ad_photo_5.js',
-        'custom/upload_ad_photo_6.js'
+        'custom/upload_ad_photo_6.js',
+        'cookie/cookie.js',
+        'custom/create_ad_save_inputs.js'
 
         ], 'public/js/custom.js' );
 

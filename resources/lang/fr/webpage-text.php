@@ -252,6 +252,7 @@ return
 	'avatar-upload-notification'			=>		"Votre avatar a bien été uploadé !",
 	'photo-upload-notification'				=>		"La photo a bien été uploadée !",
 	'ad-photo-deleted-notification'			=>		"La photo a bien été supprimée !",
+	'ad-created-notification'				=>		"L'annonce a bien été créée !",
 
 	// ------------------------------------------------------------
 

@@ -8,8 +8,9 @@ class User extends SentinelUser
 
 	use Notifiable;
 
-    protected $fillable = [ 'username', 'email', 'password', 'avatar', 'permissions' ];
+	// ------------------------------------------------------------
 
+    protected $fillable = [ 'username', 'email', 'password', 'avatar', 'permissions' ];
     protected $loginNames = [ 'username' ];
 
 	}
