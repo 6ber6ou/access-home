@@ -7271,12 +7271,13 @@ button.close {
   background-color: #e67e22;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
-  right: 230px;
+  top: 0px;
+  right: 235px;
   padding-top: 15px;
-  width: 80px;
-  height: 80px;
-  line-height: 25px;
+  width: 70px;
+  height: 70px;
+  font-size: 90%;
+  line-height: 20px;
   color: white;
   text-align: center; }
 
@@ -8288,7 +8289,9 @@ section {
   .row {
     padding: 0 2%; }
   .steps-box img {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .price {
+    right: 220px !important; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 992 to 1023px */
@@ -8337,7 +8340,11 @@ section {
     .works-step div {
       padding-top: 8px; }
   .icon-small {
-    width: 20px; } }
+    width: 20px; }
+  .price {
+    right: 160px !important; }
+  .secondaries_photos {
+    text-align: center; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 821 to 991px */
@@ -8366,7 +8373,9 @@ section {
   .profile-form .form-group, .new-password-form .form-group {
     margin-bottom: 0; }
   .card {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .price {
+    right: 230px !important; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 768 to 820px */
@@ -8382,7 +8391,9 @@ section {
     .works-step-container .works-step div {
       position: relative;
       top: 0;
-      right: 0; } }
+      right: 0; }
+  .price {
+    right: 120px !important; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL PHONES to SMALL TABLETS from 481 to 767px */
@@ -8488,7 +8499,9 @@ section {
   .card {
     width: 100%; }
   #container_upload_primary_photo {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .price {
+    right: -5px !important; } }
 
 /*# sourceMappingURL=app.css.map */
 

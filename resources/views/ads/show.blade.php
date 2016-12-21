@@ -56,7 +56,7 @@
         <!-- End ... ROW -->
 
         <!-- ROW -->
-        <div class="row">
+        <div class="row secondaries_photos">
 
             <div class="col-md-2 gallery">
                 <img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
