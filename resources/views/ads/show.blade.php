@@ -38,19 +38,9 @@
 
             <!-- COL MD 8 -->
             <div class="col-md-8 col-md-offset-2 text-center">
-                <img src="{{ asset( $ad->primary_photo ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
+                <a href="{{ asset( str_replace ( 'thumbs', '', $ad->primary_photo ) ) }}" class="zoombox"><img src="{{ asset( $ad->primary_photo ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
              </div>
             <!-- End ... COL MD 8 -->
-
-            <!-- PRICE -->
-            <div class="price">
-
-                100 €
-                <br>
-                jour
-
-            </div>
-            <!-- End ... PRICE -->
 
         </div>
         <!-- End ... ROW -->
@@ -59,7 +49,7 @@
         <div class="row secondaries_photos">
 
             <div class="col-md-2 gallery">
-                <img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
+                <a href="{{ asset( str_replace( 'thumbs/', '', $ad->photo_1 ) ) }}" class="zoombox"><img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
             </div>
 
             <div class="col-md-2 gallery">

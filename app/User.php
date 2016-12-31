@@ -13,4 +13,13 @@ class User extends SentinelUser
     protected $fillable = [ 'username', 'email', 'password', 'avatar', 'permissions' ];
     protected $loginNames = [ 'username' ];
 
+	// ------------------------------------------------------------
+
+    public function ads()
+    	{
+
+    	return $this->hasMany( Ad::class );
+
+    	}
+
 	}

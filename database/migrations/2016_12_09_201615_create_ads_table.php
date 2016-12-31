@@ -18,9 +18,6 @@ class CreateAdsTable extends Migration
             $table->string( 'title' );
             $table->string( 'subtitle' );
             $table->text( 'description' );
-            $table->integer( 'price' );
-            $table->string( 'currency' );
-            $table->string( 'period' );
             $table->string( 'country' );
             $table->string( 'city' );
             $table->string( 'zip' );
@@ -71,6 +68,7 @@ class CreateAdsTable extends Migration
             $table->string( 'photo_3' )->nullable();
             $table->string( 'photo_4' )->nullable();
             $table->string( 'photo_5' )->nullable();
+            $table->string( 'photo_6' )->nullable();
             $table->integer( 'user_id' )->unsigned();
             $table->timestamps();
 

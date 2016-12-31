@@ -15,9 +15,6 @@ $( document ).ready( function()
 		$( '#title' ).blur( function() { Cookies.set( 'create_ad_title', $( this ).val() ); } );
 		$( '#subtitle' ).blur( function() { Cookies.set( 'create_ad_subtitle', $( this ).val() ); } );
 		$( '#description' ).blur( function() { Cookies.set( 'create_ad_description', $( this ).val() ); } );
-		$( '#price' ).blur( function() { Cookies.set( 'create_ad_price', $( this ).val() ); } );
-		$( '#currency' ).blur( function() { Cookies.set( 'create_ad_currency', $( this ).val() ); } );
-		$( '#period' ).blur( function() { Cookies.set( 'create_ad_period', $( this ).val() ); } );
 		$( '#country' ).blur( function() { Cookies.set( 'create_ad_country', $( this ).val() ); } );
 		$( '#city' ).blur( function() { Cookies.set( 'create_ad_city', $( this ).val() ); } );
 		$( '#zip' ).blur( function() { Cookies.set( 'create_ad_zip', $( this ).val() ); } );
@@ -227,9 +224,6 @@ $( document ).ready( function()
 		Cookies.remove( 'create_ad_title' );
 		Cookies.remove( 'create_ad_subtitle' );
 		Cookies.remove( 'create_ad_description' );
-		Cookies.remove( 'create_ad_price' );
-		Cookies.remove( 'create_ad_currency' );
-		Cookies.remove( 'create_ad_period' );
 		Cookies.remove( 'create_ad_country' );
 		Cookies.remove( 'create_ad_city' );
 		Cookies.remove( 'create_ad_zip' );

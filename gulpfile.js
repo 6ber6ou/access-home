@@ -26,7 +26,8 @@ elixir( ( mix ) =>
         './resources/assets/css/font-awesome/font-awesome.min.css',
         './resources/assets/css/ionicons/ionicons.css',
         './resources/assets/css/animate/animate.css',
-    	'./resources/assets/css/jquery-peek-a-bar/dist/css/jquery.peekabar.css'
+        './resources/assets/css/jquery-peek-a-bar/dist/css/jquery.peekabar.css',
+    	'./resources/assets/css/zoombox/zoombox.css'
 
     	], 'public/css/all.css' );
 
@@ -60,7 +61,10 @@ elixir( ( mix ) =>
         'custom/upload_ad_photo_5.js',
         'custom/upload_ad_photo_6.js',
         'cookie/cookie.js',
-        'custom/create_ad_save_inputs.js'
+        'custom/create_ad_save_inputs.js',
+        'zoombox/zoombox.js',
+        'custom/init_zoombox.js',
+        'custom/no_yes_buttons.js'
 
         ], 'public/js/custom.js' );
 

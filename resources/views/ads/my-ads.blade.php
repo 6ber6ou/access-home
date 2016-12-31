@@ -17,12 +17,16 @@
         </div>
         <!-- End ...ROW -->
 
-        <!-- ROW -->
-        <div class="row">
+        @foreach( $ads as $ad)
 
-            @include( 'layouts.partials._card' )
+            <!-- ROW -->
+            <div class="row">
 
-        </div>
-        <!-- End ...ROW -->
+                @include( 'layouts.partials._card' )
+
+            </div>
+            <!-- End ...ROW -->
+
+        @endforeach
 
 @stop

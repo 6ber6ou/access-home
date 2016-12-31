@@ -47,20 +47,6 @@
   font-size: 80%;
   text-align: justify; }
 
-.section-show-ads .price {
-  background-color: #e67e22;
-  border-radius: 50%;
-  position: absolute;
-  top: 0px;
-  right: 235px;
-  padding-top: 15px;
-  width: 70px;
-  height: 70px;
-  font-size: 90%;
-  line-height: 20px;
-  color: white;
-  text-align: center; }
-
 .section-show-ads .tab-content {
   margin-top: 20px; }
   .section-show-ads .tab-content i {
@@ -336,27 +322,6 @@ input[type=submit] {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
-.card-date {
-  background-color: #e67e22;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  padding-top: 15px;
-  line-height: 15px;
-  color: white;
-  text-align: center; }
-
-.card-date-price {
-  font-size: 80%;
-  display: block; }
-  .card-date-price span {
-    font-size: 115%;
-    font-weight: 300;
-    display: block; }
-
 .card-city {
   background-color: #e67e22;
   position: absolute;
@@ -427,7 +392,8 @@ input[type=submit] {
 .card-subtitle {
   margin: 0;
   padding: 0 0 15px 0;
-  color: #e67e22; }
+  color: #e67e22;
+  text-align: center; }
   .card:hover .card-subtitle {
     -webkit-animation: subTitileBlur 0.3s;
     animation: subTitileBlur 0.3s; }
@@ -1069,9 +1035,7 @@ section {
   .row {
     padding: 0 2%; }
   .steps-box img {
-    margin-left: 0; }
-  .price {
-    right: 220px !important; } }
+    margin-left: 0; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 992 to 1023px */
@@ -1121,8 +1085,6 @@ section {
       padding-top: 8px; }
   .icon-small {
     width: 20px; }
-  .price {
-    right: 160px !important; }
   .secondaries_photos {
     text-align: center; } }
 
@@ -1153,9 +1115,7 @@ section {
   .profile-form .form-group, .new-password-form .form-group {
     margin-bottom: 0; }
   .card {
-    margin-bottom: 40px; }
-  .price {
-    right: 230px !important; } }
+    margin-bottom: 40px; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL TABLETS to BIG TABLETS from 768 to 820px */
@@ -1171,9 +1131,7 @@ section {
     .works-step-container .works-step div {
       position: relative;
       top: 0;
-      right: 0; }
-  .price {
-    right: 120px !important; } }
+      right: 0; } }
 
 /* ------------------------------------------------------------ */
 /* SMALL PHONES to SMALL TABLETS from 481 to 767px */
@@ -1279,8 +1237,6 @@ section {
   .card {
     width: 100%; }
   #container_upload_primary_photo {
-    width: 100% !important; }
-  .price {
-    right: -5px !important; } }
+    width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */

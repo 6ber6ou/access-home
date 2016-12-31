@@ -6,6 +6,8 @@
 
 Route::resource( 'ads', 'User\AdsController' );
 
+Route::post( '/delete-ad/{id}', [ 'as' => 'delete-ad', 'uses' => 'User\AdsController@delete_ad' ] );
+
 Route::get( '/my-ads', [ 'as' => 'my-ads', 'uses' => 'User\AdsController@my_adds' ] );
 
 Route::post( '/upload-ad-primary-photo', [ 'as' => 'upload-ad-primary-photo', 'uses' => 'User\AdsController@upload_ad_primary_photo' ] );

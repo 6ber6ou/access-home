@@ -65,9 +65,6 @@ class AdsController extends Controller
         $ad->title = $request->input( 'title' );
         $ad->subtitle = $request->input( 'subtitle' );
         $ad->description = $request->input( 'description' );
-        $ad->price = $request->input( 'price' );
-        $ad->currency = $request->input( 'currency' );
-        $ad->period = $request->input( 'period' );
         $ad->country = $request->input( 'country' );
         $ad->city = $request->input( 'city' );
         $ad->zip = $request->input( 'zip' );
@@ -133,13 +130,10 @@ class AdsController extends Controller
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-created-notification' ) );
 
         return redirect()
-                    ->back()
+                    ->route( 'my-ads' )
                     ->withCookie( Cookie::forget( 'create_ad_title' ) )
                     ->withCookie( Cookie::forget( 'create_ad_subtitle' ) )
                     ->withCookie( Cookie::forget( 'create_ad_description' ) )
-                    ->withCookie( Cookie::forget( 'create_ad_price' ) )
-                    ->withCookie( Cookie::forget( 'create_ad_currency' ) )
-                    ->withCookie( Cookie::forget( 'create_ad_period' ) )
                     ->withCookie( Cookie::forget( 'create_ad_country' ) )
                     ->withCookie( Cookie::forget( 'create_ad_city' ) )
                     ->withCookie( Cookie::forget( 'create_ad_zip' ) )
@@ -235,8 +229,9 @@ class AdsController extends Controller
         show_notification();
 
         $page = 'my-ads';
+        $ads = Ad::where( 'user_id', Sentinel::getUser()->id )->orderBy( 'id', 'desc' )->get();
 
-        return view( 'ads.my-ads', compact( 'page' ) );
+        return view( 'ads.my-ads', compact( 'page', 'ads' ) );
 
         }
 
@@ -562,6 +557,23 @@ class AdsController extends Controller
 
         }
 
+    // ------------------------------------------------------------
+
+    public function delete_ad( $id )
+        {
+
+        $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
+
+        $this->remove_photos( $ad );
+
+        $ad->delete();
+
+        session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-deleted-notification' ) );
+
+        return redirect()->back();
+
+        }
+
     // ============================================================
 
     private function remove_sessions()
@@ -574,6 +586,29 @@ class AdsController extends Controller
         session()->forget( 'photo_4' );
         session()->forget( 'photo_5' );
         session()->forget( 'photo_6' );
+
+        }
+
+    // ============================================================
+
+    private function remove_photos( $ad )
+        {
+
+        @unlink( $ad->primary_photo );
+        @unlink( $ad->photo_1 );
+        @unlink( $ad->photo_2 );
+        @unlink( $ad->photo_3 );
+        @unlink( $ad->photo_4 );
+        @unlink( $ad->photo_5 );
+        @unlink( $ad->photo_6 );
+
+        @unlink( str_replace( 'thumbs/', '', $ad->primary_photo ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_1 ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_2 ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_3 ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_4 ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_5 ) );
+        @unlink( str_replace( 'thumbs/', '', $ad->photo_6 ) );
 
         }
 

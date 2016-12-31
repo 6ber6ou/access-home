@@ -41,9 +41,6 @@ return
 	'create-ad-title-placeholder'		=>		"Titre",
 	'create-ad-subtitle-placeholder'	=>		"Sous titre",
 	'create-ad-description-placeholder'	=>		"Description",
-	'create-ad-price-placeholder'		=>		"Prix",
-	'create-ad-currency-placeholder'	=>		"Devise",
-	'create-ad-period-placeholder'		=>		"Période",
 	'card-period-day'					=>		"jour",
 	'card-period-week'					=>		"semaine",
 	'card-period-month'					=>		"mois",
@@ -227,6 +224,15 @@ return
 
 	// ------------------------------------------------------------
 
+	// ****
+	// MISC
+	// ****
+
+	'yes-text'								=>		"Oui",
+	'no-text'								=>		"Non",
+
+	// ------------------------------------------------------------
+
 	// *************
 	// NOTIFICATIONS
 	// *************
@@ -253,6 +259,7 @@ return
 	'photo-upload-notification'				=>		"La photo a bien été uploadée !",
 	'ad-photo-deleted-notification'			=>		"La photo a bien été supprimée !",
 	'ad-created-notification'				=>		"L'annonce a bien été créée !",
+	'ad-deleted-notification'				=>		"L'annonce a bien été supprimée !",
 
 	// ------------------------------------------------------------
 

@@ -62,21 +62,6 @@
 		font-size : 80%;
 		text-align : justify;
 		}
-	.price
-		{
-		background-color : $orange;
-		border-radius : 50%;
-		position : absolute;
-		top : 0px;
-		right : 235px;
-		padding-top : 15px;
-		width : 70px;
-		height : 70px;
-		font-size : 90%;
-		line-height : 20px;
-		color : white;
-		text-align : center;
-		}
 	.tab-content
 		{
 		margin-top : 20px;
@@ -462,33 +447,6 @@ input[type=submit]
 		}
 	}
 
-.card-date
-	{
-	background-color : $orange;
-	border-radius : 50%;
-	position : absolute;
-	top : 20px;
-	right : 20px;
-	width : 60px;
-	height : 60px;
-	padding-top : 15px;
-	line-height : 15px;
-	color : white;
-	text-align : center;
-	}
-
-.card-date-price
-	{
-	font-size : 80%;
-	display : block;
-	span
-		{
-		font-size : 115%;
-		font-weight : 300;
-		display : block;
-		}
-	}
-
 .card-city
 	{
 	background-color : $orange;
@@ -582,6 +540,7 @@ input[type=submit]
 	margin : 0;
 	padding : 0 0 15px 0;
 	color : $orange;
+	text-align : center;
 	.card:hover &
 		{
 		-webkit-animation : subTitileBlur $transition;
