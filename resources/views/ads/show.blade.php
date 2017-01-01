@@ -41,7 +41,7 @@
 
                 @if( file_exists( $ad->primary_photo ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->primary_photo ) ) }}"><img src="{{ asset( $ad->primary_photo ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->primary_photo ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->primary_photo ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -62,7 +62,7 @@
 
                 @if( file_exists( $ad->photo_1 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_1 ) ) }}"><img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_1 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -76,7 +76,7 @@
 
                 @if( file_exists( $ad->photo_2 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_2 ) ) }}"><img src="{{ asset( $ad->photo_2 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_2 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_2 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -90,7 +90,7 @@
 
                 @if( file_exists( $ad->photo_3 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_3 ) ) }}"><img src="{{ asset( $ad->photo_3 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_3 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_3 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -104,7 +104,7 @@
 
                 @if( file_exists( $ad->photo_4 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_4 ) ) }}"><img src="{{ asset( $ad->photo_4 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_4 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_4 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -118,7 +118,7 @@
 
                 @if( file_exists( $ad->photo_5 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_5 ) ) }}"><img src="{{ asset( $ad->photo_5 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_5 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_5 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 
@@ -132,7 +132,7 @@
 
                 @if( file_exists( $ad->photo_6 ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_6 ) ) }}"><img src="{{ asset( $ad->photo_6 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_6 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_6 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
                 @else
 

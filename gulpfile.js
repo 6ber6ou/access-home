@@ -61,7 +61,9 @@ elixir( ( mix ) =>
         'custom/upload_ad_photo_6.js',
         'cookie/cookie.js',
         'custom/create_ad_save_inputs.js',
-        'custom/no_yes_buttons.js'
+        'custom/no_yes_buttons.js',
+        'imagelightbox/imagelightbox.js',
+        'custom/init_imagelightbox.js'
 
         ], 'public/js/custom.js' );
 
