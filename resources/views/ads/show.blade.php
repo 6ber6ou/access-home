@@ -39,9 +39,13 @@
             <!-- COL MD 8 -->
             <div class="col-md-8 col-md-offset-2 text-center">
 
-                @if( file_exists( $ad->primary_photo ) )
+                @if( array_key_exists( 0, $photos ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->primary_photo ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->primary_photo ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @if( file_exists( $photos[ 0 ] ) )
+
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 0 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 0 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+
+                    @endif
 
                 @else
 
@@ -60,23 +64,13 @@
 
             <div class="col-md-2 gallery">
 
-                @if( file_exists( $ad->photo_1 ) )
+                @if( array_key_exists( 1, $photos ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_1 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_1 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @if( file_exists( $photos[ 1 ] ) )
 
-                @else
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 1 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 1 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
-                    <img src="{{ asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
-
-                @endif
-
-            </div>
-
-            <div class="col-md-2 gallery">
-
-                @if( file_exists( $ad->photo_2 ) )
-
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_2 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_2 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @endif
 
                 @else
 
@@ -88,23 +82,13 @@
 
             <div class="col-md-2 gallery">
 
-                @if( file_exists( $ad->photo_3 ) )
+                @if( array_key_exists( 2, $photos ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_3 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_3 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @if( file_exists( $photos[ 2 ] ) )
 
-                @else
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 2 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 2 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
 
-                    <img src="{{ asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
-
-                @endif
-
-            </div>
-
-            <div class="col-md-2 gallery">
-
-                @if( file_exists( $ad->photo_4 ) )
-
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_4 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_4 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @endif
 
                 @else
 
@@ -116,9 +100,49 @@
 
             <div class="col-md-2 gallery">
 
-                @if( file_exists( $ad->photo_5 ) )
+                @if( array_key_exists( 3, $photos ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_5 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_5 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @if( file_exists( $photos[ 3 ] ) )
+
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 3 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 3 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+
+                    @endif
+
+                @else
+
+                    <img src="{{ asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
+
+                @endif
+
+            </div>
+
+            <div class="col-md-2 gallery">
+
+                @if( array_key_exists( 4, $photos ) )
+
+                    @if( file_exists( $photos[ 4 ] ) )
+
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 4 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 4 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+
+                    @endif
+
+                @else
+
+                    <img src="{{ asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail">
+
+                @endif
+
+            </div>
+
+            <div class="col-md-2 gallery">
+
+                @if( array_key_exists( 5, $photos ) )
+
+                    @if( file_exists( $photos[ 5 ] ) )
+
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 5 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 5 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+
+                    @endif
 
                 @else
 
@@ -130,9 +154,13 @@
 
             <div class="col-md-2 gallery">
 
-                @if( file_exists( $ad->photo_6 ) )
+                @if( array_key_exists( 6, $photos ) )
 
-                    <a href="{{ asset( str_replace ( 'thumbs', '', $ad->photo_6 ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $ad->photo_6 ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+                    @if( file_exists( $photos[ 6 ] ) )
+
+                        <a href="{{ asset( str_replace ( 'thumbs', '', $photos[ 6 ] ) ) }}" class="imageLightbox" data-imagelightbox="b"><img src="{{ asset( $photos[ 6 ] ) }}" alt="{!! trans( 'webpage-text.ad-picture-alt' ) !!}" class="img-responsive img-thumbnail"></a>
+
+                    @endif
 
                 @else
 
@@ -181,13 +209,17 @@
                     {!! nl2br( Sentinel::getUser()->description ) !!}
                 </p>
 
-                <p>
-                    <a href="#" class="btn btn-full" style="margin : 0;">Contacter</a>
-                </p>
+                @if( Sentinel::getUser()->id != $ad->user->id )
 
-                <p>
-                    <a href="#" class="simple-link">Signaler un abus</a>
-                </p>
+                    <p>
+                        <a href="#" class="btn btn-full" style="margin : 0;">Contacter</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="simple-link">Signaler un abus</a>
+                    </p>
+
+                @endif
 
             </div>
             <!-- End ... PROFILE -->
@@ -558,6 +590,36 @@
 
             </div>
             <!-- End ... COL MD 12 -->
+
+        </div>
+        <!-- End ... ROW -->
+
+        <!-- ROW -->
+        <div class="row" style="margin-top : 20px;">
+
+            <div class="col-md-6 text-right">
+                <a href="{{ route( 'ads.edit', $ad->id ) }}" class="btn btn-ghost">Modifier</a>
+            </div>
+
+            <div class="col-md-6 text-left delete_button">
+                <a href="" class="btn btn-full">Supprimer</a>
+            </div>
+
+            <div class="no_yes_buttons">
+
+                <div class="col-md-3" style="padding : 0; width: auto;">
+                    <a href="" class="btn btn-ghost no_button" style="border-top-right-radius : 0; border-bottom-right-radius : 0;">{!! trans( 'webpage-text.no-text' ) !!}</a>
+                </div>
+
+                {!! Form::open( [ 'route' => [ 'delete-ad', $ad->id ], 'class' => 'form-delete-ad', 'style' => 'margin-top : 0;' ] ) !!}
+
+                    <div class="col-md-3" style="padding : 0; width: auto;">
+                        <input type="submit" class="btn btn-full yes_button" style="border-top-left-radius : 0; border-bottom-left-radius : 0;" value="{!! trans( 'webpage-text.yes-text' ) !!}">
+                    </div>
+
+                {!! Form::close() !!}
+
+            </div>
 
         </div>
         <!-- End ... ROW -->

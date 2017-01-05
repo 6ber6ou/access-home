@@ -7,7 +7,7 @@
 $( document ).ready( function()
 	{
 
-	$( 'a' ).imageLightbox(
+	$( 'a.imageLightbox' ).imageLightbox(
 		{
 
 		enableKeyboard : true

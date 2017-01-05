@@ -190,7 +190,24 @@ class AdsController extends Controller
         show_notification();
 
         $page = 'show-ads';
-        $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
+        $ad = Ad::where( 'id', $id )->first();
+
+        if( is_null( $ad ) )
+            {
+
+            abort( 404 );
+
+            }
+
+        $photos = [];
+
+        if( $ad->primary_photo != NULL ) $photos[] = $ad->primary_photo;
+        if( $ad->photo_1 != NULL ) $photos[] = $ad->photo_1;
+        if( $ad->photo_2 != NULL ) $photos[] = $ad->photo_2;
+        if( $ad->photo_3 != NULL ) $photos[] = $ad->photo_3;
+        if( $ad->photo_4 != NULL ) $photos[] = $ad->photo_4;
+        if( $ad->photo_5 != NULL ) $photos[] = $ad->photo_5;
+        if( $ad->photo_6 != NULL ) $photos[] = $ad->photo_6;
 
         JavaScript::put(
             [
@@ -199,7 +216,7 @@ class AdsController extends Controller
 
             ] );
 
-        return view( 'ads.show', compact( 'page', 'ad' ) );
+        return view( 'ads.show', compact( 'page', 'ad', 'photos' ) );
 
         }
 
@@ -570,7 +587,7 @@ class AdsController extends Controller
 
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-deleted-notification' ) );
 
-        return redirect()->back();
+        return redirect()->route( 'my-ads' );
 
         }
 

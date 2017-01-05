@@ -17,16 +17,30 @@
         </div>
         <!-- End ...ROW -->
 
-        @foreach( $ads as $ad)
+        @if( count( $ads ) > 0 )
 
-            <!-- ROW -->
+            @foreach( $ads as $ad)
+
+                <!-- ROW -->
+                <div class="row">
+
+                    @include( 'layouts.partials._card' )
+
+                </div>
+                <!-- End ...ROW -->
+
+            @endforeach
+
+        @else
+
             <div class="row">
 
-                @include( 'layouts.partials._card' )
+                <p class="col-md-12 text-center p_error_page">
+                    Pas d'annonces !
+                </p>
 
             </div>
-            <!-- End ...ROW -->
 
-        @endforeach
+        @endif
 
 @stop

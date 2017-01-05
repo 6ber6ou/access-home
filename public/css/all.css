@@ -7788,6 +7788,20 @@ input[type=submit] {
   font-size: 70% !important; }
 
 /* ------------------------------------------------------------ */
+/* ERROR PAGE */
+/* ------------------------------------------------------------ */
+.error_page h2 {
+  margin-top: 80px !important; }
+
+.error_page p {
+  margin-top: 30px !important;
+  font-size: 90%; }
+
+.p_error_page {
+  margin-top: 30px !important;
+  font-size: 90%; }
+
+/* ------------------------------------------------------------ */
 /* FEATURES */
 /* ------------------------------------------------------------ */
 .section-features .long-copy {

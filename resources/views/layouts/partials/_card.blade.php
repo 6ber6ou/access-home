@@ -4,7 +4,20 @@
     <article class="card">
 
         <div class="card-thumb">
-            <img src="{{ $ad->primary_photo ? asset( $ad->primary_photo ) : asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.card-image-alt' ); !!}">
+
+            <?php
+
+            if( $ad->primary_photo != NULL ) $photo = $ad->primary_photo;
+            else if( $ad->photo_1 != NULL ) $photo = $ad->photo_1;
+            else if( $ad->photo_2 != NULL ) $photo = $ad->photo_2;
+            else if( $ad->photo_3 != NULL ) $photo = $ad->photo_3;
+            else if( $ad->photo_4 != NULL ) $photo = $ad->photo_4;
+            else if( $ad->photo_5 != NULL ) $photo = $ad->photo_5;
+            else if( $ad->photo_6 != NULL ) $photo = $ad->photo_6;
+
+            ?>
+
+            <img src="{{ $photo ? asset( $photo ) : asset( 'uploads/housing/thumbs/default.jpg' ) }}" alt="{!! trans( 'webpage-text.card-image-alt' ); !!}">
         </div>
 
         <div class="card-city">
