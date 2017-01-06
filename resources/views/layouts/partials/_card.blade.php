@@ -7,6 +7,8 @@
 
             <?php
 
+            $photo = '';
+
             if( $ad->primary_photo != NULL ) $photo = $ad->primary_photo;
             else if( $ad->photo_1 != NULL ) $photo = $ad->photo_1;
             else if( $ad->photo_2 != NULL ) $photo = $ad->photo_2;

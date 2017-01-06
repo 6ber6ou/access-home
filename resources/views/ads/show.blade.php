@@ -269,25 +269,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Rampe d'accès aux normes<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.accessibility-ramp' ) }}<i class="{{ $ad->ramp ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Ascenseur accessible<i class="ion-checkmark-round success"></i>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Parking aux normes<i class="ion-close-round error"></i>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Jardin / cour accessible<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.accessibility-lift' ) }}<i class="{{ $ad->lift ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -297,25 +283,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Chambres accessibles<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.accessibility-parking' ) }}<i class="{{ $ad->parking ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Couloirs aux normes<i class="ion-checkmark-round success"></i>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Cuisine accessibles<i class="ion-close-round error"></i>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Salle de bain aux normes<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.accessibility-garden' ) }}<i class="{{ $ad->garden ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -325,11 +297,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Douche accessibles<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.accessibility-bedroom' ) }}<i class="{{ $ad->bedroom ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Baignoire accessibles<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.accessibility-circulation' ) }}<i class="{{ $ad->circulation ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -339,11 +311,39 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                WC accessibles<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.accessibility-kitchen' ) }}<i class="{{ $ad->kitchen_acessible ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Transports en communs accessibles<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.accessibility-bathroom' ) }}<i class="{{ $ad->bathroom_acessible ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.accessibility-shower-1' ) }}<i class="{{ $ad->shower_1 ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.accessibility-shower-1' ) }}<i class="{{ $ad->shower_2 ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.accessibility-wc' ) }}<i class="{{ $ad->wc ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.accessibility-transports' ) }}<i class="{{ $ad->transports ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -359,25 +359,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Télévision<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.equipments-tv' ) }}<i class="{{ $ad->tv ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Home cinéma<i class="ion-checkmark-round success"></i>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Ordinateur<i class="ion-close-round error"></i>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Internet<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.equipments-home-cinema' ) }}<i class="{{ $ad->home_cinema ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -387,25 +373,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                WiFi<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.equipments-computer' ) }}<i class="{{ $ad->computer ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Téléphone<i class="ion-checkmark-round success"></i>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Lave vaisselle<i class="ion-close-round error"></i>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Lave linge<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.equipments-internet' ) }}<i class="{{ $ad->internet ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -415,25 +387,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Sèche linge<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.equipments-wifi' ) }}<i class="{{ $ad->wifi ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Four<i class="ion-checkmark-round success"></i>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Réfrigérateur<i class="ion-close-round error"></i>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Congélateur<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.equipments-phone' ) }}<i class="{{ $ad->phone ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -443,11 +401,53 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Micro ondes<i class="ion-close-round error"></i>
+                                {{ trans( 'webpage-text.equipments-dishwasher' ) }}<i class="{{ $ad->dishwasher ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Machine à café<i class="ion-checkmark-round success"></i>
+                                {{ trans( 'webpage-text.equipments-washing-machine' ) }}<i class="{{ $ad->washing_machine ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-dryer' ) }}<i class="{{ $ad->dryer ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-oven' ) }}<i class="{{ $ad->oven ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-fridge' ) }}<i class="{{ $ad->fridge ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-freezer' ) }}<i class="{{ $ad->freezer ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-microwave' ) }}<i class="{{ $ad->microwave ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.equipments-coffee-machine' ) }}<i class="{{ $ad->coffee_machine ? 'ion-checkmark-round success' : 'ion-close-round error' }}"></i>
                             </div>
 
                         </div>
@@ -463,25 +463,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Salon<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-livingroom' ) }}<strong>{{ $ad->livingroom }}</strong>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Salle à manger<strong>1</strong>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Cuisine<strong>1</strong>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Kitchenette<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-dining-room' ) }}<strong>{{ $ad->dining_room }}</strong>
                             </div>
 
                         </div>
@@ -491,25 +477,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Salle de bain<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-kitchen' ) }}<strong>{{ $ad->kitchen }}</strong>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                WC séparé<strong>1</strong>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Garage<strong>1</strong>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Cave<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-kitchenette' ) }}<strong>{{ $ad->kitchenette }}</strong>
                             </div>
 
                         </div>
@@ -519,25 +491,11 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Chambre double<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-bathroom' ) }}<strong>{{ $ad->bathroom }}</strong>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Chambre simple<strong>1</strong>
-                            </div>
-
-                        </div>
-                        <!-- End ... ROW -->
-
-                        <!-- ROW -->
-                        <div class="row">
-
-                            <div class="col-md-6 text-center">
-                                Nombre lit double<strong>1</strong>
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                                Nombre lit simple<strong>2</strong>
+                                {{ trans( 'webpage-text.rooms-separed-wc' ) }}<strong>{{ $ad->separed_wc }}</strong>
                             </div>
 
                         </div>
@@ -547,11 +505,63 @@
                         <div class="row">
 
                             <div class="col-md-6 text-center">
-                                Nombre lits d'enfants<strong>0</strong>
+                                {{ trans( 'webpage-text.rooms-garage' ) }}<strong>{{ $ad->garage }}</strong>
                             </div>
 
                             <div class="col-md-6 text-center">
-                                Nombre canapé lit<strong>1</strong>
+                                {{ trans( 'webpage-text.rooms-cave' ) }}<strong>{{ $ad->cave }}</strong>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-double-bedroom' ) }}<strong>{{ $ad->double_bedroom }}</strong>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-simple-bedroom' ) }}<strong>{{ $ad->simple_bedroom }}</strong>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-nb-double-bed' ) }}<strong>{{ $ad->nb_double_bed }}</strong>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-nb-simple-bed' ) }}<strong>{{ $ad->nb_simple_bed }}</strong>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-nb-baby-bed' ) }}<strong>{{ $ad->nb_baby_bed }}</strong>
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-nb-sofa-bed' ) }}<strong>{{ $ad->nb_sofa_bed }}</strong>
+                            </div>
+
+                        </div>
+                        <!-- End ... ROW -->
+
+                        <!-- ROW -->
+                        <div class="row">
+
+                            <div class="col-md-6 text-center">
+                                {{ trans( 'webpage-text.rooms-housing-area' ) }}<strong>{{ $ad->housing_area }} m2</strong>
                             </div>
 
                         </div>
