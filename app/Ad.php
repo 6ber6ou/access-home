@@ -12,5 +12,4 @@ class Ad extends Model
 
     	}
 
-
 	}

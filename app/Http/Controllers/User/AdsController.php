@@ -110,6 +110,7 @@ class AdsController extends Controller
         $ad->nb_baby_bed = $request->input( 'nb_baby_bed' );
         $ad->nb_sofa_bed = $request->input( 'nb_sofa_bed' );
         $ad->housing_area = $request->input( 'housing_area' );
+        $ad->interior_rules = $request->input( 'interior_rules' );
         $ad->photo_1 = session()->get( 'photo_1' );
         $ad->photo_2 = session()->get( 'photo_2' );
         $ad->photo_3 = session()->get( 'photo_3' );
@@ -178,7 +179,8 @@ class AdsController extends Controller
                     ->withCookie( Cookie::forget( 'create_ad_nb_simple_bed' ) )
                     ->withCookie( Cookie::forget( 'create_ad_nb_baby_bed' ) )
                     ->withCookie( Cookie::forget( 'create_ad_nb_sofa_bed' ) )
-                    ->withCookie( Cookie::forget( 'create_ad_housing_area' ) );
+                    ->withCookie( Cookie::forget( 'create_ad_housing_area' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_rules' ) );
 
         }
 

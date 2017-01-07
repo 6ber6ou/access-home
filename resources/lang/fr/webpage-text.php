@@ -136,6 +136,7 @@ return
 	'rooms-nb-baby-bed'					=>		"Nombre lit d'enfant",
 	'rooms-nb-sofa-bed'					=>		"Nombre canapé lit",
 	'rooms-housing-area'				=>		"Surface du logement",
+	'create-ad-phase-5-h3'				=>		"Réglement intérieur",
 
 	// ------------------------------------------------------------
 

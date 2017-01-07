@@ -572,11 +572,7 @@
 
                     <!-- RULES -->
                     <div class="tab-pane fade" id="rules">
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptate perferendis voluptates nemo facere, corrupti delectus porro asperiores. Architecto quidem quisquam est veritatis ex, qui explicabo commodi doloremque praesentium eum!
-                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptate perferendis voluptates nemo facere, corrupti delectus porro asperiores. Architecto quidem quisquam est veritatis ex, qui explicabo commodi doloremque praesentium eum!
-                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptate perferendis voluptates nemo facere, corrupti delectus porro asperiores. Architecto quidem quisquam est veritatis ex, qui explicabo commodi doloremque praesentium eum!
-
+                        {{ $ad->interior_rules }}
                     </div>
                     <!-- End ... RULES -->
 

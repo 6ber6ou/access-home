@@ -1600,6 +1600,44 @@
             <!-- ============================================================ -->
 
             <!-- ROW -->
+            <div class="row">
+
+                <!-- COL MD 6 -->
+                <div class="col-md-6 col-md-offset-3 text-center" style="margin-top : 40px;">
+
+                    <h3>
+                        {!! trans( 'webpage-text.create-ad-phase-5-h3' ) !!}
+                    </h3>
+
+                </div>
+                <!-- End ... COL MD 6 -->
+
+            </div>
+            <!-- End ... ROW -->
+
+            <!-- ROW -->
+            <div class="row">
+
+                <!-- COL MD 8 -->
+                <div class="col-md-8 col-md-offset-2">
+
+                    <!-- FORM GROUP -->
+                    <div class="form-group relative">
+
+                        {!! Form::textarea( 'interior_rules', isset( $_COOKIE[ 'create_ad_rules' ] ) ? $_COOKIE[ 'create_ad_rules' ] : NULL, [ 'class' => 'form-control', 'id' => 'interior_rules' ] ) !!}
+
+                    </div>
+                    <!-- End ... FORM GROUP -->
+
+                </div>
+                <!-- End ... COL MD 8 -->
+
+            </div>
+            <!-- End ...ROW -->
+
+            <!-- ============================================================ -->
+
+            <!-- ROW -->
             <div class="row" style="margin-top : 30px;">
 
                 <!-- COL MD 6 -->

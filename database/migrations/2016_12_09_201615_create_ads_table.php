@@ -63,6 +63,7 @@ class CreateAdsTable extends Migration
             $table->string( 'nb_baby_bed' );
             $table->string( 'nb_sofa_bed' );
             $table->integer( 'housing_area' );
+            $table->text( 'interior_rules' )->nullable();
             $table->string( 'photo_1' )->nullable();
             $table->string( 'photo_2' )->nullable();
             $table->string( 'photo_3' )->nullable();

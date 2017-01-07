@@ -13582,6 +13582,7 @@ $( document ).ready( function()
 		$( '#nb_baby_bed' ).blur( function() { Cookies.set( 'create_ad_nb_baby_bed', $( this ).val() ); } );
 		$( '#nb_sofa_bed' ).blur( function() { Cookies.set( 'create_ad_nb_sofa_bed', $( this ).val() ); } );
 		$( '#housing_area' ).blur( function() { Cookies.set( 'create_ad_housing_area', $( this ).val() ); } );
+		$( '#rules' ).blur( function() { Cookies.set( 'create_ad_rules', $( this ).val() ); } );
 
 		}
 	else
@@ -13635,6 +13636,7 @@ $( document ).ready( function()
 		Cookies.remove( 'create_ad_nb_baby_bed' );
 		Cookies.remove( 'create_ad_nb_sofa_bed' );
 		Cookies.remove( 'create_ad_housing_area' );
+		Cookies.remove( 'create_ad_rules' );
 
 		}
 
