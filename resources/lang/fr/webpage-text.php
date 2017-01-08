@@ -137,6 +137,8 @@ return
 	'rooms-nb-sofa-bed'					=>		"Nombre canapé lit",
 	'rooms-housing-area'				=>		"Surface du logement",
 	'create-ad-phase-5-h3'				=>		"Réglement intérieur",
+	'edit-ads-h2'						=>		"Modifier l'annonce",
+	'create-ad-update'					=>		"Mettre à jour",
 
 	// ------------------------------------------------------------
 

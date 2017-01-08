@@ -63,10 +63,10 @@
   height: 300px; }
 
 /* ------------------------------------------------------------ */
-.section-create-ads .row, .section-create-ads .form-group {
+.section-create-ads .row, .section-create-ads .form-group, .section-edit-ads .row, .section-edit-ads .form-group {
   margin-bottom: 0; }
 
-.section-create-ads input[type=checkbox] {
+.section-create-ads input[type=checkbox], .section-edit-ads input[type=checkbox] {
   margin-left: 10px; }
 
 /* ------------------------------------------------------------ */
@@ -404,8 +404,8 @@ input[type=submit] {
   right: 20px;
   margin-bottom: 30px;
   color: #555;
-  line-height: 30px;
-  font-size: 90%;
+  line-height: 25px;
+  font-size: 80%;
   opacity: 0;
   -webkit-transition: opacity 0.3s -0.1s, -webkit-transform 0.3s -0.1s;
   transition: opacity 0.3s -0.1s, -webkit-transform 0.3s -0.1s;

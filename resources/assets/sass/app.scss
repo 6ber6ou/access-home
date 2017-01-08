@@ -89,7 +89,7 @@
 
 /* ------------------------------------------------------------ */
 
-.section-create-ads
+.section-create-ads, .section-edit-ads
 	{
 	.row, .form-group
 		{
@@ -555,8 +555,8 @@ input[type=submit]
 	right : 20px;
 	margin-bottom : 30px;
 	color : $grey-font;
-	line-height : 30px;
-	font-size : 90%;
+	line-height : 25px;
+	font-size : 80%;
 	opacity : 0;
 	-webkit-transition : opacity $transition -0.1s, -webkit-transform $transition -0.1s;
 	transition : opacity $transition -0.1s, -webkit-transform $transition -0.1s;

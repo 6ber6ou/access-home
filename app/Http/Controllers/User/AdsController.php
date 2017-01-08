@@ -226,12 +226,195 @@ class AdsController extends Controller
 
     public function edit( $id )
         {
+
+        show_notification();
+
+        $page = 'edit-ads';
+        $countries = Country::pluck( 'name', 'code' );
+        $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
+
+        if( ! preg_match( '#ads/[0-9]*/edit#', $_SERVER[ 'HTTP_REFERER' ] ) )
+            {
+
+            $this->remove_sessions();
+
+            }
+
+        return view( 'ads.edit', compact( 'page', 'countries', 'ad' ) );
+
         }
 
     // ------------------------------------------------------------
 
-    public function update( Request $request, $id )
+    public function update( CreateAdRequest $request, $id )
         {
+
+        $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $id )->first();
+
+        if( session()->get( 'primary_photo' ) != NULL )
+            {
+
+            $ad->primary_photo = session()->get( 'primary_photo' );
+
+            }
+
+        $ad->title = $request->input( 'title' );
+        $ad->subtitle = $request->input( 'subtitle' );
+        $ad->description = $request->input( 'description' );
+        $ad->country = $request->input( 'country' );
+        $ad->city = $request->input( 'city' );
+        $ad->zip = $request->input( 'zip' );
+        $ad->address = $request->input( 'address' );
+        $ad->ramp = boolval( $request->input( 'ramp' ) );
+        $ad->lift = boolval( $request->input( 'lift' ) );
+        $ad->parking = boolval( $request->input( 'parking' ) );
+        $ad->garden = boolval( $request->input( 'garden' ) );
+        $ad->bedroom = boolval( $request->input( 'bedroom' ) );
+        $ad->circulation = boolval( $request->input( 'circulation' ) );
+        $ad->kitchen_acessible = boolval( $request->input( 'kitchen_acessible' ) );
+        $ad->bathroom_acessible = boolval( $request->input( 'bathroom_acessible' ) );
+        $ad->shower_1 = boolval( $request->input( 'shower_1' ) );
+        $ad->shower_2 = boolval( $request->input( 'shower_2' ) );
+        $ad->wc = boolval( $request->input( 'wc' ) );
+        $ad->transports = boolval( $request->input( 'transports' ) );
+        $ad->tv = boolval( $request->input( 'tv' ) );
+        $ad->home_cinema = boolval( $request->input( 'home_cinema' ) );
+        $ad->computer = boolval( $request->input( 'computer' ) );
+        $ad->internet = boolval( $request->input( 'internet' ) );
+        $ad->wifi = boolval( $request->input( 'wifi' ) );
+        $ad->phone = boolval( $request->input( 'phone' ) );
+        $ad->dishwasher = boolval( $request->input( 'dishwasher' ) );
+        $ad->washing_machine = boolval( $request->input( 'washing_machine' ) );
+        $ad->dryer = boolval( $request->input( 'dryer' ) );
+        $ad->oven = boolval( $request->input( 'oven' ) );
+        $ad->fridge = boolval( $request->input( 'fridge' ) );
+        $ad->freezer = boolval( $request->input( 'freezer' ) );
+        $ad->microwave = boolval( $request->input( 'microwave' ) );
+        $ad->coffee_machine = boolval( $request->input( 'coffee_machine' ) );
+        $ad->livingroom = $request->input( 'livingroom' );
+        $ad->dining_room = $request->input( 'dining_room' );
+        $ad->kitchen = $request->input( 'kitchen' );
+        $ad->kitchenette = $request->input( 'kitchenette' );
+        $ad->bathroom = $request->input( 'bathroom' );
+        $ad->separed_wc = $request->input( 'separed_wc' );
+        $ad->garage = $request->input( 'garage' );
+        $ad->cave = $request->input( 'cave' );
+        $ad->double_bedroom = $request->input( 'double_bedroom' );
+        $ad->simple_bedroom = $request->input( 'simple_bedroom' );
+        $ad->nb_double_bed = $request->input( 'nb_double_bed' );
+        $ad->nb_simple_bed = $request->input( 'nb_simple_bed' );
+        $ad->nb_baby_bed = $request->input( 'nb_baby_bed' );
+        $ad->nb_sofa_bed = $request->input( 'nb_sofa_bed' );
+        $ad->housing_area = $request->input( 'housing_area' );
+        $ad->interior_rules = $request->input( 'interior_rules' );
+
+        if( session()->get( 'photo_1' ) != NULL )
+            {
+
+            $ad->photo_1 = session()->get( 'photo_1' );
+
+            }
+
+        if( session()->get( 'photo_2' ) != NULL )
+            {
+
+            $ad->photo_2 = session()->get( 'photo_2' );
+
+            }
+
+        if( session()->get( 'photo_3' ) != NULL )
+            {
+
+            $ad->photo_3 = session()->get( 'photo_3' );
+
+            }
+
+        if( session()->get( 'photo_4' ) != NULL )
+            {
+
+            $ad->photo_4 = session()->get( 'photo_4' );
+
+            }
+
+        if( session()->get( 'photo_5' ) != NULL )
+            {
+
+            $ad->photo_5 = session()->get( 'photo_5' );
+
+            }
+
+        if( session()->get( 'photo_6' ) != NULL )
+            {
+
+            $ad->photo_6 = session()->get( 'photo_6' );
+
+            }
+
+        $ad->user_id = Sentinel::getUser()->id;
+        $ad->update();
+
+        if( session()->has( 'primary_photo' ) ) session()->forget( 'primary_photo' );
+        if( session()->has( 'photo_1' ) ) session()->forget( 'photo_1' );
+        if( session()->has( 'photo_2' ) ) session()->forget( 'photo_2' );
+        if( session()->has( 'photo_3' ) ) session()->forget( 'photo_3' );
+        if( session()->has( 'photo_4' ) ) session()->forget( 'photo_4' );
+        if( session()->has( 'photo_5' ) ) session()->forget( 'photo_5' );
+        if( session()->has( 'photo_6' ) ) session()->forget( 'photo_6' );
+
+        session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-created-notification' ) );
+
+        return redirect()
+                    ->route( 'my-ads' )
+                    ->withCookie( Cookie::forget( 'create_ad_title' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_subtitle' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_description' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_country' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_city' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_zip' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_address' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_ramp' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_lift' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_parking' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_garden' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_bedroom' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_circulation' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_kitchen_acessible' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_bathroom_acessible' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_shower_1' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_shower_2' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_wc' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_transports' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_tv' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_home_cinema' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_computer' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_internet' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_wifi' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_phone' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_dishwasher' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_washing_machine' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_dryer' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_oven' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_fridge' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_freezer' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_microwave' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_coffee_machine' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_livingroom' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_dining_room' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_kitchen' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_kitchenette' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_bathroom' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_separed_wc' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_garage' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_cave' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_double_bedroom' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_simple_bedroom' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_nb_double_bed' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_nb_simple_bed' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_nb_baby_bed' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_nb_sofa_bed' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_housing_area' ) )
+                    ->withCookie( Cookie::forget( 'create_ad_rules' ) );
+
         }
 
     // ------------------------------------------------------------
@@ -293,6 +476,15 @@ class AdsController extends Controller
         @unlink( str_replace( 'thumbs/', '', session()->get( 'primary_photo' ) ) );
 
         session()->forget( 'primary_photo' );
+
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->primary_photo = NULL;
+            $ad->save();
+
+            }
 
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
