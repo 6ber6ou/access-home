@@ -238,6 +238,16 @@ return
 
 	// ------------------------------------------------------------
 
+	// *****
+	// INBOX
+	// *****
+
+	'inbox-h2'							=>		"Messages",
+	'inbox-received-messages-link'		=>		"Messages reçus",
+	'inbox-sent-messages-link'			=>		"Messages envoyés",
+
+	// ------------------------------------------------------------
+
 	// ******
 	// EMAILS
 	// ******

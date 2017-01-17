@@ -79,8 +79,8 @@
 <!-- ROW -->
 <div class="row">
 
-    <!-- COL MD 6 -->
-    <div class="col-md-6 col-md-offset-3">
+    <!-- COL MD 8 -->
+    <div class="col-md-8 col-md-offset-2">
 
         <!-- FORM GROUP -->
         <div class="form-group relative {{ $errors->first( 'description' ) ? 'has-error' : '' }}">
@@ -102,7 +102,7 @@
         <!-- End ... FORM GROUP -->
 
     </div>
-    <!-- End ... COL MD 6 -->
+    <!-- End ... COL MD 8 -->
 
 </div>
 <!-- End ...ROW -->

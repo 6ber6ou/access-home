@@ -31,6 +31,16 @@
 
             @endforeach
 
+        <!-- ROW -->
+        <div class="row">
+
+            <div class="col-md-10 text-right">
+                {{ $ads->links() }}
+            </div>
+
+        </div>
+        <!-- End ... ROW -->
+
         @else
 
             <div class="row">

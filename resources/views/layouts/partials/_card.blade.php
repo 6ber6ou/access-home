@@ -58,7 +58,7 @@
 
     </article>
 
-    @if( Sentinel::getUser()->id == $ad->user->id )
+    @if( Sentinel::getUser()->id == $ad->user->id && $page == 'my-ads' )
 
         <div class="row" style="margin : 20px 0;">
 

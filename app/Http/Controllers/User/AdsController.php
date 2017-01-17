@@ -29,8 +29,9 @@ class AdsController extends Controller
         show_notification();
 
         $page = 'ads';
+        $ads = Ad::orderBy( 'id', 'desc' )->paginate( 10 );
 
-        return view( 'ads.index', compact( 'page' ) );
+        return view( 'ads.index', compact( 'page', 'ads' ) );
 
         }
 
@@ -431,7 +432,7 @@ class AdsController extends Controller
         show_notification();
 
         $page = 'my-ads';
-        $ads = Ad::where( 'user_id', Sentinel::getUser()->id )->orderBy( 'id', 'desc' )->get();
+        $ads = Ad::where( 'user_id', Sentinel::getUser()->id )->orderBy( 'id', 'desc' )->paginate( 10 );
 
         return view( 'ads.my-ads', compact( 'page', 'ads' ) );
 
@@ -532,6 +533,15 @@ class AdsController extends Controller
 
         session()->forget( 'photo_1' );
 
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_1 = NULL;
+            $ad->save();
+
+            }
+
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
         return redirect()->back();
@@ -577,6 +587,15 @@ class AdsController extends Controller
         @unlink( str_replace( 'thumbs/', '', session()->get( 'photo_2' ) ) );
 
         session()->forget( 'photo_2' );
+
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_2 = NULL;
+            $ad->save();
+
+            }
 
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
@@ -624,6 +643,15 @@ class AdsController extends Controller
 
         session()->forget( 'photo_3' );
 
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_3 = NULL;
+            $ad->save();
+
+            }
+
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
         return redirect()->back();
@@ -669,6 +697,15 @@ class AdsController extends Controller
         @unlink( str_replace( 'thumbs/', '', session()->get( 'photo_4' ) ) );
 
         session()->forget( 'photo_4' );
+
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_4 = NULL;
+            $ad->save();
+
+            }
 
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
@@ -716,6 +753,15 @@ class AdsController extends Controller
 
         session()->forget( 'photo_5' );
 
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_5 = NULL;
+            $ad->save();
+
+            }
+
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 
         return redirect()->back();
@@ -761,6 +807,15 @@ class AdsController extends Controller
         @unlink( str_replace( 'thumbs/', '', session()->get( 'photo_6' ) ) );
 
         session()->forget( 'photo_6' );
+
+        if( $request->input( 'id' ) )
+            {
+
+            $ad = Ad::where( 'user_id', Sentinel::getUser()->id )->where( 'id', $request->input( 'id' ) )->first();
+            $ad->photo_6 = NULL;
+            $ad->save();
+
+            }
 
         session()->flash( 'message', 'success|' . trans( 'webpage-text.ad-photo-deleted-notification' ) );
 

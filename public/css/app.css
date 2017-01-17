@@ -1178,6 +1178,56 @@ a.link-invisible:active {
   color: white; }
 
 /* ------------------------------------------------------------ */
+/* PAGINATION */
+/* ------------------------------------------------------------ */
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-color: #e67e22; }
+  .pagination > li:first-child > a:hover,
+  .pagination > li:first-child > span:hover {
+    border-color: #e67e22; }
+
+.pagination > li > a,
+.pagination > li > span {
+  border-color: #e67e22;
+  color: #e67e22; }
+  .pagination > li > a:hover,
+  .pagination > li > span:hover {
+    border-color: #e67e22;
+    background-color: #e67e22;
+    color: white; }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  border-color: #cf6d17;
+  background-color: #cf6d17 !important;
+  color: white; }
+
+.pagination > .disabled > a,
+.pagination > .disabled > span,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > span:focus {
+  border-color: #f0b37e !important;
+  color: #f0b37e; }
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-color: #e67e22; }
+  .pagination > li:last-child > a:hover,
+  .pagination > li:last-child > span:hover {
+    border-color: #e67e22; }
+
+/* ------------------------------------------------------------ */
 /* PARAGRAPHS */
 /* ------------------------------------------------------------ */
 .long-copy {

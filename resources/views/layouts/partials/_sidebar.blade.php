@@ -1,5 +1,5 @@
 <h3>
-	Annonces
+	{!! trans( 'webpage-text.ads-h2' ) !!}
 </h3>
 
 <ul>
@@ -19,17 +19,17 @@
 </ul>
 
 <h3>
-	Témoignages
+	{!! trans( 'webpage-text.inbox-h2' ) !!}
 </h3>
 
 <ul>
 
 	<li>
-		<a href="#">Voir les témoignages</a>
+		<a href="#">{!! trans( 'webpage-text.inbox-received-messages-link' ) !!}</a>
 	</li>
 
 	<li>
-		<a href="#">Poster un témoignage</a>
+		<a href="#">{!! trans( 'webpage-text.inbox-sent-messages-link' ) !!}</a>
 	</li>
 
 </ul>

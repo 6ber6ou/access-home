@@ -5,7 +5,7 @@
 @section( 'content' )
 
    <!-- SECTION -->
-    <section class="section-my-adds">
+    <section class="section-my-ads">
 
         <!-- ROW -->
         <div class="row">
@@ -17,16 +17,40 @@
         </div>
         <!-- End ...ROW -->
 
+        @if( count( $ads ) > 0 )
+
+            @foreach( $ads as $ad)
+
+                <!-- ROW -->
+                <div class="row">
+
+                    @include( 'layouts.partials._card' )
+
+                </div>
+                <!-- End ...ROW -->
+
+            @endforeach
+
         <!-- ROW -->
         <div class="row">
 
-            <div class="col-md-4 col-md-offset-4">
-
-
-
+            <div class="col-md-10 text-right">
+                {{ $ads->links() }}
             </div>
 
         </div>
-        <!-- End ...ROW -->
+        <!-- End ... ROW -->
+
+        @else
+
+            <div class="row">
+
+                <p class="col-md-12 text-center p_error_page">
+                    Pas d'annonces !
+                </p>
+
+            </div>
+
+        @endif
 
 @stop
